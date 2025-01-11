@@ -1,8 +1,2 @@
-[build]
-  command = """
-  wget -qO- https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest && quarto render
-  """
-  publish = "_site"
-
-[build.environment]
-  NODE_VERSION = "16"
+[[plugins]]
+package = "@quarto/netlify-plugin-quarto"
