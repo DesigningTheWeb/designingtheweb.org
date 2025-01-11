@@ -1,10 +1,6 @@
 [build]
   command = """
-  wget -qO- https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest \
-  | grep "browser_download_url.*linux-amd64.tar.gz" \
-  | cut -d : -f 2,3 \
-  | tr -d \\" \
-  | wget -qi - && tar -xvzf quarto-*-linux-amd64.tar.gz && mv quarto-*/bin/* /usr/local/bin/ && quarto render
+  wget -qO- https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest && quarto render
   """
   publish = "_site"
 
