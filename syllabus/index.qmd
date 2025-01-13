@@ -41,9 +41,11 @@ Distribution Requirements: IP, SP.
 ### Distribution Requirements
 
 **IP: International & Intercultural Perspectives (IP).** An understanding of International & Intercultural Perspectives means awareness that culture provides the interpretive lens for action in the world, and that one’s particular culture is itself one of many cultures of the world. It includes the ability to recognize and understand the results of cultural difference wherever they are found, as well as an awareness of the norms of one’s own culture or those of other cultures.
+
 - **Learning Outcome**: Students who successfully complete this requirement will demonstrate an understanding of cultural complexity and difference.
 
 **SP: Scientific Process & Knowledge (SP).** Courses involving Scientific Process & Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.
+
 - **Learning Outcome:** Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.
 
 Course learning outcomes 1, 2, 3 and 4 satisfy IP learning outcome. 
