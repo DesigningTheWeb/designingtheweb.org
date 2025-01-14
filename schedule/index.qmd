@@ -20,6 +20,7 @@ layout: full
 - Tasks:  
   - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): Git, VSCode, Markdown
   - Read Chapter 1: Basics in [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)  
+  - [Slides](week1/index.qmd)
 
 ### Week 2 (Jan 20-24): Markdown, Quarto, and Introduction to 11ty  
 - Topics: Markdown, using Quarto for document generation, and setting up basic 11ty projects  
