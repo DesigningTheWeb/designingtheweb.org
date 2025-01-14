@@ -7,8 +7,7 @@ layout: full
 
 - January 13: No Lab
 - January 20: No Class
-- February 24: Personal Website
-- March 3 - 7: No Classes
+- March 3-7: No Classes
 - April 7: No Class
 - April 11: No Class
 - April 28: Community Project Presentation
@@ -16,11 +15,12 @@ layout: full
 ## Weekly Schedule
 
 ### Week 1 (Jan 13-17): Introduction to Web Design and Tools  
-- Topics: Overview of web design, development tools, workflows, and site mapping  
+- Topics: Overview of web design, development tools, workflows, and sitemapping  
 - Tasks:  
   - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): Git, VSCode, Markdown
   - Read Chapter 1: Basics in [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)  
-  - [Slides: Site Map](week1/index.qmd)
+  - [Slides: Sitemap](week1/index.qmd)
+  - [Technical Challenge: Sitemap]()
 
 ### Week 2 (Jan 20-24): Markdown, Quarto, and Introduction to 11ty  
 - Topics: Markdown, using Quarto for document generation, and setting up basic 11ty projects  
