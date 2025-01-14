@@ -1,0 +1,23 @@
+---
+title: "Web Design"
+description: "What is a site map?"
+date: "2025-01-15"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+# What is a site map?
+
+::: incremental
+- A file with information about the pages, videos, and other files on your site, and the relationships between them
+- Helps search engines crawl site efficiently
+:::
