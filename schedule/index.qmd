@@ -22,10 +22,14 @@ layout: full
   - [Slides: Sitemap](week1/index.qmd)
   - [Technical Challenge: Sitemap](https://classroom.github.com/a/4uWr1dqq)
 
-### Week 2 (Jan 20-24): Markdown, Quarto, and Introduction to 11ty  
-- Topics: Markdown, using Quarto for document generation, and setting up basic 11ty projects  
+### Week 2 (Jan 20-24): Markdown, Quarto, and Introduction to Software Engineering  
+- Topics: Markdown, Quarto, Wireframing and Software Engineering process
 - Tasks:  
-  - Web Project 1 Introduction: Course Website 
+  - [Web Project 1: Course Website](https://classroom.github.com/a/TWfWTBaQ)
+  - Read Chapter 1: Process in [Web Style Guide](https://www.webstyleguide.com/wsg3/1-process)  
+  - Read Chapter 1 in [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/read/)
+  - [Slides: Software Engineering Process](week2/index.qmd)
+  - [Slides: Wireframing](week2_2/index.qmd)
 
 ### Week 3 (Jan 27-31): HTML Basics  
 - Topics: Structure of HTML documents, semantic HTML, and elements  
@@ -35,8 +39,8 @@ layout: full
 ### Week 4 (Feb 3-7): CSS Basics and Box Model  
 - Topics: Styling with CSS, box model, positioning, and layout  
 
-### Week 5 (Feb 10-14): Design Principles and Wireframing with Figma  
-- Topics: Visual hierarchy, color theory, typography, and creating wireframes in Figma  
+### Week 5 (Feb 10-14): Design Principles  
+- Topics: Visual hierarchy, color theory, typography  
 - Tasks:  
   - Web Project 2 Introduction: Personal Website 
 

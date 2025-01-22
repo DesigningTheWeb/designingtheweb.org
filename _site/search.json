@@ -89,5 +89,201 @@
     "title": "Schedule",
     "section": "Weekly Schedule",
     "text": "Weekly Schedule\n\nWeek 1 (Jan 13-17): Introduction to Web Design and Tools\n\nTopics: Overview of web design, development tools, workflows, and site mapping\n\nResources:\n\nMozilla Developer Network (MDN) Web Docs\n\nLearn Enough Command Line to Be Dangerous\n\n“Web Design: A Book for Beginners” (Toronto Metropolitan University Press)\n\n\n\n\nWeek 2 (Jan 20-24): Markdown, Quarto, and Introduction to 11ty\n\nTopics: Markdown, using Quarto for document generation, and setting up basic 11ty projects\n\nTasks:\n\nWeb Project 1 Introduction: Course Website\n\n\n\n\nWeek 3 (Jan 27-31): HTML Basics\n\nTopics: Structure of HTML documents, semantic HTML, and elements\n\nTasks:\n\nQuiz 1 on January 31st\n\n\n\n\nWeek 4 (Feb 3-7): CSS Basics and Box Model\n\nTopics: Styling with CSS, box model, positioning, and layout\n\n\n\nWeek 5 (Feb 10-14): Design Principles and Wireframing with Figma\n\nTopics: Visual hierarchy, color theory, typography, and creating wireframes in Figma\n\nTasks:\n\nWeb Project 2 Introduction: Personal Website\n\n\n\n\nWeek 6 (Feb 17-21): Responsive Design\n\nTopics: Media queries, flexible grids, responsive images\nTasks:\n\nQuiz 2 on February 21st\n\n\n\n\nWeek 7 (Feb 24-28): Accessibility Basics\n\nTopics: WCAG 2 standards, testing tools, creating accessible content\n\n\n\nWeek 8 (Mar 1-9): Spring Break\n\nNo class meetings. Use this time to rest, reflect, and recharge.\n\n\n\nWeek 9 (Mar 10-14): Advanced CSS and Design Patterns\n\nTopics: Flexbox, Grid, and web design patterns\n\nTasks:\n\nWeb Project 3 Introduction: Community Website\nQuiz 3 on March 14th\n\n\n\n\nWeek 10 (Mar 17-21): Javascript\n\nTopics: JavaScript syntax, DOM manipulation, basic interactivity\n\n\n\nWeek 11 (Mar 24-28): Introduction to React\n\nTopics: React fundamentals, components\n\n\n\nWeek 12 (Mar 31-Apr 4): React\n\nTopics: React props, and state\n\nTasks:\n\nQuiz 4 on April 4th\n\n\n\n\nWeek 13 (Apr 7-9): Building with React and Static Site Generators\n\nTopics: Using React with 11ty or integrating React components into static sites\n\n\n\nWeek 14 (Apr 14-18): Web Performance Optimization\n\nTopics: Minimizing load times, SEO basics, performance audits\n\n\n\nWeek 15 (Apr 21-25): Final Project Development\n\nActivities: Web portfolio work time.\nTasks:\n\nQuiz 5 on April 21st\n\n\n\n\nFinal Exam Week (Apr 28-May 6): Project Presentation and Reflection\n\nActivities: Present final projects, peer reviews, course reflection"
+  },
+  {
+    "objectID": "schedule/week2/index.html#github-flow-overview",
+    "href": "schedule/week2/index.html#github-flow-overview",
+    "title": "Using Git Together",
+    "section": "GitHub Flow Overview",
+    "text": "GitHub Flow Overview\n\nWhat is GitHub Flow?\n\nA lightweight, branch-based collaboration workflow.\nGitHub Flow Documentation"
+  },
+  {
+    "objectID": "schedule/week2/index.html#steps-in-github-flow",
+    "href": "schedule/week2/index.html#steps-in-github-flow",
+    "title": "Using Git Together",
+    "section": "Steps in GitHub Flow",
+    "text": "Steps in GitHub Flow\n\n\nCreate a descriptively named branch from main.\ngit checkout -b &lt;branch-name&gt;\nCommit and push your work within this branch.\ngit add &lt;file&gt;\ngit commit -m \"&lt;message&gt;\"\nMerge main into your branch and resolve conflicts.\ngit merge main\nOpen a pull request and request review.\nRespond to review feedback.\nOnce reviewers approve, merge the branch into main."
+  },
+  {
+    "objectID": "schedule/week2/index.html#best-practices-for-pull-requests",
+    "href": "schedule/week2/index.html#best-practices-for-pull-requests",
+    "title": "Using Git Together",
+    "section": "Best Practices for Pull Requests",
+    "text": "Best Practices for Pull Requests\n\nSubmitting a Pull Request\n\nClean up code before requesting review.\nKeep pull requests small (&lt; 200 lines).\nBe open to influence and specific in replies.\n\nReviewing a Pull Request\n\nBe patient and tactful.\nFocus on algorithmic problems first.\nOffer alternatives and avoid overwhelming details."
+  },
+  {
+    "objectID": "schedule/week2/index.html#sustainability-through-github-flow",
+    "href": "schedule/week2/index.html#sustainability-through-github-flow",
+    "title": "Using Git Together",
+    "section": "Sustainability through GitHub Flow",
+    "text": "Sustainability through GitHub Flow\n\n\nEnables parallel modifications and maintenance.\nImproves team’s ability to react to changes effectively."
+  },
+  {
+    "objectID": "schedule/week2/index.html#version-control",
+    "href": "schedule/week2/index.html#version-control",
+    "title": "Using Git Together",
+    "section": "Version Control",
+    "text": "Version Control\n\n\nVersion control helps us react to valuable changes.\nIt enables us to confidently modify software.\nCommits represent versions, or snapshots, of a system."
+  },
+  {
+    "objectID": "schedule/week2/index.html#branches-best-practices",
+    "href": "schedule/week2/index.html#branches-best-practices",
+    "title": "Using Git Together",
+    "section": "Branches: Best Practices",
+    "text": "Branches: Best Practices\n\nUse Grouping Tokens (Prefixes)\n\nHelps identify the purpose of the branch:\n\nfeature/: For new features.\nbugfix/: For bug fixes.\nhotfix/: For urgent fixes.\nrelease/: For release preparation.\ntest/: For experimental changes.\n\n\nExample: feature/add-user-authentication\n\nIncorporate Issue or Ticket Numbers\n\nFacilitates tracking and cross-referencing.\nExample: feature/1234-add-user-authentication\n\n1234 refers to the issue or ticket number.\n\n\n\nUse Descriptive and Concise Names\n\nClearly convey the purpose of the branch.\nKeep names short and meaningful.\n\nExample: - bugfix/fix-login-error is better than bugfix/issue-5678.\n\nUse Lowercase Letters and Delimiters\n\nImproves readability and compatibility.\nUse hyphens (-) or underscores (_) as delimiters.\n\nExamples: - feature/add-user-authentication - feature/add_user_authentication\n\nAvoid Leading Numbers\n\nStarting with numbers can cause confusion.\nPrefix numbers with descriptive text.\n\nExample: - feature/issue-1234 instead of 1234-feature."
+  },
+  {
+    "objectID": "schedule/week2/index.html#commits",
+    "href": "schedule/week2/index.html#commits",
+    "title": "Using Git Together",
+    "section": "Commits",
+    "text": "Commits\n\n\nCommits contain two parts–the message and the changes since the last commit.\nGood commit messages enable us to easily locate changes.\nFollow commit message conventions."
+  },
+  {
+    "objectID": "schedule/week2/index.html#branches",
+    "href": "schedule/week2/index.html#branches",
+    "title": "Using Git Together",
+    "section": "Branches",
+    "text": "Branches\n\n\nBranch Naming Model\nGit Style Guide"
+  },
+  {
+    "objectID": "schedule/week2/index.html#branch-name-use-grouping-tokens-prefixes",
+    "href": "schedule/week2/index.html#branch-name-use-grouping-tokens-prefixes",
+    "title": "Using Git Together",
+    "section": "Branch Name: Use Grouping Tokens (Prefixes)",
+    "text": "Branch Name: Use Grouping Tokens (Prefixes)\n\nHelps identify the purpose of the branch:\n\nfeature/: For new features.\nbugfix/: For bug fixes.\nhotfix/: For urgent fixes.\nrelease/: For release preparation.\ntest/: For experimental changes.\n\n\nExample: feature/add-user-authentication"
+  },
+  {
+    "objectID": "schedule/week2/index.html#incorporate-issue-or-ticket-numbers",
+    "href": "schedule/week2/index.html#incorporate-issue-or-ticket-numbers",
+    "title": "Using Git Together",
+    "section": "Incorporate Issue or Ticket Numbers",
+    "text": "Incorporate Issue or Ticket Numbers\n\nFacilitates tracking and cross-referencing.\nExample: feature/1234-add-user-authentication\n\n1234 refers to the issue or ticket number."
+  },
+  {
+    "objectID": "schedule/week2/index.html#use-descriptive-and-concise-names",
+    "href": "schedule/week2/index.html#use-descriptive-and-concise-names",
+    "title": "Using Git Together",
+    "section": "Use Descriptive and Concise Names",
+    "text": "Use Descriptive and Concise Names\n\nClearly convey the purpose of the branch.\nKeep names short and meaningful.\n\nExample: - bugfix/fix-login-error is better than bugfix/issue-5678."
+  },
+  {
+    "objectID": "schedule/week2/index.html#use-lowercase-letters-and-delimiters",
+    "href": "schedule/week2/index.html#use-lowercase-letters-and-delimiters",
+    "title": "Using Git Together",
+    "section": "Use Lowercase Letters and Delimiters",
+    "text": "Use Lowercase Letters and Delimiters\n\nImproves readability and compatibility.\nUse hyphens (-) or underscores (_) as delimiters.\n\nExamples: - feature/add-user-authentication - feature/add_user_authentication"
+  },
+  {
+    "objectID": "schedule/week2/index.html#avoid-leading-numbers",
+    "href": "schedule/week2/index.html#avoid-leading-numbers",
+    "title": "Using Git Together",
+    "section": "Avoid Leading Numbers",
+    "text": "Avoid Leading Numbers\n\nStarting with numbers can cause confusion.\nPrefix numbers with descriptive text.\n\nExample: - feature/issue-1234 instead of 1234-feature."
+  },
+  {
+    "objectID": "schedule/week2/index.html#the-genius-myth",
+    "href": "schedule/week2/index.html#the-genius-myth",
+    "title": "Using Git Together",
+    "section": "The Genius Myth",
+    "text": "The Genius Myth\n\nDefinition: The tendency to ascribe the success of a team to a single person.\nWhy it’s harmful: ::: incremental\n\nCreates the misconception that collaboration is unnecessary.\nUndermines the fact that software engineering is a team endeavor. :::"
+  },
+  {
+    "objectID": "schedule/week2/index.html#sharing-knowledge",
+    "href": "schedule/week2/index.html#sharing-knowledge",
+    "title": "Using Git Together",
+    "section": "Sharing Knowledge",
+    "text": "Sharing Knowledge\nWhy is sharing knowledge important?\n\n\nEnables early detection of issues.\nSupports rapid feedback loops, enhancing sustainability.\nIncreases the “bus factor”: the number of people who need to be hit by a bus before a project is doomed.\n\n“It is better to be one part of a successful project than the critical part of a failed project.”"
+  },
+  {
+    "objectID": "schedule/week2/index.html#critical-role-of-knowledge-sharing",
+    "href": "schedule/week2/index.html#critical-role-of-knowledge-sharing",
+    "title": "Using Git Together",
+    "section": "Critical Role of Knowledge Sharing",
+    "text": "Critical Role of Knowledge Sharing\nConsequences of poor knowledge sharing:\n\n\nIf a developer leaves without sharing, it disrupts software maintenance and enhancement.\nNewcomers lacking knowledge introduce defects, diverting time from valuable changes."
+  },
+  {
+    "objectID": "schedule/week2/index.html#what-knowledge-should-be-shared",
+    "href": "schedule/week2/index.html#what-knowledge-should-be-shared",
+    "title": "Using Git Together",
+    "section": "What Knowledge Should Be Shared?",
+    "text": "What Knowledge Should Be Shared?\n\n\nThe “why” behind:\n\nDesign decisions\nDevelopment choices\nTesting strategies\n\nPost-mortem learnings &gt; “Don’t erase your tracks—light them up like a runway for those who follow you!”\n:::\n\n\n\nTools for Knowledge Sharing\n\n\nIssue trackers\nGitHub Pages / Documentation websites\nDiscord or similar platforms\nStackOverflow\nSource code comments\n\n\n\n\n\nConway’s Law\n\nDefinition: Software reflects the communication structure of the team producing it.\nImplication:\n\nGood communication = Good software\n\n\n\n\n\nQualities of a Good Team Member\nEmbrace:\n\n\nHumility: Be open to influence and willing to change your mind.\nRespect: Learn to give and take criticism; remember, you are not your code.\nTrust: Be patient and act with trust, even if it’s not a feeling yet."
+  },
+  {
+    "objectID": "schedule/week2/index.html#tools-for-knowledge-sharing",
+    "href": "schedule/week2/index.html#tools-for-knowledge-sharing",
+    "title": "Using Git Together",
+    "section": "Tools for Knowledge Sharing",
+    "text": "Tools for Knowledge Sharing\n\n\nIssue trackers\nGitHub Pages / Documentation websites\nDiscord or similar platforms\nStackOverflow\nSource code comments"
+  },
+  {
+    "objectID": "schedule/week2/index.html#conways-law",
+    "href": "schedule/week2/index.html#conways-law",
+    "title": "Using Git Together",
+    "section": "Conway’s Law",
+    "text": "Conway’s Law\n\nDefinition: Software reflects the communication structure of the team producing it.\nImplication:\n\nGood communication = Good software"
+  },
+  {
+    "objectID": "schedule/week2/index.html#qualities-of-a-good-team-member",
+    "href": "schedule/week2/index.html#qualities-of-a-good-team-member",
+    "title": "Using Git Together",
+    "section": "Qualities of a Good Team Member",
+    "text": "Qualities of a Good Team Member\nEmbrace:\n\n\nHumility: Be open to influence and willing to change your mind.\nRespect: Learn to give and take criticism; remember, you are not your code.\nTrust: Be patient and act with trust, even if it’s not a feeling yet."
+  },
+  {
+    "objectID": "schedule/week2/index.html#working-together-the-genius-myth",
+    "href": "schedule/week2/index.html#working-together-the-genius-myth",
+    "title": "Using Git Together",
+    "section": "Working Together: The Genius Myth",
+    "text": "Working Together: The Genius Myth\n\n\nDefinition: The tendency to ascribe the success of a team to a single person.\nWhy it’s harmful:\n\nCreates the misconception that collaboration is unnecessary.\nUndermines the fact that software engineering is a team endeavor."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#what-is-wireframing",
+    "href": "schedule/week2_2/index.html#what-is-wireframing",
+    "title": "Wireframing",
+    "section": "What is Wireframing?",
+    "text": "What is Wireframing?\n\nA wireframe is a visual blueprint of a web page’s structure. - Focuses on layout and functionality, not aesthetics. - Acts as a guide for design and development.\nThink of it as the skeleton of your website."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#why-is-wireframing-important",
+    "href": "schedule/week2_2/index.html#why-is-wireframing-important",
+    "title": "Wireframing",
+    "section": "Why is Wireframing Important?",
+    "text": "Why is Wireframing Important?\nBenefits of Wireframing:\n\n\nClarifies project scope and requirements.\nProvides a foundation for collaboration between designers and developers.\nIdentifies potential usability issues early.\nSaves time by reducing revisions during later stages."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#wireframe-fidelity-levels",
+    "href": "schedule/week2_2/index.html#wireframe-fidelity-levels",
+    "title": "Wireframing",
+    "section": "Wireframe Fidelity Levels",
+    "text": "Wireframe Fidelity Levels\nLow-Fidelity Wireframes:\n\nSimplistic sketches focusing on structure.\nOften hand-drawn or created with basic shapes.\n\nHigh-Fidelity Wireframes:\n\nMore detailed and precise.\nIncludes placeholder text, images, and components."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#key-components-of-a-wireframe",
+    "href": "schedule/week2_2/index.html#key-components-of-a-wireframe",
+    "title": "Wireframing",
+    "section": "Key Components of a Wireframe",
+    "text": "Key Components of a Wireframe\nCommon Elements:\n\n\nHeaders and Footers: Define global navigation and site structure.\nContent Areas: Indicate where text, images, or videos will be placed.\nNavigation Menus: Show how users will navigate the site.\nCall-to-Action (CTA): Highlight key actions for users (e.g., “Sign Up”).\nPlaceholders: Represent images, videos, or other media."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#wireframing-best-practices",
+    "href": "schedule/week2_2/index.html#wireframing-best-practices",
+    "title": "Wireframing",
+    "section": "Wireframing Best Practices",
+    "text": "Wireframing Best Practices\nTips for Effective Wireframes:\n\n\nKeep it simple and focus on functionality.\nUse consistent symbols for components.\nLabel key elements clearly.\nGet feedback early and often."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#introduction-to-figma-for-wireframing",
+    "href": "schedule/week2_2/index.html#introduction-to-figma-for-wireframing",
+    "title": "Wireframing",
+    "section": "Introduction to Figma for Wireframing",
+    "text": "Introduction to Figma for Wireframing\n\nFigma is a cloud-based design tool used for creating wireframes, prototypes, and UI designs.\n\nWhy Figma?\n\n\nCollaborative: Work in real-time with teammates.\nAccessible: Runs in your browser; no installation required.\nVersatile: Offers tools for both low- and high-fidelity wireframes."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#figma-features-for-wireframing",
+    "href": "schedule/week2_2/index.html#figma-features-for-wireframing",
+    "title": "Wireframing",
+    "section": "Figma Features for Wireframing",
+    "text": "Figma Features for Wireframing\n\nDrag-and-drop components.\nTemplates and pre-made UI kits.\nTools for adding annotations and comments.\nAbility to share wireframes for feedback."
   }
 ]

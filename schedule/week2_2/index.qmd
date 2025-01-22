@@ -1,0 +1,114 @@
+---
+title: "Wireframing"
+description: "Wireframing"
+date: "2025-01-22"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+## What is Wireframing?
+::: incremental
+
+A **wireframe** is a visual blueprint of a web page's structure.
+
+  - Focuses on layout and functionality, not aesthetics.
+  - Acts as a guide for design and development.
+
+Think of it as the **skeleton** of your website.
+
+:::
+---
+
+## Why is Wireframing Important?
+
+### Benefits of Wireframing:
+
+::: incremental
+- Clarifies project scope and requirements.
+- Provides a foundation for collaboration between designers and developers.
+- Identifies potential usability issues early.
+- Saves time by reducing revisions during later stages.
+:::
+
+---
+
+## Wireframe Fidelity Levels
+
+### Low-Fidelity Wireframes:
+
+- Simplistic sketches focusing on structure.
+- Often hand-drawn or created with basic shapes.
+
+### High-Fidelity Wireframes:
+
+- More detailed and precise.
+- Includes placeholder text, images, and components.
+
+---
+
+## Key Components of a Wireframe
+
+### Common Elements:
+
+::: incremental
+- **Headers and Footers**: Define global navigation and site structure.
+- **Content Areas**: Indicate where text, images, or videos will be placed.
+- **Navigation Menus**: Show how users will navigate the site.
+- **Call-to-Action (CTA)**: Highlight key actions for users (e.g., "Sign Up").
+- **Placeholders**: Represent images, videos, or other media.
+:::
+
+---
+
+## Wireframing Best Practices
+
+### Tips for Effective Wireframes:
+
+::: incremental
+- Keep it simple and focus on functionality.
+- Use consistent symbols for components.
+- Label key elements clearly.
+- Get feedback early and often.
+:::
+
+---
+
+## Introduction to Figma for Wireframing
+
+- **Figma** is a cloud-based design tool used for creating wireframes, prototypes, and UI designs.
+
+### Why Figma?
+
+::: incremental
+- Collaborative: Work in real-time with teammates.
+- Accessible: Runs in your browser; no installation required.
+- Versatile: Offers tools for both low- and high-fidelity wireframes.
+:::
+
+---
+
+## Figma Features for Wireframing
+
+- Drag-and-drop components.
+- Templates and pre-made UI kits.
+- Tools for adding annotations and comments.
+- Ability to share wireframes for feedback.
+
+---
+
+
+## Figma for Wireframing
+
+![Example Kit](figma1.png)
+
+---
+
