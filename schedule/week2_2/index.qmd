@@ -1,7 +1,7 @@
 ---
-title: "Wireframing"
+title: "Quarto and Wireframing"
 description: "Wireframing"
-date: "2025-01-22"
+date: "2025-01-24"
 date-format: long
 author: Janyl Jumadinova
 format:
@@ -13,6 +13,49 @@ format:
     transition: slide
     highlight-style: github
     footer: "Web Design"
+---
+
+## Introduction to Quarto for Websites
+
+### What is Quarto?
+
+::: incremental
+- **Quarto** is an open-source scientific and technical publishing system.
+- It allows you to create dynamic documents, presentations, and websites.
+- Supports multiple formats including HTML, PDF, and more.
+:::
+
+---
+
+### Why Use Quarto for Websites?
+
+::: incremental
+- **Flexibility**: Write content in Markdown, Jupyter, or R Markdown.
+- **Customization**: Easily customize the appearance with themes and CSS.
+- **Integration**: Integrates with various tools and languages like Python, R, and Julia.
+:::
+
+---
+
+### Features for Websites with Quarto
+
+::: incremental
+- **Responsive Design**: Automatically adjusts to different screen sizes.
+- **Interactive Elements**: Add interactive plots, tables, and more.
+- **Code Execution**: Embed and execute code from multiple languages.
+- **Version Control**: Easily track changes with Git integration.
+:::
+
+---
+
+### Getting Started with Quarto
+
+::: incremental
+- Follow [Quick Start](https://quarto.org/docs/websites/)
+- [Navigation, theme](https://quarto.org/docs/websites/website-navigation.html)
+- [Search](https://quarto.org/docs/websites/website-search.html)
+- [Website Tools](https://quarto.org/docs/websites/website-tools.html): headers/footers, social metadata, cookies
+:::
 ---
 
 ## What is Wireframing?
@@ -84,7 +127,7 @@ Think of it as the **skeleton** of your website.
 
 ## Introduction to Figma for Wireframing
 
-- **Figma** is a cloud-based design tool used for creating wireframes, prototypes, and UI designs.
+ **Figma** is a cloud-based design tool used for creating wireframes, prototypes, and UI designs.
 
 ### Why Figma?
 
@@ -110,5 +153,4 @@ Think of it as the **skeleton** of your website.
 
 ![Example Kit](figma1.png)
 
----
 

@@ -165,21 +165,21 @@
     "href": "schedule/week2/index.html#use-descriptive-and-concise-names",
     "title": "Using Git Together",
     "section": "Use Descriptive and Concise Names",
-    "text": "Use Descriptive and Concise Names\n\nClearly convey the purpose of the branch.\nKeep names short and meaningful.\n\nExample: - bugfix/fix-login-error is better than bugfix/issue-5678."
+    "text": "Use Descriptive and Concise Names\n\nClearly convey the purpose of the branch.\nKeep names short and meaningful.\n\nExample: bugfix/fix-login-error is better than bugfix/issue-5678."
   },
   {
     "objectID": "schedule/week2/index.html#use-lowercase-letters-and-delimiters",
     "href": "schedule/week2/index.html#use-lowercase-letters-and-delimiters",
     "title": "Using Git Together",
     "section": "Use Lowercase Letters and Delimiters",
-    "text": "Use Lowercase Letters and Delimiters\n\nImproves readability and compatibility.\nUse hyphens (-) or underscores (_) as delimiters.\n\nExamples: - feature/add-user-authentication - feature/add_user_authentication"
+    "text": "Use Lowercase Letters and Delimiters\n\nImproves readability and compatibility.\nUse hyphens (-) or underscores (_) as delimiters.\n\nExamples:\n\nfeature/add-user-authentication\nfeature/add_user_authentication"
   },
   {
     "objectID": "schedule/week2/index.html#avoid-leading-numbers",
     "href": "schedule/week2/index.html#avoid-leading-numbers",
     "title": "Using Git Together",
     "section": "Avoid Leading Numbers",
-    "text": "Avoid Leading Numbers\n\nStarting with numbers can cause confusion.\nPrefix numbers with descriptive text.\n\nExample: - feature/issue-1234 instead of 1234-feature."
+    "text": "Avoid Leading Numbers\n\nStarting with numbers can cause confusion.\nPrefix numbers with descriptive text.\n\nExample: feature/issue-1234 instead of 1234-feature."
   },
   {
     "objectID": "schedule/week2/index.html#the-genius-myth",
@@ -207,7 +207,7 @@
     "href": "schedule/week2/index.html#what-knowledge-should-be-shared",
     "title": "Using Git Together",
     "section": "What Knowledge Should Be Shared?",
-    "text": "What Knowledge Should Be Shared?\n\n\nThe “why” behind:\n\nDesign decisions\nDevelopment choices\nTesting strategies\n\nPost-mortem learnings &gt; “Don’t erase your tracks—light them up like a runway for those who follow you!”\n:::\n\n\n\nTools for Knowledge Sharing\n\n\nIssue trackers\nGitHub Pages / Documentation websites\nDiscord or similar platforms\nStackOverflow\nSource code comments\n\n\n\n\n\nConway’s Law\n\nDefinition: Software reflects the communication structure of the team producing it.\nImplication:\n\nGood communication = Good software\n\n\n\n\n\nQualities of a Good Team Member\nEmbrace:\n\n\nHumility: Be open to influence and willing to change your mind.\nRespect: Learn to give and take criticism; remember, you are not your code.\nTrust: Be patient and act with trust, even if it’s not a feeling yet."
+    "text": "What Knowledge Should Be Shared?\n\n\nThe “why” behind:\n\nDesign decisions\nDevelopment choices\nTesting strategies\n\nPost-mortem learnings: “Don’t erase your tracks—light them up like a runway for those who follow you!”"
   },
   {
     "objectID": "schedule/week2/index.html#tools-for-knowledge-sharing",
@@ -240,50 +240,92 @@
   {
     "objectID": "schedule/week2_2/index.html#what-is-wireframing",
     "href": "schedule/week2_2/index.html#what-is-wireframing",
-    "title": "Wireframing",
+    "title": "Quarto and Wireframing",
     "section": "What is Wireframing?",
-    "text": "What is Wireframing?\n\nA wireframe is a visual blueprint of a web page’s structure. - Focuses on layout and functionality, not aesthetics. - Acts as a guide for design and development.\nThink of it as the skeleton of your website."
+    "text": "What is Wireframing?\n\nA wireframe is a visual blueprint of a web page’s structure.\n\nFocuses on layout and functionality, not aesthetics.\nActs as a guide for design and development.\n\nThink of it as the skeleton of your website."
   },
   {
     "objectID": "schedule/week2_2/index.html#why-is-wireframing-important",
     "href": "schedule/week2_2/index.html#why-is-wireframing-important",
-    "title": "Wireframing",
+    "title": "Quarto and Wireframing",
     "section": "Why is Wireframing Important?",
     "text": "Why is Wireframing Important?\nBenefits of Wireframing:\n\n\nClarifies project scope and requirements.\nProvides a foundation for collaboration between designers and developers.\nIdentifies potential usability issues early.\nSaves time by reducing revisions during later stages."
   },
   {
     "objectID": "schedule/week2_2/index.html#wireframe-fidelity-levels",
     "href": "schedule/week2_2/index.html#wireframe-fidelity-levels",
-    "title": "Wireframing",
+    "title": "Quarto and Wireframing",
     "section": "Wireframe Fidelity Levels",
     "text": "Wireframe Fidelity Levels\nLow-Fidelity Wireframes:\n\nSimplistic sketches focusing on structure.\nOften hand-drawn or created with basic shapes.\n\nHigh-Fidelity Wireframes:\n\nMore detailed and precise.\nIncludes placeholder text, images, and components."
   },
   {
     "objectID": "schedule/week2_2/index.html#key-components-of-a-wireframe",
     "href": "schedule/week2_2/index.html#key-components-of-a-wireframe",
-    "title": "Wireframing",
+    "title": "Quarto and Wireframing",
     "section": "Key Components of a Wireframe",
     "text": "Key Components of a Wireframe\nCommon Elements:\n\n\nHeaders and Footers: Define global navigation and site structure.\nContent Areas: Indicate where text, images, or videos will be placed.\nNavigation Menus: Show how users will navigate the site.\nCall-to-Action (CTA): Highlight key actions for users (e.g., “Sign Up”).\nPlaceholders: Represent images, videos, or other media."
   },
   {
     "objectID": "schedule/week2_2/index.html#wireframing-best-practices",
     "href": "schedule/week2_2/index.html#wireframing-best-practices",
-    "title": "Wireframing",
+    "title": "Quarto and Wireframing",
     "section": "Wireframing Best Practices",
     "text": "Wireframing Best Practices\nTips for Effective Wireframes:\n\n\nKeep it simple and focus on functionality.\nUse consistent symbols for components.\nLabel key elements clearly.\nGet feedback early and often."
   },
   {
     "objectID": "schedule/week2_2/index.html#introduction-to-figma-for-wireframing",
     "href": "schedule/week2_2/index.html#introduction-to-figma-for-wireframing",
-    "title": "Wireframing",
+    "title": "Quarto and Wireframing",
     "section": "Introduction to Figma for Wireframing",
-    "text": "Introduction to Figma for Wireframing\n\nFigma is a cloud-based design tool used for creating wireframes, prototypes, and UI designs.\n\nWhy Figma?\n\n\nCollaborative: Work in real-time with teammates.\nAccessible: Runs in your browser; no installation required.\nVersatile: Offers tools for both low- and high-fidelity wireframes."
+    "text": "Introduction to Figma for Wireframing\nFigma is a cloud-based design tool used for creating wireframes, prototypes, and UI designs.\nWhy Figma?\n\n\nCollaborative: Work in real-time with teammates.\nAccessible: Runs in your browser; no installation required.\nVersatile: Offers tools for both low- and high-fidelity wireframes."
   },
   {
     "objectID": "schedule/week2_2/index.html#figma-features-for-wireframing",
     "href": "schedule/week2_2/index.html#figma-features-for-wireframing",
-    "title": "Wireframing",
+    "title": "Quarto and Wireframing",
     "section": "Figma Features for Wireframing",
     "text": "Figma Features for Wireframing\n\nDrag-and-drop components.\nTemplates and pre-made UI kits.\nTools for adding annotations and comments.\nAbility to share wireframes for feedback."
+  },
+  {
+    "objectID": "schedule/week2/index.html#why-is-sharing-knowledge-important",
+    "href": "schedule/week2/index.html#why-is-sharing-knowledge-important",
+    "title": "Using Git Together",
+    "section": "Why is sharing knowledge important?",
+    "text": "Why is sharing knowledge important?\n\n\nEnables early detection of issues.\nSupports rapid feedback loops, enhancing sustainability.\nIncreases the “bus factor”: the number of people who need to be hit by a bus before a project is doomed.\n\n“It is better to be one part of a successful project than the critical part of a failed project.”"
+  },
+  {
+    "objectID": "schedule/week2/index.html#consequences-of-poor-knowledge-sharing",
+    "href": "schedule/week2/index.html#consequences-of-poor-knowledge-sharing",
+    "title": "Using Git Together",
+    "section": "Consequences of poor knowledge sharing:",
+    "text": "Consequences of poor knowledge sharing:\n\n\nIf a developer leaves without sharing, it disrupts software maintenance and enhancement.\nNewcomers lacking knowledge introduce defects, diverting time from valuable changes."
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#figma-for-wireframing",
+    "href": "schedule/week2_2/index.html#figma-for-wireframing",
+    "title": "Quarto and Wireframing",
+    "section": "Figma for Wireframing",
+    "text": "Figma for Wireframing\n\n\n\nExample Kit"
+  },
+  {
+    "objectID": "schedule/week2_2/index.html#introduction-to-quarto-for-websites",
+    "href": "schedule/week2_2/index.html#introduction-to-quarto-for-websites",
+    "title": "Quarto and Wireframing",
+    "section": "Introduction to Quarto for Websites",
+    "text": "Introduction to Quarto for Websites\nWhat is Quarto?\n\n\nQuarto is an open-source scientific and technical publishing system.\nIt allows you to create dynamic documents, presentations, and websites.\nSupports multiple formats including HTML, PDF, and more."
+  },
+  {
+    "objectID": "schedule/week2_3/index.html#agile-scrum-process",
+    "href": "schedule/week2_3/index.html#agile-scrum-process",
+    "title": "Scrum Process: Sprints",
+    "section": "Agile Scrum Process",
+    "text": "Agile Scrum Process\nScrum is an Agile framework for delivering complex projects in iterative cycles.\n\nSprints"
+  },
+  {
+    "objectID": "schedule/week2_3/index.html#sprint",
+    "href": "schedule/week2_3/index.html#sprint",
+    "title": "Scrum Process: Sprints",
+    "section": "Sprint",
+    "text": "Sprint\nA short, focused period (typically 2 weeks) where the team delivers a specific goal.\nSprint Lifecycle:\n\nSprint Planning: Define sprint goals and tasks.\nDaily Stand-Ups: Stay aligned and address blockers.\nSprint Review: Present the increment to stakeholders.\nSprint Retrospective: Reflect and improve the process."
   }
 ]

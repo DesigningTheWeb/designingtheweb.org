@@ -161,45 +161,36 @@ Example: `feature/issue-1234` instead of `1234-feature`.
   - Undermines the fact that software engineering is a team endeavor.
 :::
 
----
 
-## Sharing Knowledge
-
-### Why is sharing knowledge important?
+##  Why is sharing knowledge important?
 
 ::: incremental
 - Enables early detection of issues.
 - Supports rapid feedback loops, enhancing sustainability.
 - Increases the "bus factor": the number of people who need to be hit by a bus before a project is doomed.
-  - *“It is better to be one part of a successful project than the critical part of a failed project.”*
+  - *"It is better to be one part of a successful project than the critical part of a failed project."*
 :::
 
----
 
-## Critical Role of Knowledge Sharing
-
-### Consequences of poor knowledge sharing:
+## Consequences of poor knowledge sharing:
 
 ::: incremental
 - If a developer leaves without sharing, it disrupts software maintenance and enhancement.
 - Newcomers lacking knowledge introduce defects, diverting time from valuable changes.
 :::
 
----
 
 ## What Knowledge Should Be Shared?
 
 ::: incremental
 
-- The **“why”** behind:
+- The **"why"** behind:
   - Design decisions
   - Development choices
   - Testing strategies
-- Post-mortem learnings
-  > *“Don’t erase your tracks—light them up like a runway for those who follow you!”*
+- Post-mortem learnings: *"Don’t erase your tracks—light them up like a runway for those who follow you!"*
 
-  :::
----
+:::
 
 ## Tools for Knowledge Sharing
 
@@ -211,7 +202,6 @@ Example: `feature/issue-1234` instead of `1234-feature`.
 - Source code comments
 :::
 
----
 
 ## Conway’s Law
 
@@ -219,7 +209,6 @@ Example: `feature/issue-1234` instead of `1234-feature`.
 - **Implication**:
   - Good communication = Good software
 
----
 
 ## Qualities of a Good Team Member
 
@@ -228,7 +217,6 @@ Example: `feature/issue-1234` instead of `1234-feature`.
 ::: incremental
 - **Humility**: Be open to influence and willing to change your mind.
 - **Respect**: Learn to give and take criticism; remember, *you are not your code*.
-- **Trust**: Be patient and act with trust, even if it’s not a feeling yet.
+- **Trust**: Be patient and act with trust, even if it's not a feeling yet.
 :::
 
----
