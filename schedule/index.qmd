@@ -38,7 +38,7 @@ layout: full
   - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): HTML
   - Read [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
   - Read [Markup](https://adaptivewebdesign.info/1st-edition/read/chapter-2.html)
-  - Technical Challenge 2
+  - [Technical Challenge 2](https://classroom.github.com/a/32KcroMs)
   - Quiz 1 on January 31st
 
 ### Week 4 (Feb 3-7): CSS Basics and Box Model  
