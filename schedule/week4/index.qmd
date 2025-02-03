@@ -101,7 +101,7 @@ format:
 
 ## Website Review
 
-Critique a website based on the three principles:
+Critique a website based on:
 
 - **Visual Hierarchy:** Does the layout make the most important information stand out? How are headings, subheadings, and calls to action organized?
 - **Color Use:** Does the color scheme enhance or hinder readability? Does the design convey the intended message or mood?
