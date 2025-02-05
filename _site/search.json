@@ -338,51 +338,51 @@
   {
     "objectID": "schedule/week4/index.html#visual-hierarchy-core-concepts",
     "href": "schedule/week4/index.html#visual-hierarchy-core-concepts",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "title": "Design Principles and Responsiveness",
     "section": "Visual Hierarchy: Core Concepts",
     "text": "Visual Hierarchy: Core Concepts\n\n\nImportance of ordering and arranging elements to guide attention.\nTechniques: size, color, contrast, and spacing."
   },
   {
     "objectID": "schedule/week4/index.html#visual-hierarchy-practical-tips",
     "href": "schedule/week4/index.html#visual-hierarchy-practical-tips",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
-    "section": "3. Visual Hierarchy: Practical Tips",
-    "text": "3. Visual Hierarchy: Practical Tips\n\n\nKeep key elements larger or bolder.\nUse whitespace to help users focus.\nGroup related items together using proximity.\nPrioritize content based on importance and context.\nMore details at Web Style Guide: Chapter 2."
+    "title": "Design Principles and Responsiveness",
+    "section": "Visual Hierarchy: Practical Tips",
+    "text": "Visual Hierarchy: Practical Tips\n\n\nKeep key elements larger or bolder.\nUse whitespace to help users focus.\nGroup related items together using proximity.\nPrioritize content based on importance and context.\nMore details at Web Style Guide: Chapter 2."
   },
   {
     "objectID": "schedule/week4/index.html#color-theory",
     "href": "schedule/week4/index.html#color-theory",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
-    "section": "4. Color Theory",
-    "text": "4. Color Theory\n\n\nBasics of color relationships and contrast.\nAccessibility considerations (e.g., color-blind palettes).\nUse high contrast for readability and usability.\nCreate color schemes with complementary and analogous colors.\nUse color meaning to evoke emotion or direct attention."
+    "title": "Design Principles and Responsiveness",
+    "section": "Color Theory",
+    "text": "Color Theory\n\n\nBasics of color relationships and contrast.\nAccessibility considerations (e.g., color-blind palettes).\nUse high contrast for readability and usability.\nCreate color schemes with complementary and analogous colors.\nUse color meaning to evoke emotion or direct attention."
   },
   {
     "objectID": "schedule/week4/index.html#typography-fundamentals",
     "href": "schedule/week4/index.html#typography-fundamentals",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
-    "section": "5. Typography Fundamentals",
-    "text": "5. Typography Fundamentals\n\n\nFont selection, spacing, and line height.\nReadability across devices.\nUse clear and legible fonts for better accessibility.\nAdjust line height and spacing for comfortable reading.\nAvoid using too many font types to ensure consistency.\nOpt for responsive typography that scales well on different screen sizes."
+    "title": "Design Principles and Responsiveness",
+    "section": "Typography Fundamentals",
+    "text": "Typography Fundamentals\n\n\nFont selection, spacing, and line height.\nReadability across devices.\nUse clear and legible fonts for better accessibility.\nAdjust line height and spacing for comfortable reading.\nAvoid using too many font types to ensure consistency.\nOpt for responsive typography that scales well on different screen sizes."
   },
   {
     "objectID": "schedule/week4/index.html#crap-principles",
     "href": "schedule/week4/index.html#crap-principles",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
-    "section": "6. CRAP Principles",
-    "text": "6. CRAP Principles\n\n\nContrast: Differentiate elements for clarity.\nRepetition: Maintain consistency in design.\nAlignment: Position elements deliberately.\nProximity: Group related items together."
+    "title": "Design Principles and Responsiveness",
+    "section": "CRAP Principles",
+    "text": "CRAP Principles\n\n\nContrast: Differentiate elements for clarity.\nRepetition: Maintain consistency in design.\nAlignment: Position elements deliberately.\nProximity: Group related items together."
   },
   {
     "objectID": "schedule/week4/index.html#examples-of-crap-in-action",
     "href": "schedule/week4/index.html#examples-of-crap-in-action",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
-    "section": "7. Examples of CRAP in Action",
-    "text": "7. Examples of CRAP in Action\n\n\n\n\n\nC\n\n\n\n\n\nR\n\n\n\n\n\nA"
+    "title": "Design Principles and Responsiveness",
+    "section": "Examples of CRAP in Action",
+    "text": "Examples of CRAP in Action\n\n\n\n\n\nC\n\n\n\n\n\nR\n\n\n\n\n\nA"
   },
   {
     "objectID": "schedule/week4/index.html#balancing-aesthetics-and-usability",
     "href": "schedule/week4/index.html#balancing-aesthetics-and-usability",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
-    "section": "8. Balancing Aesthetics and Usability",
-    "text": "8. Balancing Aesthetics and Usability\n\n\nCombine visual hierarchy, color theory, and typography.\nKeep CRAP principles in mind to maintain clarity.\nEnsure accessibility is not overlooked for aesthetic choices."
+    "title": "Design Principles and Responsiveness",
+    "section": "Balancing Aesthetics and Usability",
+    "text": "Balancing Aesthetics and Usability\n\n\nCombine visual hierarchy, color theory, and typography.\nKeep CRAP principles in mind to maintain clarity.\nEnsure accessibility is not overlooked for aesthetic choices."
   },
   {
     "objectID": "schedule/week4/index.html#further-reading-tools",
@@ -415,7 +415,7 @@
   {
     "objectID": "schedule/week4/index.html#usability",
     "href": "schedule/week4/index.html#usability",
-    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "title": "Design Principles and Responsiveness",
     "section": "Usability",
     "text": "Usability\n\n\nUsability: Measure of effectiveness\nVisual design is important in shaping user experience.\n\nUniversal Usability\n\nAccessibility (WAI)\nUsability\nUniversal Design"
   },
@@ -425,5 +425,82 @@
     "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
     "section": "4. Color Theory",
     "text": "4. Color Theory\n\n\n\n\nColor Wheel and Theory"
+  },
+  {
+    "objectID": "schedule/week4/index.html#website-review",
+    "href": "schedule/week4/index.html#website-review",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "Website Review",
+    "text": "Website Review\nCritique a website based on:\n\nVisual Hierarchy: Does the layout make the most important information stand out? How are headings, subheadings, and calls to action organized?\nColor Use: Does the color scheme enhance or hinder readability? Does the design convey the intended message or mood?\nTypography: How readable is the text? Are headings and body text appropriately styled and sized?\nCRAP: How are the fundamental design principles (Contrast, Repetition, Alignment, Proximity) used or not used?"
+  },
+  {
+    "objectID": "schedule/week4/index.html#responsive-web-design",
+    "href": "schedule/week4/index.html#responsive-web-design",
+    "title": "Design Principles and Responsiveness",
+    "section": "Responsive Web Design",
+    "text": "Responsive Web Design\n\nEnsures websites adapt to different screen sizes\nImproves user experience on all devices\nUses flexible layouts, images, and media queries"
+  },
+  {
+    "objectID": "schedule/week4/index.html#key-concepts",
+    "href": "schedule/week4/index.html#key-concepts",
+    "title": "Design Principles and Responsiveness",
+    "section": "Key Concepts",
+    "text": "Key Concepts\nFluid Grids\n\nUse percentage-based widths instead of fixed pixels\n\nFlexible Images\n\nmax-width: 100%; height: auto;\n\nMedia Queries\n\nApply styles based on screen size:\n@media (max-width: 600px) {\n    body {\n        background-color: lightgray;\n    }\n}"
+  },
+  {
+    "objectID": "schedule/week4/index.html#what-is-css",
+    "href": "schedule/week4/index.html#what-is-css",
+    "title": "Design Principles and Responsiveness",
+    "section": "What is CSS?",
+    "text": "What is CSS?\n\nCSS (Cascading Style Sheets) is used to style and layout HTML elements.\n\nIt controls colors, fonts, spacing, positioning, and responsiveness.\n\nWorks alongside HTML:\n\nHTML provides structure.\n\nCSS provides style and layout."
+  },
+  {
+    "objectID": "schedule/week4/index.html#how-css-is-applied",
+    "href": "schedule/week4/index.html#how-css-is-applied",
+    "title": "Design Principles and Responsiveness",
+    "section": "How CSS is Applied",
+    "text": "How CSS is Applied\n\nInline CSS (style attribute in an element).\nInternal CSS (&lt;style&gt; tag in &lt;head&gt;).\nExternal CSS (linked .css file).\n\n/* Example External CSS */\nh1 {\n  color: blue;\n  font-size: 24px;\n  margin-bottom: 10px;\n}"
+  },
+  {
+    "objectID": "schedule/week4/index.html#the-css-box-model",
+    "href": "schedule/week4/index.html#the-css-box-model",
+    "title": "Design Principles and Responsiveness",
+    "section": "The CSS Box Model",
+    "text": "The CSS Box Model\nEvery HTML element is a rectangular box with four key parts:\n- Content: The actual text, image, or element.\n- Padding: Space between content and border.\n- Border: The outline around the padding and content.\n- Margin: Space outside the border, affecting separation from other elements."
+  },
+  {
+    "objectID": "schedule/week4/index.html#css-units-margin-collapse-and-overflow",
+    "href": "schedule/week4/index.html#css-units-margin-collapse-and-overflow",
+    "title": "Design Principles and Responsiveness",
+    "section": "CSS Units, Margin Collapse, and Overflow",
+    "text": "CSS Units, Margin Collapse, and Overflow\nCSS Units\n\nAbsolute: px (fixed size)\nRelative: em, rem (based on font size), % (relative to parent)\nViewport-based: vh, vw (based on screen size)\n\nMargin Collapse\n\nWhen two vertical margins meet, the larger one takes effect instead of stacking.\nFixes: Add padding, border, or overflow: hidden to elements.\n\nOverflow Handling\n\nWhat happens when content exceeds its container?\n\nvisible (default): Content spills out.\nhidden: Content is clipped.\nscroll: Adds a scrollbar.\nauto: Scrollbar appears if needed."
+  },
+  {
+    "objectID": "schedule/week4/index.html#the-css-box-model-1",
+    "href": "schedule/week4/index.html#the-css-box-model-1",
+    "title": "Design Principles and Responsiveness",
+    "section": "The CSS Box Model",
+    "text": "The CSS Box Model\n\n\n\n\nBox Model Diagram\n\n\n\n\nbox-sizing affects how the width/height of elements is calculated:\n\ncontent-box (default): Width excludes padding and border.\nborder-box: Width includes padding and border."
+  },
+  {
+    "objectID": "schedule/week4/index.html#css-units",
+    "href": "schedule/week4/index.html#css-units",
+    "title": "Design Principles and Responsiveness",
+    "section": "CSS Units",
+    "text": "CSS Units\n\nAbsolute: px (fixed size)\nRelative: em, rem (based on font size), % (relative to parent)\nViewport-based: vh, vw (based on screen size)"
+  },
+  {
+    "objectID": "schedule/week4/index.html#margin-collapse",
+    "href": "schedule/week4/index.html#margin-collapse",
+    "title": "Design Principles and Responsiveness",
+    "section": "Margin Collapse",
+    "text": "Margin Collapse\n\nWhen two vertical margins meet, the larger one takes effect instead of stacking.\nFixes: Add padding, border, or overflow: hidden to elements."
+  },
+  {
+    "objectID": "schedule/week4/index.html#overflow-handling",
+    "href": "schedule/week4/index.html#overflow-handling",
+    "title": "Design Principles and Responsiveness",
+    "section": "Overflow Handling",
+    "text": "Overflow Handling\n\nWhat happens when content exceeds its container?\n\nvisible (default): Content spills out.\nhidden: Content is clipped.\nscroll: Adds a scrollbar.\nauto: Scrollbar appears if needed."
   }
 ]

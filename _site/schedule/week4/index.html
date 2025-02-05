@@ -11,7 +11,7 @@
 
   <meta name="author" content="Janyl Jumadinova">
   <meta name="dcterms.date" content="2025-02-03">
-  <title>CMPSC 302 – Visual Hierarchy, Color Theory, Typography, &amp; CRAP Principles</title>
+  <title>CMPSC 302 – Design Principles and Responsiveness</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -130,7 +195,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Visual Hierarchy, Color Theory, Typography, &amp; CRAP Principles</h1>
+  <h1 class="title">Design Principles and Responsiveness</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -167,7 +232,7 @@ Janyl Jumadinova
 </div>
 </section>
 <section id="visual-hierarchy-practical-tips" class="slide level2">
-<h2>3. Visual Hierarchy: Practical Tips</h2>
+<h2>Visual Hierarchy: Practical Tips</h2>
 <div>
 <ul>
 <li class="fragment">Keep key elements larger or bolder.</li>
@@ -179,7 +244,7 @@ Janyl Jumadinova
 </div>
 </section>
 <section id="color-theory" class="slide level2">
-<h2>4. Color Theory</h2>
+<h2>Color Theory</h2>
 <div>
 <ul>
 <li class="fragment">Basics of color relationships and contrast.</li>
@@ -191,7 +256,7 @@ Janyl Jumadinova
 </div>
 </section>
 <section id="typography-fundamentals" class="slide level2">
-<h2>5. Typography Fundamentals</h2>
+<h2>Typography Fundamentals</h2>
 <div>
 <ul>
 <li class="fragment">Font selection, spacing, and line height.</li>
@@ -204,7 +269,7 @@ Janyl Jumadinova
 </div>
 </section>
 <section id="crap-principles" class="slide level2">
-<h2>6. CRAP Principles</h2>
+<h2>CRAP Principles</h2>
 <div>
 <ul>
 <li class="fragment"><strong>Contrast</strong>: Differentiate elements for clarity.</li>
@@ -215,7 +280,7 @@ Janyl Jumadinova
 </div>
 </section>
 <section id="examples-of-crap-in-action" class="slide level2">
-<h2>7. Examples of CRAP in Action</h2>
+<h2>Examples of CRAP in Action</h2>
 <div>
 <ul>
 <li class="fragment"><div class="quarto-figure quarto-figure-center">
@@ -240,7 +305,7 @@ Janyl Jumadinova
 </div>
 </section>
 <section id="balancing-aesthetics-and-usability" class="slide level2">
-<h2>8. Balancing Aesthetics and Usability</h2>
+<h2>Balancing Aesthetics and Usability</h2>
 <div>
 <ul>
 <li class="fragment">Combine visual hierarchy, color theory, and typography.</li>
@@ -249,14 +314,118 @@ Janyl Jumadinova
 </ul>
 </div>
 </section>
-<section id="image-sources" class="slide level2">
-<h2>Image Sources:</h2>
+<section id="responsive-web-design" class="slide level2">
+<h2>Responsive Web Design</h2>
 <ul>
-<li>Visual Hierarchy Example: <a href="https://venngage.com/blog/visual-hierarchy/">15 Golden Principles of Visual Hierarchy</a></li>
-<li>Color Wheel and Theory: Color Theory Basics: <a href="https://www.color-meanings.com/color-wheel-theory-complementary-colors/">The Color Wheel and Finding Complementary Colors</a></li>
-<li>Typography Design: Font Typography: <a href="https://graphicdesignjunction.com/2011/02/font-typography-50-brilliant-typography-designs-to-inspire-you/">50 Brilliant Typography Designs To Inspire You</a></li>
-<li>CRAP Design Principles: CRAP Design Principles: <a href="https://watchthem.live/crap-design-principles/">Creating a Great UX Design [Infographic]</a></li>
+<li>Ensures websites adapt to different screen sizes</li>
+<li>Improves user experience on all devices</li>
+<li>Uses flexible layouts, images, and media queries</li>
 </ul>
+</section>
+<section id="key-concepts" class="slide level2">
+<h2>Key Concepts</h2>
+<h3 id="fluid-grids">Fluid Grids</h3>
+<ul>
+<li>Use percentage-based widths instead of fixed pixels</li>
+</ul>
+<h3 id="flexible-images">Flexible Images</h3>
+<ul>
+<li><code>max-width: 100%; height: auto;</code></li>
+</ul>
+<h3 id="media-queries">Media Queries</h3>
+<ul>
+<li><p>Apply styles based on screen size:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb1-1"><a></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">max-width</span><span class="ch">:</span> <span class="dv">600</span><span class="dt">px</span><span class="fu">)</span> {</span>
+<span id="cb1-2"><a></a>    body {</span>
+<span id="cb1-3"><a></a>        <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">lightgray</span><span class="op">;</span></span>
+<span id="cb1-4"><a></a>    }</span>
+<span id="cb1-5"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="what-is-css" class="slide level2">
+<h2>What is CSS?</h2>
+<ul>
+<li><strong>CSS (Cascading Style Sheets)</strong> is used to style and layout HTML elements.<br>
+</li>
+<li>It controls <strong>colors, fonts, spacing, positioning, and responsiveness</strong>.<br>
+</li>
+<li>Works alongside HTML:
+<ul>
+<li>HTML provides <strong>structure</strong>.<br>
+</li>
+<li>CSS provides <strong>style and layout</strong>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="how-css-is-applied" class="slide level2">
+<h2>How CSS is Applied</h2>
+<ul>
+<li><strong>Inline CSS</strong> (<code>style</code> attribute in an element).</li>
+<li><strong>Internal CSS</strong> (<code>&lt;style&gt;</code> tag in <code>&lt;head&gt;</code>).</li>
+<li><strong>External CSS</strong> (linked <code>.css</code> file).</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a></a><span class="co">/* Example External CSS */</span></span>
+<span id="cb2-2"><a></a>h1 {</span>
+<span id="cb2-3"><a></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">blue</span><span class="op">;</span></span>
+<span id="cb2-4"><a></a>  <span class="kw">font-size</span><span class="ch">:</span> <span class="dv">24</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-5"><a></a>  <span class="kw">margin-bottom</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-6"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-css-box-model" class="slide level2">
+<h2>The CSS Box Model</h2>
+<p>Every HTML element is a rectangular box with four key parts:<br>
+- <strong>Content</strong>: The actual text, image, or element.<br>
+- <strong>Padding</strong>: Space between content and border.<br>
+- <strong>Border</strong>: The outline around the padding and content.<br>
+- <strong>Margin</strong>: Space outside the border, affecting separation from other elements.</p>
+</section>
+<section id="the-css-box-model-1" class="slide level2">
+<h2>The CSS Box Model</h2>
+<div class="center">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png"></p>
+<figcaption>Box Model Diagram</figcaption>
+</figure>
+</div>
+</div>
+<ul>
+<li><code>box-sizing</code> affects how the width/height of elements is calculated:
+<ul>
+<li><strong><code>content-box</code></strong> (default): Width excludes padding and border.</li>
+<li><strong><code>border-box</code></strong>: Width includes padding and border.</li>
+</ul></li>
+</ul>
+</section>
+<section id="css-units" class="slide level2">
+<h2><strong>CSS Units</strong></h2>
+<ul>
+<li><strong>Absolute:</strong> <code>px</code> (fixed size)</li>
+<li><strong>Relative:</strong> <code>em</code>, <code>rem</code> (based on font size), <code>%</code> (relative to parent)</li>
+<li><strong>Viewport-based:</strong> <code>vh</code>, <code>vw</code> (based on screen size)</li>
+</ul>
+</section>
+<section id="margin-collapse" class="slide level2">
+<h2><strong>Margin Collapse</strong></h2>
+<ul>
+<li>When two vertical margins meet, the larger one takes effect instead of stacking.</li>
+<li><strong>Fixes:</strong> Add <code>padding</code>, <code>border</code>, or <code>overflow: hidden</code> to elements.</li>
+</ul>
+</section>
+<section id="overflow-handling" class="slide level2">
+<h2><strong>Overflow Handling</strong></h2>
+<ul>
+<li>What happens when content exceeds its container?
+<ul>
+<li><code>visible</code> (default): Content spills out.</li>
+<li><code>hidden</code>: Content is clipped.</li>
+<li><code>scroll</code>: Adds a scrollbar.</li>
+<li><code>auto</code>: Scrollbar appears if needed.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
 
 
 </section>
