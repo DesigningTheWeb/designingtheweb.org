@@ -502,5 +502,61 @@
     "title": "Design Principles and Responsiveness",
     "section": "Overflow Handling",
     "text": "Overflow Handling\n\nWhat happens when content exceeds its container?\n\nvisible (default): Content spills out.\nhidden: Content is clipped.\nscroll: Adds a scrollbar.\nauto: Scrollbar appears if needed."
+  },
+  {
+    "objectID": "schedule/week5/index.html#css-layout-techniques",
+    "href": "schedule/week5/index.html#css-layout-techniques",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "CSS Layout Techniques",
+    "text": "CSS Layout Techniques\n\nCSS Positioning\nFlexbox\nGrid Layout\nComparing Flexbox vs Grid"
+  },
+  {
+    "objectID": "schedule/week5/index.html#positioning-methods-in-css",
+    "href": "schedule/week5/index.html#positioning-methods-in-css",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "Positioning Methods in CSS",
+    "text": "Positioning Methods in CSS\n\nStatic: Default positioning\nRelative: Positioned relative to its normal position\nAbsolute: Positioned relative to the nearest positioned ancestor\nFixed: Stays in place even when scrolling"
+  },
+  {
+    "objectID": "schedule/week5/index.html#css-positioning---example",
+    "href": "schedule/week5/index.html#css-positioning---example",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "CSS Positioning - Example",
+    "text": "CSS Positioning - Example\nModify the position of elements with relative, absolute, and fixed values:\n.box {\n  position: relative;\n  top: 20px;\n  left: 10px;\n}"
+  },
+  {
+    "objectID": "schedule/week5/index.html#flexbox-basics",
+    "href": "schedule/week5/index.html#flexbox-basics",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "Flexbox Basics",
+    "text": "Flexbox Basics\nMain axis vs. Cross axis\n\njustify-content: Align items along the main axis\nalign-items: Align items along the cross axis\n\nFlex properties: flex-grow, flex-shrink, flex-basis"
+  },
+  {
+    "objectID": "schedule/week5/index.html#flexbox---example-layout",
+    "href": "schedule/week5/index.html#flexbox---example-layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "Flexbox - Example Layout",
+    "text": "Flexbox - Example Layout\nCreating responsive layouts with Flexbox\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.item {\n  flex: 1;\n}"
+  },
+  {
+    "objectID": "schedule/week5/index.html#grid-layout-vs-flexbox",
+    "href": "schedule/week5/index.html#grid-layout-vs-flexbox",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "Grid Layout vs Flexbox",
+    "text": "Grid Layout vs Flexbox\n\nGrid: Use for two-dimensional layouts (rows and columns)\nFlexbox: Use for one-dimensional layouts (row or column)\n\nDefining rows and columns:\n.container {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}"
+  },
+  {
+    "objectID": "schedule/week5/index.html#grid-layout---example",
+    "href": "schedule/week5/index.html#grid-layout---example",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "Grid Layout - Example",
+    "text": "Grid Layout - Example\nUsing grid-template-rows, grid-template-columns, and grid-gap:\n.container {\n  display: grid;\n  grid-template-rows: 200px 1fr;\n  grid-template-columns: 1fr 2fr;\n}"
+  },
+  {
+    "objectID": "schedule/week5/index.html#responsive-grid-layouts",
+    "href": "schedule/week5/index.html#responsive-grid-layouts",
+    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "section": "Responsive Grid Layouts",
+    "text": "Responsive Grid Layouts\nUse media queries to adjust layouts dynamically:\n@media (max-width: 600px) {\n  .container {\n    grid-template-columns: 1fr;\n  }\n}"
   }
 ]
