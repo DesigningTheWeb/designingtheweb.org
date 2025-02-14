@@ -506,57 +506,99 @@
   {
     "objectID": "schedule/week5/index.html#css-layout-techniques",
     "href": "schedule/week5/index.html#css-layout-techniques",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "CSS Layout Techniques",
-    "text": "CSS Layout Techniques\n\nCSS Positioning\nFlexbox\nGrid Layout\nComparing Flexbox vs Grid"
+    "text": "CSS Layout Techniques\n\nCSS Positioning\nFlexbox\nGrid Layout"
   },
   {
     "objectID": "schedule/week5/index.html#positioning-methods-in-css",
     "href": "schedule/week5/index.html#positioning-methods-in-css",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "Positioning Methods in CSS",
     "text": "Positioning Methods in CSS\n\nStatic: Default positioning\nRelative: Positioned relative to its normal position\nAbsolute: Positioned relative to the nearest positioned ancestor\nFixed: Stays in place even when scrolling"
   },
   {
     "objectID": "schedule/week5/index.html#css-positioning---example",
     "href": "schedule/week5/index.html#css-positioning---example",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "CSS Positioning - Example",
     "text": "CSS Positioning - Example\nModify the position of elements with relative, absolute, and fixed values:\n.box {\n  position: relative;\n  top: 20px;\n  left: 10px;\n}"
   },
   {
     "objectID": "schedule/week5/index.html#flexbox-basics",
     "href": "schedule/week5/index.html#flexbox-basics",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "Flexbox Basics",
     "text": "Flexbox Basics\nMain axis vs. Cross axis\n\njustify-content: Align items along the main axis\nalign-items: Align items along the cross axis\n\nFlex properties: flex-grow, flex-shrink, flex-basis"
   },
   {
     "objectID": "schedule/week5/index.html#flexbox---example-layout",
     "href": "schedule/week5/index.html#flexbox---example-layout",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "Flexbox - Example Layout",
-    "text": "Flexbox - Example Layout\nCreating responsive layouts with Flexbox\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.item {\n  flex: 1;\n}"
+    "text": "Flexbox - Example Layout\nCreating responsive layouts with Flexbox\n.container {\n  display: flex;\n  justify-content: center;  // Centers items horizontally\n  align-items: center;      // Centers items vertically\n}\n\n.item {\n  flex: 1;                 // Makes items grow equally\n}"
   },
   {
     "objectID": "schedule/week5/index.html#grid-layout-vs-flexbox",
     "href": "schedule/week5/index.html#grid-layout-vs-flexbox",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "Grid Layout vs Flexbox",
     "text": "Grid Layout vs Flexbox\n\nGrid: Use for two-dimensional layouts (rows and columns)\nFlexbox: Use for one-dimensional layouts (row or column)\n\nDefining rows and columns:\n.container {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}"
   },
   {
     "objectID": "schedule/week5/index.html#grid-layout---example",
     "href": "schedule/week5/index.html#grid-layout---example",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "Grid Layout - Example",
-    "text": "Grid Layout - Example\nUsing grid-template-rows, grid-template-columns, and grid-gap:\n.container {\n  display: grid;\n  grid-template-rows: 200px 1fr;\n  grid-template-columns: 1fr 2fr;\n}"
+    "text": "Grid Layout - Example\nUsing grid-template-rows, grid-template-columns, and grid-gap:\n.container {\n  display: grid;\n  grid-template-rows: 200px 1fr;\n  grid-template-columns: 1fr 2fr;\n  grid-gap: 20px;\n}"
   },
   {
     "objectID": "schedule/week5/index.html#responsive-grid-layouts",
     "href": "schedule/week5/index.html#responsive-grid-layouts",
-    "title": "CSS Positioning, Flexbox, and Grid Layout",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
     "section": "Responsive Grid Layouts",
     "text": "Responsive Grid Layouts\nUse media queries to adjust layouts dynamically:\n@media (max-width: 600px) {\n  .container {\n    grid-template-columns: 1fr;\n  }\n}"
+  },
+  {
+    "objectID": "schedule/week5/index.html#why-accessibility-matters",
+    "href": "schedule/week5/index.html#why-accessibility-matters",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
+    "section": "Why Accessibility Matters",
+    "text": "Why Accessibility Matters\n\nAccessibility ensures people with disabilities, can use the web.\nBenefits everyone, not just disabled users:\n\nCaptions help in noisy environments.\nHigh contrast improves readability for all.\n\nExamples:\n\nLow Contrast: Light gray text on a white background.\n\nAccessible Contrast: Dark text on a light background."
+  },
+  {
+    "objectID": "schedule/week5/index.html#wcag-guidelines---key-standards",
+    "href": "schedule/week5/index.html#wcag-guidelines---key-standards",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
+    "section": "WCAG Guidelines - Key Standards",
+    "text": "WCAG Guidelines - Key Standards\nWeb Content Accessibility Guidelines (WCAG) Principles\n\n\nPerceivable - users must be able to see/hear content.\n\nExample: Provide alt text for images.\n\n&lt;img src=\"chart.png\" alt=\"Bar chart showing revenue increase from 2020 to 2024\"&gt;"
+  },
+  {
+    "objectID": "schedule/week5/index.html#running-an-accessibility-audit",
+    "href": "schedule/week5/index.html#running-an-accessibility-audit",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
+    "section": "Running an Accessibility Audit",
+    "text": "Running an Accessibility Audit\n\n\nTools:\n\n🛠 Lighthouse (Chrome DevTools)\n🔍 WAVE (Browser extension)\n\nHow to Run Lighthouse:\n\nOpen Chrome DevTools (Right-click -&gt; Inspect -&gt; Lighthouse tab).\nRun an Accessibility audit.\nIdentify errors and warnings (e.g., missing alt text).\n\nUse WAVE for a visual check of accessibility issues."
+  },
+  {
+    "objectID": "schedule/week5/index.html#web-content-accessibility-guidelines-wcag-principles",
+    "href": "schedule/week5/index.html#web-content-accessibility-guidelines-wcag-principles",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
+    "section": "Web Content Accessibility Guidelines (WCAG) Principles",
+    "text": "Web Content Accessibility Guidelines (WCAG) Principles\n\n\nOperable - site must work without a mouse.\n\nExample: Users navigate menus with Tab/Enter.\n\n&lt;a href=\"contact.html\" tabindex=\"0\"&gt;Contact Us&lt;/a&gt;\nbutton:focus {\n  outline: 2px solid blue;\n}\n\n\n\n  &lt;a href=\"#main-content\" class=\"skip-link\"&gt;Skip to Main Content&lt;/a&gt;"
+  },
+  {
+    "objectID": "schedule/week5/index.html#contrast",
+    "href": "schedule/week5/index.html#contrast",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
+    "section": "Contrast",
+    "text": "Contrast\n\nUsers with color blindness or low vision need high-contrast text.\nWCAG recommends at least 4.5:1 contrast ratio for text.\n\nCan use WebAIM’s Contrast Checker to check contrast ratios."
+  },
+  {
+    "objectID": "schedule/week5/index.html#web-content-accessibility-guidelines-wcag-principles-1",
+    "href": "schedule/week5/index.html#web-content-accessibility-guidelines-wcag-principles-1",
+    "title": "CSS Positioning, Flexbox, and Grid Layout, Accessibility",
+    "section": "Web Content Accessibility Guidelines (WCAG) Principles",
+    "text": "Web Content Accessibility Guidelines (WCAG) Principles\n\n\nUnderstandable - content should be easy to read.\n\nExample: Use clear labels, avoid jargon.\n\n&lt;label for=\"email\"&gt;Enter your email:&lt;/label&gt;\n&lt;input type=\"email\" id=\"email\" placeholder=\"you@example.com\"&gt;\nRobust - Content should work across different browsers, devices, and assistive technologies.\n\nExample: Use semantic HTML elements so screen readers and future technologies can interpret content correctly.\n\n\n&lt;button type=\"submit\"&gt;Submit&lt;/button&gt;"
   }
 ]

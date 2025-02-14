@@ -11,7 +11,7 @@
 
   <meta name="author" content="Janyl Jumadinova">
   <meta name="dcterms.date" content="2025-02-08">
-  <title>CMPSC 302 – CSS Positioning, Flexbox, and Grid Layout</title>
+  <title>CMPSC 302 – CSS Positioning, Flexbox, and Grid Layout, Accessibility</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -195,7 +195,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">CSS Positioning, Flexbox, and Grid Layout</h1>
+  <h1 class="title">CSS Positioning, Flexbox, and Grid Layout, Accessibility</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -213,7 +213,6 @@ Janyl Jumadinova
 <li>CSS Positioning</li>
 <li>Flexbox</li>
 <li>Grid Layout</li>
-<li>Comparing Flexbox vs Grid</li>
 </ul>
 </section>
 <section id="positioning-methods-in-css" class="slide level2">
@@ -248,12 +247,12 @@ Janyl Jumadinova
 <p>Creating responsive layouts with Flexbox</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a></a><span class="fu">.container</span> {</span>
 <span id="cb2-2"><a></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
-<span id="cb2-3"><a></a>  <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
-<span id="cb2-4"><a></a>  <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb2-3"><a></a>  <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span>  <span class="er">// Centers items horizontally</span></span>
+<span id="cb2-4"><a></a>  <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span>      <span class="er">// Centers items vertically</span></span>
 <span id="cb2-5"><a></a>}</span>
 <span id="cb2-6"><a></a></span>
 <span id="cb2-7"><a></a><span class="fu">.item</span> {</span>
-<span id="cb2-8"><a></a>  <span class="kw">flex</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb2-8"><a></a>  <span class="kw">flex</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span>                 <span class="er">// Makes items grow equally</span></span>
 <span id="cb2-9"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="grid-layout-vs-flexbox" class="slide level2">
@@ -275,7 +274,8 @@ Janyl Jumadinova
 <span id="cb4-2"><a></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">grid</span><span class="op">;</span></span>
 <span id="cb4-3"><a></a>  <span class="kw">grid-template-rows</span><span class="ch">:</span> <span class="dv">200</span><span class="dt">px</span> <span class="dv">1</span><span class="dt">fr</span><span class="op">;</span></span>
 <span id="cb4-4"><a></a>  <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">fr</span> <span class="dv">2</span><span class="dt">fr</span><span class="op">;</span></span>
-<span id="cb4-5"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-5"><a></a>  grid-gap<span class="ch">:</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-6"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="responsive-grid-layouts" class="slide level2">
 <h2>Responsive Grid Layouts</h2>
@@ -285,6 +285,102 @@ Janyl Jumadinova
 <span id="cb5-3"><a></a>    <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">fr</span><span class="op">;</span></span>
 <span id="cb5-4"><a></a>  }</span>
 <span id="cb5-5"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="why-accessibility-matters" class="slide level2">
+<h2>Why Accessibility Matters</h2>
+<ul>
+<li><strong>Accessibility ensures</strong> people with disabilities, can use the web.</li>
+<li>Benefits <strong>everyone</strong>, not just disabled users:
+<ul>
+<li>Captions help in noisy environments.</li>
+<li>High contrast improves readability for all.</li>
+</ul></li>
+<li><strong>Examples:</strong>
+<ul>
+<li><strong>Low Contrast</strong>: Light gray text on a white background.<br>
+</li>
+<li><strong>Accessible Contrast</strong>: Dark text on a light background.</li>
+</ul></li>
+</ul>
+</section>
+<section id="wcag-guidelines---key-standards" class="slide level2 scrollable">
+<h2>WCAG Guidelines - Key Standards</h2>
+<p><strong>Web Content Accessibility Guidelines (WCAG) Principles</strong></p>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Perceivable</strong> - users must be able to see/hear content.
+<ul>
+<li class="fragment"><em>Example:</em> Provide <strong>alt text</strong> for images.<br>
+</li>
+<li class="fragment"><code>&lt;img src="chart.png" alt="Bar chart showing revenue increase from 2020 to 2024"&gt;</code></li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section id="web-content-accessibility-guidelines-wcag-principles" class="slide level2 scrollable">
+<h2>Web Content Accessibility Guidelines (WCAG) Principles</h2>
+<div>
+<ol start="2" type="1">
+<li class="fragment"><strong>Operable</strong> - site must work without a mouse.
+<ul>
+<li class="fragment"><em>Example:</em> Users navigate menus with <strong>Tab/Enter</strong>.<br>
+</li>
+<li class="fragment"><code>&lt;a href="contact.html" tabindex="0"&gt;Contact Us&lt;/a&gt;</code></li>
+<li class="fragment"><pre><code>button:focus {
+  outline: 2px solid blue;
+}</code></pre></li>
+</ul></li>
+</ol>
+<ul>
+<li class="fragment"><pre><code>  &lt;a href="#main-content" class="skip-link"&gt;Skip to Main Content&lt;/a&gt;</code></pre></li>
+</ul>
+</div>
+</section>
+<section id="web-content-accessibility-guidelines-wcag-principles-1" class="slide level2 scrollable">
+<h2>Web Content Accessibility Guidelines (WCAG) Principles</h2>
+<div>
+<ol start="3" type="1">
+<li class="fragment"><strong>Understandable</strong> - content should be easy to read.
+<ul>
+<li class="fragment"><em>Example:</em> Use <strong>clear labels</strong>, avoid jargon.</li>
+</ul>
+<pre><code>&lt;label for="email"&gt;Enter your email:&lt;/label&gt;
+&lt;input type="email" id="email" placeholder="you@example.com"&gt;</code></pre></li>
+<li class="fragment"><strong>Robust</strong> - Content should work across different browsers, devices, and assistive technologies.
+<ul>
+<li class="fragment"><em>Example:</em> Use <strong>semantic HTML</strong> elements so screen readers and future technologies can interpret content correctly.<br>
+</li>
+</ul>
+<pre><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre></li>
+</ol>
+</div>
+</section>
+<section id="running-an-accessibility-audit" class="slide level2 scrollable">
+<h2>Running an Accessibility Audit</h2>
+<div>
+<ul>
+<li class="fragment"><strong>Tools:</strong>
+<ul>
+<li class="fragment">🛠 <strong>Lighthouse</strong> (Chrome DevTools)</li>
+<li class="fragment">🔍 <strong>WAVE</strong> (Browser extension)</li>
+</ul></li>
+<li class="fragment"><strong>How to Run Lighthouse:</strong>
+<ol type="1">
+<li class="fragment">Open Chrome DevTools (Right-click -&gt; Inspect -&gt; Lighthouse tab).</li>
+<li class="fragment">Run an <strong>Accessibility audit</strong>.</li>
+<li class="fragment">Identify <strong>errors and warnings</strong> (e.g., missing alt text).</li>
+</ol></li>
+<li class="fragment"><strong>Use WAVE for a visual check</strong> of accessibility issues.</li>
+</ul>
+</div>
+</section>
+<section id="contrast" class="slide level2">
+<h2>Contrast</h2>
+<ul>
+<li>Users with color blindness or low vision need high-contrast text.</li>
+<li>WCAG recommends at least 4.5:1 contrast ratio for text.</li>
+</ul>
+<p>Can use <a href="https://webaim.org/resources/contrastchecker/">WebAIM’s Contrast Checker</a> to check contrast ratios.</p>
 
 
 </section>
