@@ -1,0 +1,56 @@
+---
+title: "Internationalization & Advanced Accessibility Techniques"
+description: "Design and Accessibility"
+date: "2025-02-24"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+## W3C Internationalization (i18n)
+
+- **Definition**: Designing and developing websites so they can be easily adapted to different languages, regions, and cultures.
+- **Key Considerations**:
+  - Text direction (LTR vs. RTL languages)
+  - Unicode support for diverse character sets
+  - Date, time, and number formatting localization
+  - Cultural context in images, symbols, and colors
+- **Best Practice**: Use HTML `lang` attribute (`<html lang="en">`) for language declaration.
+
+---
+
+## W3C Accessibility (a11y)
+
+- **Definition**: Ensuring web content is usable by people with disabilities.
+- **Key Principles (WCAG)**:
+  - **Perceivable**: Provide text alternatives, captions, and adaptable content.
+  - **Operable**: Ensure keyboard accessibility, avoid flashing content.
+  - **Understandable**: Use clear language, predictable navigation.
+  - **Robust**: Ensure compatibility with assistive technologies.
+- **Best Practice**: Use semantic HTML elements (`<header>`, `<nav>`, `<main>`, `<footer>`) and provide ARIA roles where needed.
+
+---
+
+## Why It Matters
+
+- Enhances **user experience** for diverse global audiences.
+- Improves **SEO and site reachability** across different markets.
+- Ensures **legal compliance** (e.g., ADA, EU Accessibility Act).
+- Aligns with **ethical and inclusive design** principles.
+
+---
+
+## Resources
+
+- [W3C Internationalization](https://www.w3.org/International/)
+- [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/)
+- [WCAG Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+- [Google Lighthouse: Accessibility Audits](https://developers.google.com/web/tools/lighthouse)

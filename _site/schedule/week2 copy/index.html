@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Janyl Jumadinova">
-<meta name="dcterms.date" content="2025-02-08">
-<meta name="description" content="Design and Accessibility">
+<meta name="dcterms.date" content="2025-02-03">
+<meta name="description" content="Fundamental design principles for user interfaces">
 
-<title>CSS Positioning, Flexbox, and Grid Layout, Accessibility – CMPSC 302</title>
+<title>Visual Hierarchy, Color Theory, Typography, &amp; CRAP Principles – CMPSC 302</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -153,20 +119,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#css-layout-techniques" id="toc-css-layout-techniques" class="nav-link active" data-scroll-target="#css-layout-techniques">CSS Layout Techniques</a></li>
-  <li><a href="#positioning-methods-in-css" id="toc-positioning-methods-in-css" class="nav-link" data-scroll-target="#positioning-methods-in-css">Positioning Methods in CSS</a></li>
-  <li><a href="#css-positioning---example" id="toc-css-positioning---example" class="nav-link" data-scroll-target="#css-positioning---example">CSS Positioning - Example</a></li>
-  <li><a href="#flexbox-basics" id="toc-flexbox-basics" class="nav-link" data-scroll-target="#flexbox-basics">Flexbox Basics</a></li>
-  <li><a href="#flexbox---example-layout" id="toc-flexbox---example-layout" class="nav-link" data-scroll-target="#flexbox---example-layout">Flexbox - Example Layout</a></li>
-  <li><a href="#grid-layout-vs-flexbox" id="toc-grid-layout-vs-flexbox" class="nav-link" data-scroll-target="#grid-layout-vs-flexbox">Grid Layout vs Flexbox</a></li>
-  <li><a href="#grid-layout---example" id="toc-grid-layout---example" class="nav-link" data-scroll-target="#grid-layout---example">Grid Layout - Example</a></li>
-  <li><a href="#responsive-grid-layouts" id="toc-responsive-grid-layouts" class="nav-link" data-scroll-target="#responsive-grid-layouts">Responsive Grid Layouts</a></li>
-  <li><a href="#why-accessibility-matters" id="toc-why-accessibility-matters" class="nav-link" data-scroll-target="#why-accessibility-matters">Why Accessibility Matters</a></li>
-  <li><a href="#wcag-guidelines---key-standards" id="toc-wcag-guidelines---key-standards" class="nav-link" data-scroll-target="#wcag-guidelines---key-standards">WCAG Guidelines - Key Standards</a></li>
-  <li><a href="#web-content-accessibility-guidelines-wcag-principles" id="toc-web-content-accessibility-guidelines-wcag-principles" class="nav-link" data-scroll-target="#web-content-accessibility-guidelines-wcag-principles">Web Content Accessibility Guidelines (WCAG) Principles</a></li>
-  <li><a href="#web-content-accessibility-guidelines-wcag-principles-1" id="toc-web-content-accessibility-guidelines-wcag-principles-1" class="nav-link" data-scroll-target="#web-content-accessibility-guidelines-wcag-principles-1">Web Content Accessibility Guidelines (WCAG) Principles</a></li>
-  <li><a href="#running-an-accessibility-audit" id="toc-running-an-accessibility-audit" class="nav-link" data-scroll-target="#running-an-accessibility-audit">Running an Accessibility Audit</a></li>
-  <li><a href="#contrast" id="toc-contrast" class="nav-link" data-scroll-target="#contrast">Contrast</a></li>
+  <li><a href="#usability" id="toc-usability" class="nav-link active" data-scroll-target="#usability">Usability</a></li>
+  <li><a href="#visual-hierarchy-core-concepts" id="toc-visual-hierarchy-core-concepts" class="nav-link" data-scroll-target="#visual-hierarchy-core-concepts">Visual Hierarchy: Core Concepts</a></li>
+  <li><a href="#visual-hierarchy-practical-tips" id="toc-visual-hierarchy-practical-tips" class="nav-link" data-scroll-target="#visual-hierarchy-practical-tips">Visual Hierarchy: Practical Tips</a></li>
+  <li><a href="#color-theory" id="toc-color-theory" class="nav-link" data-scroll-target="#color-theory">Color Theory</a></li>
+  <li><a href="#typography-fundamentals" id="toc-typography-fundamentals" class="nav-link" data-scroll-target="#typography-fundamentals">Typography Fundamentals</a></li>
+  <li><a href="#crap-principles" id="toc-crap-principles" class="nav-link" data-scroll-target="#crap-principles">CRAP Principles</a></li>
+  <li><a href="#examples-of-crap-in-action" id="toc-examples-of-crap-in-action" class="nav-link" data-scroll-target="#examples-of-crap-in-action">Examples of CRAP in Action</a></li>
+  <li><a href="#balancing-aesthetics-and-usability" id="toc-balancing-aesthetics-and-usability" class="nav-link" data-scroll-target="#balancing-aesthetics-and-usability">Balancing Aesthetics and Usability</a></li>
+  <li><a href="#website-review" id="toc-website-review" class="nav-link" data-scroll-target="#website-review">Website Review</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
@@ -175,12 +136,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CSS Positioning, Flexbox, and Grid Layout, Accessibility</h1>
+<h1 class="title">Visual Hierarchy, Color Theory, Typography, &amp; CRAP Principles</h1>
 </div>
 
 <div>
   <div class="description">
-    Design and Accessibility
+    Fundamental design principles for user interfaces
   </div>
 </div>
 
@@ -197,7 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 8, 2025</p>
+      <p class="date">February 3, 2025</p>
     </div>
   </div>
   
@@ -209,192 +170,126 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="css-layout-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="css-layout-techniques">CSS Layout Techniques</h2>
-<ul>
-<li>CSS Positioning</li>
-<li>Flexbox</li>
-<li>Grid Layout</li>
-</ul>
-<hr>
-</section>
-<section id="positioning-methods-in-css" class="level2">
-<h2 class="anchored" data-anchor-id="positioning-methods-in-css">Positioning Methods in CSS</h2>
-<ul>
-<li><strong>Static</strong>: Default positioning</li>
-<li><strong>Relative</strong>: Positioned relative to its normal position</li>
-<li><strong>Absolute</strong>: Positioned relative to the nearest positioned ancestor</li>
-<li><strong>Fixed</strong>: Stays in place even when scrolling</li>
-</ul>
-<hr>
-</section>
-<section id="css-positioning---example" class="level2">
-<h2 class="anchored" data-anchor-id="css-positioning---example">CSS Positioning - Example</h2>
-<p>Modify the position of elements with relative, absolute, and fixed values:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.box</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">position</span><span class="ch">:</span> <span class="dv">relative</span><span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">top</span><span class="ch">:</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">left</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="flexbox-basics" class="level2">
-<h2 class="anchored" data-anchor-id="flexbox-basics">Flexbox Basics</h2>
-<p>Main axis vs.&nbsp;Cross axis</p>
-<ul>
-<li><code>justify-content</code>: Align items along the main axis</li>
-<li><code>align-items</code>: Align items along the cross axis</li>
-</ul>
-<p>Flex properties: <code>flex-grow</code>, <code>flex-shrink</code>, <code>flex-basis</code></p>
-<hr>
-</section>
-<section id="flexbox---example-layout" class="level2">
-<h2 class="anchored" data-anchor-id="flexbox---example-layout">Flexbox - Example Layout</h2>
-<p>Creating responsive layouts with Flexbox</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span>  <span class="er">// Centers items horizontally</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span>      <span class="er">// Centers items vertically</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">.item</span> {</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span>                 <span class="er">// Makes items grow equally</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="grid-layout-vs-flexbox" class="level2">
-<h2 class="anchored" data-anchor-id="grid-layout-vs-flexbox">Grid Layout vs Flexbox</h2>
-<ul>
-<li><strong>Grid</strong>: Use for two-dimensional layouts (rows and columns)</li>
-<li><strong>Flexbox</strong>: Use for one-dimensional layouts (row or column)</li>
-</ul>
-<p>Defining rows and columns:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">grid</span><span class="op">;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">fr</span> <span class="dv">1</span><span class="dt">fr</span><span class="op">;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="grid-layout---example" class="level2">
-<h2 class="anchored" data-anchor-id="grid-layout---example">Grid Layout - Example</h2>
-<p>Using grid-template-rows, grid-template-columns, and grid-gap:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">grid</span><span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-template-rows</span><span class="ch">:</span> <span class="dv">200</span><span class="dt">px</span> <span class="dv">1</span><span class="dt">fr</span><span class="op">;</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">fr</span> <span class="dv">2</span><span class="dt">fr</span><span class="op">;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  grid-gap<span class="ch">:</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="responsive-grid-layouts" class="level2">
-<h2 class="anchored" data-anchor-id="responsive-grid-layouts">Responsive Grid Layouts</h2>
-<p>Use media queries to adjust layouts dynamically:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">max-width</span><span class="ch">:</span> <span class="dv">600</span><span class="dt">px</span><span class="fu">)</span> {</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.container</span> {</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">grid-template-columns</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">fr</span><span class="op">;</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="why-accessibility-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-accessibility-matters">Why Accessibility Matters</h2>
-<ul>
-<li><strong>Accessibility ensures</strong> people with disabilities, can use the web.</li>
-<li>Benefits <strong>everyone</strong>, not just disabled users:
-<ul>
-<li>Captions help in noisy environments.</li>
-<li>High contrast improves readability for all.</li>
-</ul></li>
-<li><strong>Examples:</strong>
-<ul>
-<li><strong>Low Contrast</strong>: Light gray text on a white background.<br>
-</li>
-<li><strong>Accessible Contrast</strong>: Dark text on a light background.</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="wcag-guidelines---key-standards" class="level2">
-<h2 class="anchored" data-anchor-id="wcag-guidelines---key-standards">WCAG Guidelines - Key Standards</h2>
-<p><strong>Web Content Accessibility Guidelines (WCAG) Principles</strong></p>
+<section id="usability" class="level2">
+<h2 class="anchored" data-anchor-id="usability">Usability</h2>
 <div class="incremental">
-<ol class="incremental" type="1">
-<li><strong>Perceivable</strong> - users must be able to see/hear content.
 <ul class="incremental">
-<li><em>Example:</em> Provide <strong>alt text</strong> for images.<br>
-</li>
-<li><code>&lt;img src="chart.png" alt="Bar chart showing revenue increase from 2020 to 2024"&gt;</code></li>
-</ul></li>
-</ol>
+<li>Usability: Measure of effectiveness</li>
+<li>Visual design is important in shaping user experience.</li>
+</ul>
+<section id="universal-usability" class="level3">
+<h3 class="anchored" data-anchor-id="universal-usability">Universal Usability</h3>
+<ul class="incremental">
+<li>Accessibility (<a href="https://www.w3.org/WAI/">WAI</a>)</li>
+<li>Usability</li>
+<li>Universal Design</li>
+</ul>
+</section>
 </div>
 <hr>
 </section>
-<section id="web-content-accessibility-guidelines-wcag-principles" class="level2">
-<h2 class="anchored" data-anchor-id="web-content-accessibility-guidelines-wcag-principles">Web Content Accessibility Guidelines (WCAG) Principles</h2>
+<section id="visual-hierarchy-core-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="visual-hierarchy-core-concepts">Visual Hierarchy: Core Concepts</h2>
 <div class="incremental">
-<ol class="incremental" start="2" type="1">
-<li><strong>Operable</strong> - site must work without a mouse.
 <ul class="incremental">
-<li><em>Example:</em> Users navigate menus with <strong>Tab/Enter</strong>.<br>
-</li>
-<li><code>&lt;a href="contact.html" tabindex="0"&gt;Contact Us&lt;/a&gt;</code></li>
-<li><pre><code>button:focus {
-  outline: 2px solid blue;
-}</code></pre></li>
-</ul></li>
-</ol>
-<ul class="incremental">
-<li><pre><code>  &lt;a href="#main-content" class="skip-link"&gt;Skip to Main Content&lt;/a&gt;</code></pre></li>
+<li>Importance of ordering and arranging elements to guide attention.</li>
+<li>Techniques: size, color, contrast, and spacing. <img src="https://seahawkmedia.com/wp-content/uploads/2024/08/visual-hierarchy-importance-1024x681.jpg" class="img-fluid" alt="Visual Hierarchy Example"></li>
 </ul>
 </div>
 <hr>
 </section>
-<section id="web-content-accessibility-guidelines-wcag-principles-1" class="level2">
-<h2 class="anchored" data-anchor-id="web-content-accessibility-guidelines-wcag-principles-1">Web Content Accessibility Guidelines (WCAG) Principles</h2>
+<section id="visual-hierarchy-practical-tips" class="level2">
+<h2 class="anchored" data-anchor-id="visual-hierarchy-practical-tips">Visual Hierarchy: Practical Tips</h2>
 <div class="incremental">
-<ol class="incremental" start="3" type="1">
-<li><strong>Understandable</strong> - content should be easy to read.
 <ul class="incremental">
-<li><em>Example:</em> Use <strong>clear labels</strong>, avoid jargon.</li>
+<li>Keep key elements larger or bolder.</li>
+<li>Use whitespace to help users focus.</li>
+<li>Group related items together using proximity.</li>
+<li>Prioritize content based on importance and context.</li>
+<li>More details at <a href="https://www.webstyleguide.com/wsg3/2-universal-usability/index.html">Web Style Guide: Chapter 2</a>.</li>
 </ul>
-<pre><code>&lt;label for="email"&gt;Enter your email:&lt;/label&gt;
-&lt;input type="email" id="email" placeholder="you@example.com"&gt;</code></pre></li>
-<li><strong>Robust</strong> - Content should work across different browsers, devices, and assistive technologies.
-<ul class="incremental">
-<li><em>Example:</em> Use <strong>semantic HTML</strong> elements so screen readers and future technologies can interpret content correctly.<br>
-</li>
-</ul>
-<pre><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre></li>
-</ol>
 </div>
 <hr>
 </section>
-<section id="running-an-accessibility-audit" class="level2">
-<h2 class="anchored" data-anchor-id="running-an-accessibility-audit">Running an Accessibility Audit</h2>
+<section id="color-theory" class="level2">
+<h2 class="anchored" data-anchor-id="color-theory">Color Theory</h2>
 <div class="incremental">
 <ul class="incremental">
-<li><strong>Tools:</strong>
-<ul class="incremental">
-<li>🛠 <strong>Lighthouse</strong> (Chrome DevTools)</li>
-<li>🔍 <strong>WAVE</strong> (Browser extension)</li>
-</ul></li>
-<li><strong>How to Run Lighthouse:</strong>
-<ol class="incremental" type="1">
-<li>Open Chrome DevTools (Right-click -&gt; Inspect -&gt; Lighthouse tab).</li>
-<li>Run an <strong>Accessibility audit</strong>.</li>
-<li>Identify <strong>errors and warnings</strong> (e.g., missing alt text).</li>
-</ol></li>
-<li><strong>Use WAVE for a visual check</strong> of accessibility issues.</li>
+<li>Basics of color relationships and contrast.</li>
+<li>Accessibility considerations (e.g., color-blind palettes).</li>
+<li>Use high contrast for readability and usability.</li>
+<li>Create color schemes with complementary and analogous colors.</li>
+<li>Use color meaning to evoke emotion or direct attention. <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/BYR_color_wheel.svg/1024px-BYR_color_wheel.svg.png" class="img-fluid" alt="Color Wheel and Theory"></li>
 </ul>
 </div>
+<hr>
 </section>
-<section id="contrast" class="level2">
-<h2 class="anchored" data-anchor-id="contrast">Contrast</h2>
-<ul>
-<li>Users with color blindness or low vision need high-contrast text.</li>
-<li>WCAG recommends at least 4.5:1 contrast ratio for text.</li>
+<section id="typography-fundamentals" class="level2">
+<h2 class="anchored" data-anchor-id="typography-fundamentals">Typography Fundamentals</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Font selection, spacing, and line height.</li>
+<li>Readability across devices.</li>
+<li>Use clear and legible fonts for better accessibility.</li>
+<li>Adjust line height and spacing for comfortable reading.</li>
+<li>Avoid using too many font types to ensure consistency.</li>
+<li>Opt for responsive typography that scales well on different screen sizes.</li>
 </ul>
-<p>Can use <a href="https://webaim.org/resources/contrastchecker/">WebAIM’s Contrast Checker</a> to check contrast ratios.</p>
+</div>
+<hr>
+</section>
+<section id="crap-principles" class="level2">
+<h2 class="anchored" data-anchor-id="crap-principles">CRAP Principles</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Contrast</strong>: Differentiate elements for clarity.</li>
+<li><strong>Repetition</strong>: Maintain consistency in design.</li>
+<li><strong>Alignment</strong>: Position elements deliberately.</li>
+<li><strong>Proximity</strong>: Group related items together.</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="examples-of-crap-in-action" class="level2">
+<h2 class="anchored" data-anchor-id="examples-of-crap-in-action">Examples of CRAP in Action</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://jordanudy.weebly.com/uploads/9/7/7/9/97791440/contrast_orig.jpeg" class="img-fluid figure-img"></p>
+<figcaption>C</figcaption>
+</figure>
+</div></li>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.glidedesign.com/wp-content/uploads/crap-design-principle-repetition-web-design.jpg" class="img-fluid figure-img"></p>
+<figcaption>R</figcaption>
+</figure>
+</div></li>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.glidedesign.com/wp-content/uploads/crap-design-principle-alignment-web-design.jpg" class="img-fluid figure-img"></p>
+<figcaption>A</figcaption>
+</figure>
+</div></li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="balancing-aesthetics-and-usability" class="level2">
+<h2 class="anchored" data-anchor-id="balancing-aesthetics-and-usability">Balancing Aesthetics and Usability</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Combine visual hierarchy, color theory, and typography.</li>
+<li>Keep CRAP principles in mind to maintain clarity.</li>
+<li>Ensure accessibility is not overlooked for aesthetic choices.</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="website-review" class="level2">
+<h2 class="anchored" data-anchor-id="website-review">Website Review</h2>
+<p>Critique a website based on the three principles: - <strong>Visual Hierarchy:</strong> Does the layout make the most important information stand out? How are headings, subheadings, and calls to action organized? - <strong>Typography:</strong> How readable is the text? Are headings and body text appropriately styled and sized? - <strong>Color Use:</strong> Does the color scheme enhance or hinder readability? Does the design convey the intended message or mood?</p>
 
 
 </section>
