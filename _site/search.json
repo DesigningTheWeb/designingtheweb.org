@@ -754,5 +754,201 @@
     "title": "Responsive Web Design: Advanced Techniques",
     "section": "Viewport Meta Tag",
     "text": "Viewport Meta Tag\n\nEnsures proper scaling on mobile devices\nPrevents zooming issues and horizontal scrolling\n\nUsage\n&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;\nKey Attributes\n\nwidth=device-width: Matches screen width\ninitial-scale=1: Sets 1:1 scale ratio\nExample:\n\n&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\"&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#accessible-rich-internet-applications-aria",
+    "href": "schedule/week7/index.html#accessible-rich-internet-applications-aria",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Accessible Rich Internet Applications (ARIA)",
+    "text": "Accessible Rich Internet Applications (ARIA)\n\nARIA enhances accessibility of dynamic web content.\nProvides additional semantic information for assistive technologies.\nUsed when native HTML elements are insufficient.\n\n&lt;button aria-label=\"Close\"&gt;X&lt;/button&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#live-regions",
+    "href": "schedule/week7/index.html#live-regions",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Live Regions",
+    "text": "Live Regions\n\naria-live: Announces dynamic content updates.\naria-atomic: Ensures entire content update is read.\n\n&lt;div aria-live=\"polite\"&gt;New notifications will appear here&lt;/div&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#aria-roles-and-states",
+    "href": "schedule/week7/index.html#aria-roles-and-states",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "ARIA Roles and States",
+    "text": "ARIA Roles and States\n\nrole=\"alertdialog\": Accessible modals.\naria-expanded, aria-pressed: Manage interactive elements.\n\n&lt;button aria-expanded=\"false\" onclick=\"toggleMenu()\"&gt;Menu&lt;/button&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#focus-management",
+    "href": "schedule/week7/index.html#focus-management",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Focus Management",
+    "text": "Focus Management\n\nEnsure logical tab order (tabindex=0 for focusable elements)."
+  },
+  {
+    "objectID": "schedule/week7/index.html#skip-links",
+    "href": "schedule/week7/index.html#skip-links",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Skip Links",
+    "text": "Skip Links\n\nAllow users to skip navigation.\n\n&lt;a href=\"#main-content\" class=\"skip-link\"&gt;Skip to content&lt;/a&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#reduce-motion-for-sensitive-users",
+    "href": "schedule/week7/index.html#reduce-motion-for-sensitive-users",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Reduce Motion for Sensitive Users",
+    "text": "Reduce Motion for Sensitive Users\n\nUse @media (prefers-reduced-motion: reduce) in CSS.\n\n@media (prefers-reduced-motion: reduce) {\n  * { animation: none !important; }\n}"
+  },
+  {
+    "objectID": "schedule/week7/index.html#step-1-inspect-elements",
+    "href": "schedule/week7/index.html#step-1-inspect-elements",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Step 1: Inspect Elements",
+    "text": "Step 1: Inspect Elements\n\nRight-click -&gt; Inspect -&gt; Accessibility tab."
+  },
+  {
+    "objectID": "schedule/week7/index.html#step-2-use-the-accessibility-tree",
+    "href": "schedule/week7/index.html#step-2-use-the-accessibility-tree",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Step 2: Use the Accessibility Tree",
+    "text": "Step 2: Use the Accessibility Tree\n\nChrome DevTools: Elements -&gt; Accessibility -&gt; View Computed Properties."
+  },
+  {
+    "objectID": "schedule/week7/index.html#step-3-check-color-contrast",
+    "href": "schedule/week7/index.html#step-3-check-color-contrast",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Step 3: Check Color Contrast",
+    "text": "Step 3: Check Color Contrast\n\nElements -&gt; Styles -&gt; Contrast Ratio."
+  },
+  {
+    "objectID": "schedule/week7/index.html#step-4-screen-reader-simulation",
+    "href": "schedule/week7/index.html#step-4-screen-reader-simulation",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Step 4: Screen Reader Simulation",
+    "text": "Step 4: Screen Reader Simulation\n\nUse ChromeVox extension or VoiceOver."
+  },
+  {
+    "objectID": "schedule/week7/index.html#lazy-loading-impact",
+    "href": "schedule/week7/index.html#lazy-loading-impact",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Lazy Loading Impact",
+    "text": "Lazy Loading Impact\n\nUse loading=\"lazy\" carefully; ensure content is still accessible.\n\n&lt;img src=\"image.jpg\" alt=\"Example\" loading=\"lazy\"&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#accessible-loading-indicators",
+    "href": "schedule/week7/index.html#accessible-loading-indicators",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Accessible Loading Indicators",
+    "text": "Accessible Loading Indicators\n\nUse ARIA live regions to announce loading states.\n\n&lt;div aria-live=\"assertive\"&gt;Loading, please wait...&lt;/div&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#touch-targets",
+    "href": "schedule/week7/index.html#touch-targets",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Touch Targets",
+    "text": "Touch Targets\n\nEnsure buttons are at least 44x44px.\n\nbutton { min-width: 44px; min-height: 44px; }"
+  },
+  {
+    "objectID": "schedule/week7/index.html#zoom-and-scaling",
+    "href": "schedule/week7/index.html#zoom-and-scaling",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Zoom and Scaling",
+    "text": "Zoom and Scaling\n\nAvoid disabling zoom in meta tags.\n\n&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#right-to-left-rtl-support",
+    "href": "schedule/week7/index.html#right-to-left-rtl-support",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Right-to-Left (RTL) Support",
+    "text": "Right-to-Left (RTL) Support\n\nUse dir=\"rtl\" for proper text direction.\n\n&lt;body dir=\"rtl\"&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#language-attributes",
+    "href": "schedule/week7/index.html#language-attributes",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Language Attributes",
+    "text": "Language Attributes\n\nHelps screen readers pronounce text correctly.\n\n&lt;p lang=\"fr\"&gt;Bonjour!&lt;/p&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#w3c-internationalization-i18n",
+    "href": "schedule/week7/index.html#w3c-internationalization-i18n",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "W3C Internationalization (i18n)",
+    "text": "W3C Internationalization (i18n)\n\nDefinition: Designing and developing websites so they can be easily adapted to different languages, regions, and cultures.\nKey Considerations:\n\nText direction (LTR vs. RTL languages)\nUnicode support for diverse character sets\nDate, time, and number formatting localization\nCultural context in images, symbols, and colors\n\nBest Practice: Use HTML lang attribute (&lt;html lang=\"en\"&gt;) for language declaration."
+  },
+  {
+    "objectID": "schedule/week7/index.html#w3c-accessibility-a11y",
+    "href": "schedule/week7/index.html#w3c-accessibility-a11y",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "W3C Accessibility (a11y)",
+    "text": "W3C Accessibility (a11y)\n\nDefinition: Ensuring web content is usable by people with disabilities.\nKey Principles (WCAG):\n\nPerceivable: Provide text alternatives, captions, and adaptable content.\nOperable: Ensure keyboard accessibility, avoid flashing content.\nUnderstandable: Use clear language, predictable navigation.\nRobust: Ensure compatibility with assistive technologies.\n\nBest Practice: Use semantic HTML elements (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;) and provide ARIA roles where needed."
+  },
+  {
+    "objectID": "schedule/week7/index.html#why-accessibility-matters",
+    "href": "schedule/week7/index.html#why-accessibility-matters",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Why Accessibility Matters",
+    "text": "Why Accessibility Matters\n\nEnhances user experience for diverse global audiences.\nImproves SEO and site reachability across different markets.\nEnsures legal compliance (e.g., ADA, EU Accessibility Act).\nAligns with ethical and inclusive design principles."
+  },
+  {
+    "objectID": "schedule/week7/index.html#resources",
+    "href": "schedule/week7/index.html#resources",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Resources",
+    "text": "Resources\n\nW3C Internationalization\nW3C Web Accessibility Initiative (WAI)\nW3C Accessibility Checking Tools\nWCAG Guidelines\nGoogle Lighthouse: Accessibility Audits"
+  },
+  {
+    "objectID": "schedule/week7/index.html#aria-accessible-rich-internet-applications-aria",
+    "href": "schedule/week7/index.html#aria-accessible-rich-internet-applications-aria",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "ARIA: Accessible Rich Internet Applications (ARIA)",
+    "text": "ARIA: Accessible Rich Internet Applications (ARIA)\n\nARIA enhances accessibility of dynamic web content.\nProvides additional semantic information for assistive technologies.\nUsed when native HTML elements are insufficient.\n\n&lt;button aria-label=\"Close\"&gt;X&lt;/button&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#advanced-aria-techniques",
+    "href": "schedule/week7/index.html#advanced-aria-techniques",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Advanced ARIA Techniques",
+    "text": "Advanced ARIA Techniques\nLive Regions\n\naria-live: Announces dynamic content updates.\naria-atomic: Ensures entire content update is read.\n\n&lt;div aria-live=\"polite\"&gt;New notifications will appear here&lt;/div&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#keyboard-accessibility",
+    "href": "schedule/week7/index.html#keyboard-accessibility",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Keyboard Accessibility",
+    "text": "Keyboard Accessibility\nFocus Management\n\nUse tabindex to manage focus order.\nEnsure interactive elements are keyboard accessible.\nEnsure logical tab order (tabindex=0 for focusable elements).\n\nSkip Links\n\nAllow users to skip navigation.\n\n&lt;a href=\"#main-content\" class=\"skip-link\"&gt;Skip to content&lt;/a&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#prefers-reduced-motion-for-sensitive-users",
+    "href": "schedule/week7/index.html#prefers-reduced-motion-for-sensitive-users",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Prefers-Reduced-Motion for Sensitive Users",
+    "text": "Prefers-Reduced-Motion for Sensitive Users\n\nUse @media (prefers-reduced-motion: reduce) in CSS.\n\n@media (prefers-reduced-motion: reduce) {\n  * { animation: none !important; }\n}"
+  },
+  {
+    "objectID": "schedule/week7/index.html#debugging-accessibility-in-devtools",
+    "href": "schedule/week7/index.html#debugging-accessibility-in-devtools",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Debugging Accessibility in DevTools",
+    "text": "Debugging Accessibility in DevTools\n\nInspect Elements: Right-click -&gt; Inspect -&gt; Accessibility tab.\nUse the Accessibility Tree\n\n\nChrome DevTools: Elements -&gt; Accessibility -&gt; View Computed Properties.\n\n\nCheck Color Contrast: Elements -&gt; Styles -&gt; Contrast Ratio.\nScreen Reader Simulation\n\n\nChromeVox extension or VoiceOver."
+  },
+  {
+    "objectID": "schedule/week7/index.html#performance-accessibility",
+    "href": "schedule/week7/index.html#performance-accessibility",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Performance & Accessibility",
+    "text": "Performance & Accessibility\nLazy Loading Impact\n\nUse loading=\"lazy\" carefully; ensure content is still accessible.\n\n&lt;img src=\"image.jpg\" alt=\"Example\" loading=\"lazy\"&gt;\nAccessible Loading Indicators - Use ARIA live regions to announce loading states.\n&lt;div aria-live=\"assertive\"&gt;Loading, please wait...&lt;/div&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#mobile-accessibility",
+    "href": "schedule/week7/index.html#mobile-accessibility",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Mobile Accessibility",
+    "text": "Mobile Accessibility\nTouch Targets\n\nEnsure buttons are at least 44x44px.\n\nbutton { min-width: 44px; min-height: 44px; }\nZoom and Scaling\n\nAvoid disabling zoom in meta tags.\n\n&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;"
+  },
+  {
+    "objectID": "schedule/week7/index.html#internationalization-accessibility",
+    "href": "schedule/week7/index.html#internationalization-accessibility",
+    "title": "Internationalization & Advanced Accessibility Techniques",
+    "section": "Internationalization & Accessibility",
+    "text": "Internationalization & Accessibility\nRight-to-Left (RTL) Support\n\nUse dir=\"rtl\" for proper text direction.\n\n&lt;body dir=\"rtl\"&gt;\nLanguage Attributes\n\nHelps screen readers pronounce text correctly.\n\n&lt;p lang=\"fr\"&gt;Bonjour!&lt;/p&gt;"
   }
 ]

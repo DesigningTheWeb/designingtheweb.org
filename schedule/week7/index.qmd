@@ -1,7 +1,7 @@
 ---
 title: "Internationalization & Advanced Accessibility Techniques"
-description: "Design and Accessibility"
-date: "2025-02-24"
+description: "Advanced Accessibility"
+date: "2025-02-28"
 date-format: long
 author: Janyl Jumadinova
 format:
@@ -13,6 +13,140 @@ format:
     transition: slide
     highlight-style: github
     footer: "Web Design"
+---
+
+## ARIA: Accessible Rich Internet Applications (ARIA)
+
+- ARIA enhances accessibility of dynamic web content.
+- Provides additional semantic information for assistive technologies.
+- Used when native HTML elements are insufficient.
+
+```html
+<button aria-label="Close">X</button>
+```
+
+---
+
+## Advanced ARIA Techniques
+
+**Live Regions**
+
+- `aria-live`: Announces dynamic content updates.
+- `aria-atomic`: Ensures entire content update is read.
+
+```html
+<div aria-live="polite">New notifications will appear here</div>
+```
+
+---
+
+## ARIA Roles and States
+
+- `role="alertdialog"`: Accessible modals.
+- `aria-expanded`, `aria-pressed`: Manage interactive elements.
+
+```html
+<button aria-expanded="false" onclick="toggleMenu()">Menu</button>
+```
+
+---
+
+## Keyboard Accessibility
+
+**Focus Management**
+
+- Use `tabindex` to manage focus order.
+- Ensure interactive elements are keyboard accessible.
+- Ensure logical tab order (`tabindex=0` for focusable elements).
+
+**Skip Links**
+
+- Allow users to skip navigation.
+
+```html
+<a href="#main-content" class="skip-link">Skip to content</a>
+```
+
+---
+
+## Prefers-Reduced-Motion for Sensitive Users
+
+- Use `@media (prefers-reduced-motion: reduce)` in CSS.
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; }
+}
+```
+
+---
+
+## Debugging Accessibility in DevTools
+
+1. Inspect Elements: Right-click -> Inspect -> Accessibility tab.
+2. Use the Accessibility Tree
+  - Chrome DevTools: Elements -> Accessibility -> View Computed Properties.
+3. Check Color Contrast: Elements -> Styles -> Contrast Ratio.
+4. Screen Reader Simulation
+  - ChromeVox extension or VoiceOver.
+
+---
+
+## Performance & Accessibility
+
+**Lazy Loading Impact**
+
+- Use `loading="lazy"` carefully; ensure content is still accessible.
+
+```html
+<img src="image.jpg" alt="Example" loading="lazy">
+```
+
+**Accessible Loading Indicators**
+- Use ARIA live regions to announce loading states.
+
+```html
+<div aria-live="assertive">Loading, please wait...</div>
+```
+
+---
+
+## Mobile Accessibility
+
+**Touch Targets**
+
+- Ensure buttons are at least `44x44px`.
+
+```css
+button { min-width: 44px; min-height: 44px; }
+```
+
+**Zoom and Scaling**
+
+- Avoid disabling zoom in meta tags.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+---
+
+## Internationalization & Accessibility
+
+### Right-to-Left (RTL) Support
+- Use `dir="rtl"` for proper text direction.
+
+```html
+<body dir="rtl">
+```
+
+### Language Attributes
+- Helps screen readers pronounce text correctly.
+
+```html
+<p lang="fr">Bonjour!</p>
+```
+
 ---
 
 ## W3C Internationalization (i18n)
@@ -39,7 +173,7 @@ format:
 
 ---
 
-## Why It Matters
+## Why Accessibility Matters
 
 - Enhances **user experience** for diverse global audiences.
 - Improves **SEO and site reachability** across different markets.
@@ -52,5 +186,6 @@ format:
 
 - [W3C Internationalization](https://www.w3.org/International/)
 - [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/)
+- [W3C Accessibility Checking Tools](https://www.w3.org/WAI/ER/tools/)
 - [WCAG Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Google Lighthouse: Accessibility Audits](https://developers.google.com/web/tools/lighthouse)

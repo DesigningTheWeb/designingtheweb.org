@@ -76,7 +76,11 @@ layout: full
 
 ### Week 7 (Feb 24-28): Accessibility   
 - Topics: More on creating accessible content  
-- Project 1: Sprint 2 DUE on February 24th by 2:30pm
+- Tasks:  
+  - Read [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+  - Read [Keyboard Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
+  - [Slides: Advanced Accessibility](week7/index.qmd)
+  - Project 1: Sprint 2 DUE on February 24th by 2:30pm
 
 ### Week 8 (Mar 1-9): Spring Break
 - No class meetings. Use this time to rest, reflect, and recharge.
@@ -86,11 +90,11 @@ layout: full
 - Tasks:  
   - Project 2: Stage 1 Due on March 10th by 2:30pm (peer reviews during the lab). 
   - Project 2: Personal Website - Stage 2.
-  - Web Project 3 Introduction: Community Website 
-  - Quiz 3 on March 14th 
 
 ### Week 10 (Mar 17-21): Javascript  
 - Topics: More advanced Javascript 
+- Quiz 3 on March 17th 
+- Web Project 3 Introduction: Community Website 
 
 ### Week 11 (Mar 24-28): Introduction to React 
 - Topics: React fundamentals, components   
