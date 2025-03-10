@@ -44,6 +44,7 @@ layout: full
 
 ### Week 4 (Feb 3-7): CSS Basics and Design Principles  
 - Topics: Design Principles & User Experience 
+- Tasks:
   - Read [What is CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS)
   - Read [Box Model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
   - Read [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
@@ -79,7 +80,7 @@ layout: full
 - Tasks:  
   - Read [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
   - Read [Keyboard Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
-  - [Slides: Advanced Accessibility](week7/index.qmd)
+  - [Slides: Advanced Accessibility and Internationalization](week7/index.qmd)
   - Project 1: Sprint 2 DUE on February 24th by 2:30pm
 
 ### Week 8 (Mar 1-9): Spring Break
@@ -88,34 +89,45 @@ layout: full
 ### Week 9 (Mar 10-14): Javascript    
 - Topics: JavaScript syntax, DOM manipulation, basic interactivity   
 - Tasks:  
-  - Project 2: Stage 1 Due on March 10th by 2:30pm (peer reviews during the lab). 
-  - Project 2: Personal Website - Stage 2.
+  - International & Intercultural Perspectives Presentation Assignment Released
+  - Project 2: Stage 1 Due on March 10th by 2:30pm (Complete a [peer review form](https://forms.gle/UBNRxeRP4ak2bnty6)). Begin Stage 2.
+  - Project 3: Requirements Gathering - Community Website. Complete the [Google form](https://forms.gle/X3svVkwGVoUADNW6A).
+  - Read [Eloquent JavaScript (Chapters 1-4)](https://eloquentjavascript.net/)
+  - Read [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+  - Ref [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Week 10 (Mar 17-21): Javascript  
 - Topics: More advanced Javascript 
 - Quiz 3 on March 17th 
-- Web Project 3 Introduction: Community Website 
+- Web Project 3: Sprint 1 - Community Website 
+- IIP Presentations Round 1 on March 21st
 
 ### Week 11 (Mar 24-28): Introduction to React 
 - Topics: React fundamentals, components   
+- IIP Presentations Round 2 on March 28th
 
 ### Week 12 (Mar 31-Apr 4): React  
 - Topics: React props, and state  
 - Tasks:  
-  - Project 2: Stage 2 Due on March 31st by 2:30pm (presentations during the lab).
-  - Project 2: Personal Website - Stage 3.
+  - Project 2: Stage 2 Due on March 31st by 2:30pm (presentations during the lab). Begin Stage 3.
+  - IIP Presentations Round 3 on April 2nd
   - Quiz 4 on April 4th
 
 ### Week 13 (Apr 7-9): Building with React and Static Site Generators  
 - Topics: Using React with 11ty or integrating React components into static sites  
+- Tasks:
+  - IIP Presentations Round 4 on April 9th
 
 ### Week 14 (Apr 14-18): Web Performance Optimization  
 - Topics: Minimizing load times, SEO basics, performance audits  
+- Tasks: 
+  - IIP Presentations Round 5 on April 16th
 
 ### Week 15 (Apr 21-25): Final Project Development  
 - Activities: Web portfolio work time. Show and Tell.
 - Tasks:  
   - Quiz 5 on April 21st
+  - IIP Presentations Round 6 on April 25th
 
 ### Final Exam Week (Apr 28-May 6): Project Presentation and Reflection  
 - Activities: Present final projects, peer reviews, course reflection
