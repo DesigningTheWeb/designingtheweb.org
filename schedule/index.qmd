@@ -89,7 +89,7 @@ layout: full
 ### Week 9 (Mar 10-14): Javascript    
 - Topics: JavaScript syntax, DOM manipulation, basic interactivity   
 - Tasks:  
-  - International & Intercultural Perspectives Presentation Assignment Released
+  - [International & Intercultural Perspectives Presentation Assignment](https://classroom.github.com/a/RmT-d8O4) Released
   - Project 2: Stage 1 Due on March 10th by 2:30pm (Complete a [peer review form](https://forms.gle/UBNRxeRP4ak2bnty6)). Begin Stage 2.
   - Project 3: Requirements Gathering - Community Website. Complete the [Google form](https://forms.gle/X3svVkwGVoUADNW6A).
   - Read [Eloquent JavaScript (Chapters 1-4)](https://eloquentjavascript.net/)
