@@ -91,7 +91,7 @@ A closed-note quiz will be given on average every two weeks that assesses concep
 
 ##### International & Intercultural Perspectives Presentation
 
-One presentation, given in a small team, that demonstrates International & Intercultural Perspectives of web design. 
+One presentation that demonstrates International & Intercultural Perspectives of web design. 
 
 ##### Technical Challenges
 
