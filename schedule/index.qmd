@@ -95,6 +95,8 @@ layout: full
   - Read [Eloquent JavaScript (Chapters 1-4)](https://eloquentjavascript.net/)
   - Read [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
   - Ref [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  - [Slides: JavaScript Basics](week9/index.qmd)  
+  - [Technical Challenge 5]()
 
 ### Week 10 (Mar 17-21): Javascript  
 - Topics: More advanced Javascript 

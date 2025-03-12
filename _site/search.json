@@ -950,5 +950,75 @@
     "title": "Internationalization & Advanced Accessibility Techniques",
     "section": "Internationalization & Accessibility",
     "text": "Internationalization & Accessibility\nRight-to-Left (RTL) Support\n\nUse dir=\"rtl\" for proper text direction.\n\n&lt;body dir=\"rtl\"&gt;\nLanguage Attributes\n\nHelps screen readers pronounce text correctly.\n\n&lt;p lang=\"fr\"&gt;Bonjour!&lt;/p&gt;"
+  },
+  {
+    "objectID": "schedule/week9/index.html#arrays",
+    "href": "schedule/week9/index.html#arrays",
+    "title": "Javascript Basics",
+    "section": "Arrays",
+    "text": "Arrays\nlet numbers = [1, 2, 3, 4, 5];\nnumbers.push(6);\nconsole.log(numbers.length);  // Outputs: 6"
+  },
+  {
+    "objectID": "schedule/week9/index.html#objects",
+    "href": "schedule/week9/index.html#objects",
+    "title": "Javascript Basics",
+    "section": "Objects",
+    "text": "Objects\nlet person = {\n  name: \"Alice\",\n  age: 25,\n  greet: function() { console.log(\"Hi!\"); }\n};\nconsole.log(person.name); // Outputs: Alice"
+  },
+  {
+    "objectID": "schedule/week9/index.html#functions-as-values",
+    "href": "schedule/week9/index.html#functions-as-values",
+    "title": "Javascript Basics",
+    "section": "Functions as Values",
+    "text": "Functions as Values\n\nFunctions can be assigned to variables and passed as arguments.\n\nfunction repeat(fn, times) {\n  for (let i = 0; i &lt; times; i++) {\n    fn(i);\n  }\n}\n\nrepeat(console.log, 3);"
+  },
+  {
+    "objectID": "schedule/week9/index.html#array-methods",
+    "href": "schedule/week9/index.html#array-methods",
+    "title": "Javascript Basics",
+    "section": "Array Methods",
+    "text": "Array Methods\n\nmap, filter, reduce allow for functional programming approaches.\n\nlet numbers = [1, 2, 3, 4, 5];\nlet squares = numbers.map(n =&gt; n * n);\nconsole.log(squares); // [1, 4, 9, 16, 25]"
+  },
+  {
+    "objectID": "schedule/week9/index.html#javascript-in-web-pages",
+    "href": "schedule/week9/index.html#javascript-in-web-pages",
+    "title": "Javascript Basics",
+    "section": "JavaScript in Web Pages",
+    "text": "JavaScript in Web Pages\n\nJavaScript interacts with web pages via the DOM (Document Object Model).\nCan dynamically update content, handle user interactions, and modify styles.\n\ndocument.querySelector(\"button\").addEventListener(\"click\", function() {\n  alert(\"Button clicked!\");\n});\n\ndocument.querySelector() selects elements.\naddEventListener() attaches event handlers."
+  },
+  {
+    "objectID": "schedule/week9/index.html#values-types-and-operators",
+    "href": "schedule/week9/index.html#values-types-and-operators",
+    "title": "Javascript Basics",
+    "section": "Values, Types, and Operators",
+    "text": "Values, Types, and Operators\n\nJavaScript is a dynamic, weakly typed language.\nSupports numbers, strings, booleans, objects, functions.\n\nconsole.log(4 + 5 * 2);  // Outputs: 14\nconsole.log(\"Hello\" + \" World!\"); // Outputs: Hello World!"
+  },
+  {
+    "objectID": "schedule/week9/index.html#program-structure",
+    "href": "schedule/week9/index.html#program-structure",
+    "title": "Javascript Basics",
+    "section": "Program Structure",
+    "text": "Program Structure\nlet x = 10;\nif (x &gt; 5) {\n  console.log(\"x is greater than 5\");\n} else {\n  console.log(\"x is 5 or less\");\n}\n\nlet, const, var\nLoops: for, while, do...while"
+  },
+  {
+    "objectID": "schedule/week9/index.html#functions",
+    "href": "schedule/week9/index.html#functions",
+    "title": "Javascript Basics",
+    "section": "Functions",
+    "text": "Functions\nfunction greet(name) {\n  return `Hello, ${name}!`;\n}\nconsole.log(greet(\"Alice\"));\n\nFunctions allow code reuse.\nArrow functions: const square = x =&gt; x * x;"
+  },
+  {
+    "objectID": "schedule/week9/index.html#data-structures---objects-arrays",
+    "href": "schedule/week9/index.html#data-structures---objects-arrays",
+    "title": "Javascript Basics",
+    "section": "Data Structures - Objects & Arrays",
+    "text": "Data Structures - Objects & Arrays\nArrays\nlet numbers = [1, 2, 3, 4, 5];\nnumbers.push(6);\nconsole.log(numbers.length);  // Outputs: 6\nObjects\nlet person = {\n  name: \"Alice\",\n  age: 25,\n  greet: function() { console.log(\"Hi!\"); }\n};\nconsole.log(person.name); // Outputs: Alice"
+  },
+  {
+    "objectID": "schedule/week9/index.html#prototypes-and-classes",
+    "href": "schedule/week9/index.html#prototypes-and-classes",
+    "title": "Javascript Basics",
+    "section": "Prototypes and Classes",
+    "text": "Prototypes and Classes\n\nJavaScript uses prototypes for inheritance.\nES6 introduced class syntax.\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a noise.`);\n  }\n}\n\nlet dog = new Animal(\"Dog\");\ndog.speak(); // Outputs: Dog makes a noise.\n\nObjects inherit properties from their prototype.\nMethods can be shared across instances via prototypes."
   }
 ]

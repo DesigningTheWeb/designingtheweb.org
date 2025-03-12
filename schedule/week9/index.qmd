@@ -1,0 +1,117 @@
+---
+title: "Javascript Basics"
+description: "Introduction to Javascript"
+date: "2025-03-12"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+## Values, Types, and Operators
+
+- JavaScript is a dynamic, weakly typed language.
+- Supports numbers, strings, booleans, objects, functions.
+
+```js
+console.log(4 + 5 * 2);  // Outputs: 14
+console.log("Hello" + " World!"); // Outputs: Hello World!
+```
+
+---
+
+## Program Structure
+
+- Variables: `let`, `const`, `var`(legacy)
+- Conditionals: `if`, `else if`, `else`
+
+```js
+let x = 10;
+if (x > 5) {
+  console.log("x is greater than 5");
+} else {
+  console.log("x is 5 or less");
+}
+```
+
+- Loops: `for`, `while`, `do...while`
+
+---
+
+## Functions
+
+- Functions allow code reuse and modularity.
+
+```js
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet("Janyl"));
+```
+
+- Arrow functions: `const square = x => x * x;`
+
+---
+
+## Data Structures - Objects & Arrays
+
+### Arrays
+
+```js
+let numbers = [1, 2, 3, 4, 5];
+numbers.push(6);
+console.log(numbers.length);  // Outputs: 6
+```
+
+### Objects
+
+```js
+let person = {
+  name: "Janyl",
+  stars: 5,
+  greet: function() { console.log("Hi!"); }
+};
+console.log(person.name); // Outputs: Janyl
+```
+
+---
+
+## Functions as Values
+
+- Functions can be assigned to variables and passed as arguments.
+
+```js
+function repeat(fn, times) {
+  for (let i = 0; i < times; i++) {
+    fn(i);
+  }
+}
+
+repeat(console.log, 3);
+```
+
+---
+
+## JavaScript in Web Pages
+
+- JavaScript interacts with web pages via the DOM (Document Object Model).
+- Can dynamically update content, handle user interactions, and modify styles.
+
+```js
+document.querySelector("button").addEventListener("click", function() {
+  alert("Button clicked!");
+});
+```
+
+- `document.querySelector()` selects elements.
+- `addEventListener()` attaches event handlers.
+
+
+
