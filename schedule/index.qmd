@@ -96,7 +96,7 @@ layout: full
   - Read [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
   - Ref [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Slides: JavaScript Basics](week9/index.qmd)  
-  - [Technical Challenge 5]()
+  - [Technical Challenge 5](https://classroom.github.com/a/hcAXoH8a)
 
 ### Week 10 (Mar 17-21): Javascript  
 - Topics: More advanced Javascript 
