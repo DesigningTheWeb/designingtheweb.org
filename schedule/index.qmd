@@ -101,7 +101,8 @@ layout: full
 ### Week 10 (Mar 17-21): Javascript  
 - Topics: More advanced Javascript 
 - Quiz 3 on March 17th 
-- Web Project 3: Sprint 1 - Community Website 
+- Web Project 3: Sprint 1 - Community Website (March 17th lab)
+- Web Project 1: Sprint 3 (March 19th)
 - IIP Presentations Round 1 on March 21st
 
 ### Week 11 (Mar 24-28): Introduction to React 
