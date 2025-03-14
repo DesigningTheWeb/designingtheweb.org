@@ -998,21 +998,21 @@
     "href": "schedule/week9/index.html#program-structure",
     "title": "Javascript Basics",
     "section": "Program Structure",
-    "text": "Program Structure\nlet x = 10;\nif (x &gt; 5) {\n  console.log(\"x is greater than 5\");\n} else {\n  console.log(\"x is 5 or less\");\n}\n\nlet, const, var\nLoops: for, while, do...while"
+    "text": "Program Structure\n\nVariables: let, const, var(legacy)\nConditionals: if, else if, else\n\nlet x = 10;\nif (x &gt; 5) {\n  console.log(\"x is greater than 5\");\n} else {\n  console.log(\"x is 5 or less\");\n}\n\nLoops: for, while, do...while"
   },
   {
     "objectID": "schedule/week9/index.html#functions",
     "href": "schedule/week9/index.html#functions",
     "title": "Javascript Basics",
     "section": "Functions",
-    "text": "Functions\nfunction greet(name) {\n  return `Hello, ${name}!`;\n}\nconsole.log(greet(\"Alice\"));\n\nFunctions allow code reuse.\nArrow functions: const square = x =&gt; x * x;"
+    "text": "Functions\n\nFunctions allow code reuse and modularity.\n\nfunction greet(name) {\n  return `Hello, ${name}!`;\n}\nconsole.log(greet(\"Janyl\"));\n\nArrow functions: const square = x =&gt; x * x;"
   },
   {
     "objectID": "schedule/week9/index.html#data-structures---objects-arrays",
     "href": "schedule/week9/index.html#data-structures---objects-arrays",
     "title": "Javascript Basics",
     "section": "Data Structures - Objects & Arrays",
-    "text": "Data Structures - Objects & Arrays\nArrays\nlet numbers = [1, 2, 3, 4, 5];\nnumbers.push(6);\nconsole.log(numbers.length);  // Outputs: 6\nObjects\nlet person = {\n  name: \"Alice\",\n  age: 25,\n  greet: function() { console.log(\"Hi!\"); }\n};\nconsole.log(person.name); // Outputs: Alice"
+    "text": "Data Structures - Objects & Arrays\nArrays\nlet numbers = [1, 2, 3, 4, 5];\nnumbers.push(6);\nconsole.log(numbers.length);  // Outputs: 6\nObjects\nlet person = {\n  name: \"Janyl\",\n  stars: 5,\n  greet: function() { console.log(\"Hi!\"); }\n};\nconsole.log(person.name); // Outputs: Janyl"
   },
   {
     "objectID": "schedule/week9/index.html#prototypes-and-classes",
@@ -1020,5 +1020,54 @@
     "title": "Javascript Basics",
     "section": "Prototypes and Classes",
     "text": "Prototypes and Classes\n\nJavaScript uses prototypes for inheritance.\nES6 introduced class syntax.\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a noise.`);\n  }\n}\n\nlet dog = new Animal(\"Dog\");\ndog.speak(); // Outputs: Dog makes a noise.\n\nObjects inherit properties from their prototype.\nMethods can be shared across instances via prototypes."
+  },
+  {
+    "objectID": "schedule/week9/index.html#higher-order-functions",
+    "href": "schedule/week9/index.html#higher-order-functions",
+    "title": "Javascript Basics",
+    "section": "Higher-Order Functions",
+    "text": "Higher-Order Functions\nFunctions as Values\n\nFunctions can be assigned to variables, passed as arguments, and return other functions.\nExample: The repeat function calls fn function times number of times\n\nfunction repeat(fn, times) {\n  for (let i = 0; i &lt; times; i++) {\n    fn(i);\n  }\n}\n\nrepeat(console.log, 3);"
+  },
+  {
+    "objectID": "schedule/week9/index.html#array-methods-map-filter-reduce",
+    "href": "schedule/week9/index.html#array-methods-map-filter-reduce",
+    "title": "Javascript Basics",
+    "section": "Array Methods: map, filter, reduce",
+    "text": "Array Methods: map, filter, reduce\n\nmap: Transforms an array by applying a function to each element.\nfilter: Returns a new array with elements that pass a test.\nreduce: Combines elements into a single value.\n\nlet numbers = [1, 2, 3, 4];\nlet doubled = numbers.map(n =&gt; n * 2);\nconsole.log(doubled); // [2, 4, 6, 8]"
+  },
+  {
+    "objectID": "schedule/week9/index.html#array-methods-map-filter-reduce-1",
+    "href": "schedule/week9/index.html#array-methods-map-filter-reduce-1",
+    "title": "Javascript Basics",
+    "section": "Array Methods: map, filter, reduce",
+    "text": "Array Methods: map, filter, reduce\n\nmap: Transforms an array by applying a function to each element.\nfilter: Returns a new array with elements that pass a test.\nreduce: Combines elements into a single value.\n\nlet numbers = [1, 2, 3, 4, 5];\nlet evenNumbers = numbers.filter(n =&gt; n % 2 === 0);\nconsole.log(evenNumbers); // [2, 4]"
+  },
+  {
+    "objectID": "schedule/week9/index.html#array-methods-map-filter-reduce-2",
+    "href": "schedule/week9/index.html#array-methods-map-filter-reduce-2",
+    "title": "Javascript Basics",
+    "section": "Array Methods: map, filter, reduce",
+    "text": "Array Methods: map, filter, reduce\n\nmap: Transforms an array by applying a function to each element.\nfilter: Returns a new array with elements that pass a test.\nreduce: Combines elements into a single value.\n\nlet numbers = [1, 2, 3, 4];\nlet sum = numbers.reduce((acc, n) =&gt; acc + n, 0);\nconsole.log(sum); // 10"
+  },
+  {
+    "objectID": "schedule/week9/index.html#prototypes-classes",
+    "href": "schedule/week9/index.html#prototypes-classes",
+    "title": "Javascript Basics",
+    "section": "Prototypes & Classes",
+    "text": "Prototypes & Classes\n\nJavaScript uses prototypes for inheritance.\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a noise.`);\n  }\n}"
+  },
+  {
+    "objectID": "schedule/week9/index.html#modules-in-javascript",
+    "href": "schedule/week9/index.html#modules-in-javascript",
+    "title": "Javascript Basics",
+    "section": "Modules in JavaScript",
+    "text": "Modules in JavaScript\nImporting and Exporting\n\nModules allow code to be organized and reused.\nExample:\n\n// math.js\nexport function add(a, b) {\n  return a + b;\n}\n\n// main.js\nimport { add } from \"./math.js\";\nconsole.log(add(2, 3));"
+  },
+  {
+    "objectID": "schedule/week9/index.html#asynchronous-programming",
+    "href": "schedule/week9/index.html#asynchronous-programming",
+    "title": "Javascript Basics",
+    "section": "Asynchronous Programming",
+    "text": "Asynchronous Programming\nCallbacks, Promises, and Async/Await\n\nCallbacks: Functions passed into other functions.\nPromises: Handle async operations.\nAsync/Await: Modern syntax for handling promises.\n\nasync function getData() {\n  let response = await fetch(\"https://api.example.com/data\");\n  let data = await response.json();\n  console.log(data);\n}\nfetchData();"
   }
 ]

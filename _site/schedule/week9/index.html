@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Janyl Jumadinova">
-  <meta name="dcterms.date" content="2025-03-12">
+  <meta name="dcterms.date" content="2025-03-14">
   <title>CMPSC 302 – Javascript Basics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -205,7 +205,7 @@ Janyl Jumadinova
 </div>
 </div>
 
-  <p class="date">March 12, 2025</p>
+  <p class="date">March 14, 2025</p>
 </section>
 <section id="values-types-and-operators" class="slide level2">
 <h2>Values, Types, and Operators</h2>
@@ -218,6 +218,10 @@ Janyl Jumadinova
 </section>
 <section id="program-structure" class="slide level2">
 <h2>Program Structure</h2>
+<ul>
+<li>Variables: <code>let</code>, <code>const</code>, <code>var</code>(legacy)</li>
+<li>Conditionals: <code>if</code>, <code>else if</code>, <code>else</code></li>
+</ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a></a><span class="kw">let</span> x <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></span>
 <span id="cb2-2"><a></a><span class="cf">if</span> (x <span class="op">&gt;</span> <span class="dv">5</span>) {</span>
 <span id="cb2-3"><a></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">"x is greater than 5"</span>)<span class="op">;</span></span>
@@ -225,18 +229,19 @@ Janyl Jumadinova
 <span id="cb2-5"><a></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">"x is 5 or less"</span>)<span class="op">;</span></span>
 <span id="cb2-6"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><code>let</code>, <code>const</code>, <code>var</code></li>
 <li>Loops: <code>for</code>, <code>while</code>, <code>do...while</code></li>
 </ul>
 </section>
 <section id="functions" class="slide level2">
 <h2>Functions</h2>
+<ul>
+<li>Functions allow code reuse and modularity.</li>
+</ul>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a></a><span class="kw">function</span> <span class="fu">greet</span>(name) {</span>
 <span id="cb3-2"><a></a>  <span class="cf">return</span> <span class="vs">`Hello, </span><span class="sc">${</span>name<span class="sc">}</span><span class="vs">!`</span><span class="op">;</span></span>
 <span id="cb3-3"><a></a>}</span>
-<span id="cb3-4"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">greet</span>(<span class="st">"Alice"</span>))<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">greet</span>(<span class="st">"Janyl"</span>))<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Functions allow code reuse.</li>
 <li>Arrow functions: <code>const square = x =&gt; x * x;</code></li>
 </ul>
 </section>
@@ -248,16 +253,18 @@ Janyl Jumadinova
 <span id="cb4-3"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(numbers<span class="op">.</span><span class="at">length</span>)<span class="op">;</span>  <span class="co">// Outputs: 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h3 id="objects">Objects</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a></a><span class="kw">let</span> person <span class="op">=</span> {</span>
-<span id="cb5-2"><a></a>  <span class="dt">name</span><span class="op">:</span> <span class="st">"Alice"</span><span class="op">,</span></span>
-<span id="cb5-3"><a></a>  <span class="dt">age</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span></span>
+<span id="cb5-2"><a></a>  <span class="dt">name</span><span class="op">:</span> <span class="st">"Janyl"</span><span class="op">,</span></span>
+<span id="cb5-3"><a></a>  <span class="dt">stars</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span></span>
 <span id="cb5-4"><a></a>  <span class="dt">greet</span><span class="op">:</span> <span class="kw">function</span>() { <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">"Hi!"</span>)<span class="op">;</span> }</span>
 <span id="cb5-5"><a></a>}<span class="op">;</span></span>
-<span id="cb5-6"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(person<span class="op">.</span><span class="at">name</span>)<span class="op">;</span> <span class="co">// Outputs: Alice</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-6"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(person<span class="op">.</span><span class="at">name</span>)<span class="op">;</span> <span class="co">// Outputs: Janyl</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="functions-as-values" class="slide level2">
-<h2>Functions as Values</h2>
+<section id="higher-order-functions" class="slide level2">
+<h2>Higher-Order Functions</h2>
+<h3 id="functions-as-values">Functions as Values</h3>
 <ul>
-<li>Functions can be assigned to variables and passed as arguments.</li>
+<li>Functions can be assigned to variables, <strong>passed as arguments</strong>, and return other functions.</li>
+<li>Example: The <code>repeat</code> function calls <code>fn</code> function <code>times</code> number of times</li>
 </ul>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a></a><span class="kw">function</span> <span class="fu">repeat</span>(fn<span class="op">,</span> times) {</span>
 <span id="cb6-2"><a></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> times<span class="op">;</span> i<span class="op">++</span>) {</span>
@@ -267,36 +274,149 @@ Janyl Jumadinova
 <span id="cb6-6"><a></a></span>
 <span id="cb6-7"><a></a><span class="fu">repeat</span>(<span class="bu">console</span><span class="op">.</span><span class="fu">log</span><span class="op">,</span> <span class="dv">3</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="array-methods" class="slide level2">
-<h2>Array Methods</h2>
+<section class="slide level2">
+
+<h3 id="functions-as-values-1">Functions as Values</h3>
 <ul>
-<li><code>map</code>, <code>filter</code>, <code>reduce</code> allow for functional programming approaches.</li>
+<li>Functions can be <strong>assigned to variables</strong>, passed as arguments, and return other functions.</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb7-1"><a></a><span class="kw">let</span> numbers <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></span>
-<span id="cb7-2"><a></a><span class="kw">let</span> squares <span class="op">=</span> numbers<span class="op">.</span><span class="fu">map</span>(n <span class="kw">=&gt;</span> n <span class="op">*</span> n)<span class="op">;</span></span>
-<span id="cb7-3"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(squares)<span class="op">;</span> <span class="co">// [1, 4, 9, 16, 25]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb7-1"><a></a><span class="kw">function</span> <span class="fu">greet</span>(name) {</span>
+<span id="cb7-2"><a></a>  <span class="cf">return</span> <span class="vs">`Hello, </span><span class="sc">${</span>name<span class="sc">}</span><span class="vs">!`</span><span class="op">;</span></span>
+<span id="cb7-3"><a></a>}</span>
+<span id="cb7-4"><a></a><span class="kw">let</span> sayHello <span class="op">=</span> greet<span class="op">;</span></span>
+<span id="cb7-5"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">sayHello</span>(<span class="st">"Alice"</span>))<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="prototypes-and-classes" class="slide level2">
-<h2>Prototypes and Classes</h2>
+<section class="slide level2">
+
+<h3 id="functions-as-values-2">Functions as Values</h3>
+<ul>
+<li>Functions can be assigned to variables, passed as arguments, and <strong>return other functions</strong>.</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a></a><span class="kw">function</span> <span class="fu">makeMultiplier</span>(multiplier) {</span>
+<span id="cb8-2"><a></a>  <span class="cf">return</span> <span class="kw">function</span> (number) {</span>
+<span id="cb8-3"><a></a>    <span class="cf">return</span> number <span class="op">*</span> multiplier<span class="op">;</span></span>
+<span id="cb8-4"><a></a>  }<span class="op">;</span></span>
+<span id="cb8-5"><a></a>}</span>
+<span id="cb8-6"><a></a></span>
+<span id="cb8-7"><a></a><span class="kw">let</span> multiplyBy2 <span class="op">=</span> <span class="fu">makeMultiplier</span>(<span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb8-8"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">multiplyBy2</span>(<span class="dv">5</span>))<span class="op">;</span> <span class="co">// 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="array-methods-map-filter-reduce" class="slide level2">
+<h2>Array Methods: map, filter, reduce</h2>
+<ul>
+<li><strong><code>map</code></strong>: Transforms an array by applying a function to each element.</li>
+<li><code>filter</code>: Returns a new array with elements that pass a test.</li>
+<li><code>reduce</code>: Combines elements into a single value.</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a></a><span class="kw">let</span> numbers <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">;</span></span>
+<span id="cb9-2"><a></a><span class="kw">let</span> doubled <span class="op">=</span> numbers<span class="op">.</span><span class="fu">map</span>(n <span class="kw">=&gt;</span> n <span class="op">*</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb9-3"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(doubled)<span class="op">;</span> <span class="co">// [2, 4, 6, 8]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="array-methods-map-filter-reduce-1" class="slide level2">
+<h2>Array Methods: map, filter, reduce</h2>
+<ul>
+<li><code>map</code>: Transforms an array by applying a function to each element.</li>
+<li><strong><code>filter</code></strong>: Returns a new array with elements that pass a test.</li>
+<li><code>reduce</code>: Combines elements into a single value.</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb10-1"><a></a><span class="kw">let</span> numbers <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></span>
+<span id="cb10-2"><a></a><span class="kw">let</span> evenNumbers <span class="op">=</span> numbers<span class="op">.</span><span class="fu">filter</span>(n <span class="kw">=&gt;</span> n <span class="op">%</span> <span class="dv">2</span> <span class="op">===</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb10-3"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(evenNumbers)<span class="op">;</span> <span class="co">// [2, 4]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="array-methods-map-filter-reduce-2" class="slide level2">
+<h2>Array Methods: map, filter, reduce</h2>
+<ul>
+<li><code>map</code>: Transforms an array by applying a function to each element.</li>
+<li><code>filter</code>: Returns a new array with elements that pass a test.</li>
+<li><strong><code>reduce</code></strong>: Combines elements into a single value.</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb11-1"><a></a><span class="kw">let</span> numbers <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">;</span></span>
+<span id="cb11-2"><a></a><span class="kw">let</span> sum <span class="op">=</span> numbers<span class="op">.</span><span class="fu">reduce</span>((acc<span class="op">,</span> n) <span class="kw">=&gt;</span> acc <span class="op">+</span> n<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb11-3"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(sum)<span class="op">;</span> <span class="co">// 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="prototypes-classes" class="slide level2">
+<h2>Prototypes &amp; Classes</h2>
 <ul>
 <li>JavaScript uses prototypes for inheritance.</li>
-<li>ES6 introduced <code>class</code> syntax.</li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a></a><span class="kw">class</span> Animal {</span>
-<span id="cb8-2"><a></a>  <span class="fu">constructor</span>(name) {</span>
-<span id="cb8-3"><a></a>    <span class="kw">this</span><span class="op">.</span><span class="at">name</span> <span class="op">=</span> name<span class="op">;</span></span>
-<span id="cb8-4"><a></a>  }</span>
-<span id="cb8-5"><a></a>  <span class="fu">speak</span>() {</span>
-<span id="cb8-6"><a></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="vs">`</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs"> makes a noise.`</span>)<span class="op">;</span></span>
-<span id="cb8-7"><a></a>  }</span>
-<span id="cb8-8"><a></a>}</span>
-<span id="cb8-9"><a></a></span>
-<span id="cb8-10"><a></a><span class="kw">let</span> dog <span class="op">=</span> <span class="kw">new</span> <span class="fu">Animal</span>(<span class="st">"Dog"</span>)<span class="op">;</span></span>
-<span id="cb8-11"><a></a>dog<span class="op">.</span><span class="fu">speak</span>()<span class="op">;</span> <span class="co">// Outputs: Dog makes a noise.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb12-1"><a></a><span class="kw">class</span> Animal {</span>
+<span id="cb12-2"><a></a>  <span class="fu">constructor</span>(name) {</span>
+<span id="cb12-3"><a></a>    <span class="kw">this</span><span class="op">.</span><span class="at">name</span> <span class="op">=</span> name<span class="op">;</span></span>
+<span id="cb12-4"><a></a>  }</span>
+<span id="cb12-5"><a></a>  <span class="fu">speak</span>() {</span>
+<span id="cb12-6"><a></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="vs">`</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs"> makes a noise.`</span>)<span class="op">;</span></span>
+<span id="cb12-7"><a></a>  }</span>
+<span id="cb12-8"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="modules-in-javascript" class="slide level2">
+<h2>Modules in JavaScript</h2>
+<h3 id="importing-and-exporting">Importing and Exporting</h3>
 <ul>
-<li>Objects inherit properties from their prototype.</li>
-<li>Methods can be shared across instances via prototypes.</li>
+<li>Modules allow code to be organized and reused.</li>
+<li>Example:</li>
 </ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb13-1"><a></a><span class="co">// math.js</span></span>
+<span id="cb13-2"><a></a><span class="im">export</span> <span class="kw">function</span> <span class="fu">add</span>(a<span class="op">,</span> b) {</span>
+<span id="cb13-3"><a></a>  <span class="cf">return</span> a <span class="op">+</span> b<span class="op">;</span></span>
+<span id="cb13-4"><a></a>}</span>
+<span id="cb13-5"><a></a></span>
+<span id="cb13-6"><a></a><span class="co">// main.js</span></span>
+<span id="cb13-7"><a></a><span class="im">import</span> { add } <span class="im">from</span> <span class="st">"./math.js"</span><span class="op">;</span></span>
+<span id="cb13-8"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">add</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">3</span>))<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="asynchronous-programming" class="slide level2">
+<h2>Asynchronous Programming</h2>
+<h3 id="callbacks-promises-and-asyncawait">Callbacks, Promises, and Async/Await</h3>
+<ul>
+<li>Callbacks: Functions passed into other functions.</li>
+<li>Promises: Handle async operations.</li>
+<li><strong>Async/Await</strong>: Modern syntax for handling promises.</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb14-1"><a></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">getData</span>() {</span>
+<span id="cb14-2"><a></a>  <span class="kw">let</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://api.example.com/data"</span>)<span class="op">;</span></span>
+<span id="cb14-3"><a></a>  <span class="kw">let</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb14-4"><a></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(data)<span class="op">;</span></span>
+<span id="cb14-5"><a></a>}</span>
+<span id="cb14-6"><a></a><span class="fu">fetchData</span>()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2">
+
+<h3 id="callbacks-promises-and-asyncawait-1">Callbacks, Promises, and Async/Await</h3>
+<ul>
+<li><strong>Callbacks</strong>: Functions passed into other functions.</li>
+<li>Promises: Handle async operations.</li>
+<li>Async/Await: Modern syntax for handling promises.</li>
+</ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb15-1"><a></a><span class="kw">function</span> <span class="fu">getData</span>(callback) {</span>
+<span id="cb15-2"><a></a>  <span class="pp">setTimeout</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb15-3"><a></a>    <span class="fu">callback</span>(<span class="st">"Data received"</span>)<span class="op">;</span></span>
+<span id="cb15-4"><a></a>  }<span class="op">,</span> <span class="dv">1000</span>)<span class="op">;</span></span>
+<span id="cb15-5"><a></a>}</span>
+<span id="cb15-6"><a></a></span>
+<span id="cb15-7"><a></a><span class="fu">fetchData</span>((data) <span class="kw">=&gt;</span> {</span>
+<span id="cb15-8"><a></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(data)<span class="op">;</span> <span class="co">// Data received</span></span>
+<span id="cb15-9"><a></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2">
+
+<h3 id="json-javascript-object-notation">JSON: JavaScript Object Notation</h3>
+<ul>
+<li>JSON is a lightweight format for storing and exchanging data; it is commonly used to send data between a server and a client in web applications.</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb16-1"><a></a><span class="co">// JavaScript Object</span></span>
+<span id="cb16-2"><a></a><span class="kw">let</span> person <span class="op">=</span> {</span>
+<span id="cb16-3"><a></a>  <span class="dt">name</span><span class="op">:</span> <span class="st">"JJ"</span><span class="op">,</span></span>
+<span id="cb16-4"><a></a>  <span class="dt">age</span><span class="op">:</span> <span class="kw">Infinity</span> <span class="op">/</span> <span class="kw">Infinity</span><span class="op">,</span></span>
+<span id="cb16-5"><a></a>  <span class="dt">city</span><span class="op">:</span> <span class="st">"Meadville"</span></span>
+<span id="cb16-6"><a></a>}<span class="op">;</span></span>
+<span id="cb16-7"><a></a></span>
+<span id="cb16-8"><a></a><span class="co">// Convert JavaScript Object to JSON</span></span>
+<span id="cb16-9"><a></a><span class="kw">let</span> jsonString <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(person)<span class="op">;</span></span>
+<span id="cb16-10"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(jsonString)<span class="op">;</span> <span class="co">// {"name":"Janyl","age": NaN,"city":"Meadville"}</span></span>
+<span id="cb16-11"><a></a></span>
+<span id="cb16-12"><a></a><span class="co">// Convert JSON back to JavaScript Object</span></span>
+<span id="cb16-13"><a></a><span class="kw">let</span> parsedObject <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(jsonString)<span class="op">;</span></span>
+<span id="cb16-14"><a></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(parsedObject)<span class="op">;</span> <span class="co">// { name: 'Janyl', age: NaN, city: 'Meadville' }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="javascript-in-web-pages" class="slide level2">
 <h2>JavaScript in Web Pages</h2>
@@ -304,9 +424,9 @@ Janyl Jumadinova
 <li>JavaScript interacts with web pages via the DOM (Document Object Model).</li>
 <li>Can dynamically update content, handle user interactions, and modify styles.</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a></a><span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"button"</span>)<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> <span class="kw">function</span>() {</span>
-<span id="cb9-2"><a></a>  <span class="fu">alert</span>(<span class="st">"Button clicked!"</span>)<span class="op">;</span></span>
-<span id="cb9-3"><a></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb17-1"><a></a><span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"button"</span>)<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> <span class="kw">function</span>() {</span>
+<span id="cb17-2"><a></a>  <span class="fu">alert</span>(<span class="st">"Button clicked!"</span>)<span class="op">;</span></span>
+<span id="cb17-3"><a></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><code>document.querySelector()</code> selects elements.</li>
 <li><code>addEventListener()</code> attaches event handlers.</li>

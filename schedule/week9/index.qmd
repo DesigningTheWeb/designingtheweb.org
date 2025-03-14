@@ -1,7 +1,7 @@
 ---
 title: "Javascript Basics"
 description: "Introduction to Javascript"
-date: "2025-03-12"
+date: "2025-03-14"
 date-format: long
 author: Janyl Jumadinova
 format:
@@ -83,9 +83,12 @@ console.log(person.name); // Outputs: Janyl
 
 ---
 
-## Functions as Values
+## Higher-Order Functions
 
-- Functions can be assigned to variables and passed as arguments.
+### Functions as Values
+
+- Functions can be assigned to variables, **passed as arguments**, and return other functions.
+- Example: The `repeat` function calls `fn` function `times` number of times
 
 ```js
 function repeat(fn, times) {
@@ -95,6 +98,179 @@ function repeat(fn, times) {
 }
 
 repeat(console.log, 3);
+```
+
+---
+
+### Functions as Values
+
+- Functions can be **assigned to variables**, passed as arguments, and return other functions.
+
+```js
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+let sayHello = greet;
+console.log(sayHello("Alice"));
+```
+
+
+---
+
+### Functions as Values
+
+- Functions can be assigned to variables, passed as arguments, and **return other functions**.
+
+```js
+function makeMultiplier(multiplier) {
+  return function (number) {
+    return number * multiplier;
+  };
+}
+
+let multiplyBy2 = makeMultiplier(2);
+console.log(multiplyBy2(5)); // 10
+```
+
+---
+
+## Array Methods: map, filter, reduce
+
+- **`map`**: Transforms an array by applying a function to each element.
+- `filter`: Returns a new array with elements that pass a test.
+- `reduce`: Combines elements into a single value.
+
+```js
+let numbers = [1, 2, 3, 4];
+let doubled = numbers.map(n => n * 2);
+console.log(doubled); // [2, 4, 6, 8]
+```
+
+---
+
+## Array Methods: map, filter, reduce
+
+- `map`: Transforms an array by applying a function to each element.
+- **`filter`**: Returns a new array with elements that pass a test.
+- `reduce`: Combines elements into a single value.
+
+```js
+let numbers = [1, 2, 3, 4, 5];
+let evenNumbers = numbers.filter(n => n % 2 === 0);
+console.log(evenNumbers); // [2, 4]
+```
+
+---
+
+## Array Methods: map, filter, reduce
+
+- `map`: Transforms an array by applying a function to each element.
+- `filter`: Returns a new array with elements that pass a test.
+- **`reduce`**: Combines elements into a single value.
+
+```js
+let numbers = [1, 2, 3, 4];
+let sum = numbers.reduce((acc, n) => acc + n, 0);
+console.log(sum); // 10
+```
+
+---
+
+## Prototypes & Classes
+
+- JavaScript uses prototypes for inheritance.
+
+```js
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+```
+
+---
+
+## Modules in JavaScript
+
+### Importing and Exporting
+
+- Modules allow code to be organized and reused.
+- Example:
+
+```js
+// math.js
+export function add(a, b) {
+  return a + b;
+}
+
+// main.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+```
+
+---
+
+## Asynchronous Programming
+
+### Callbacks, Promises, and Async/Await
+
+- Callbacks: Functions passed into other functions.
+- Promises: Handle async operations.
+- **Async/Await**: Modern syntax for handling promises.
+
+```js
+async function getData() {
+  let response = await fetch("https://api.example.com/data");
+  let data = await response.json();
+  console.log(data);
+}
+fetchData();
+```
+
+---
+
+### Callbacks, Promises, and Async/Await
+
+- **Callbacks**: Functions passed into other functions.
+- Promises: Handle async operations.
+- Async/Await: Modern syntax for handling promises.
+
+```js
+function getData(callback) {
+  setTimeout(() => {
+    callback("Data received");
+  }, 1000);
+}
+
+fetchData((data) => {
+  console.log(data); // Data received
+});
+```
+
+---
+
+### JSON: JavaScript Object Notation
+
+- JSON is a lightweight format for storing and exchanging data; it is commonly used to send data between a server and a client in web applications.
+
+```js
+// JavaScript Object
+let person = {
+  name: "JJ",
+  age: 25,
+  city: "Meadville"
+};
+
+// Convert JavaScript Object to JSON
+let jsonString = JSON.stringify(person);
+console.log(jsonString); // {"name":"Janyl","age": NaN,"city":"Meadville"}
+
+// Convert JSON back to JavaScript Object
+let parsedObject = JSON.parse(jsonString);
+console.log(parsedObject); // { name: 'Janyl', age: NaN, city: 'Meadville' }
 ```
 
 ---
