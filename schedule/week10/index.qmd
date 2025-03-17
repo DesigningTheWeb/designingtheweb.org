@@ -1,0 +1,188 @@
+---
+title: "More Javascript"
+description: "More Javascript"
+date: "2025-03-17"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+## The DOM (Document Object Model)
+
+- Represents the structure of a webpage as a tree
+- JavaScript can manipulate HTML elements via the DOM
+- Example:
+
+```js
+let heading = document.querySelector("h1");
+heading.textContent = "Hello, DOM!";
+```
+
+---
+
+## Selecting Elements
+
+- `document.getElementById("id")`
+- `document.querySelector(".class or #id")`
+- `document.querySelectorAll("tag")`
+
+---
+
+## Modifying the DOM
+
+- Changing text content:
+
+```js
+document.querySelector("p").textContent = "New paragraph!";
+```
+
+- Adding elements:
+
+```js
+let newDiv = document.createElement("div");
+newDiv.textContent = "I'm a new div!";
+document.body.appendChild(newDiv);
+```
+
+---
+
+## Handling Events
+
+- JavaScript listens for user interactions
+- Example event listener:
+
+```js
+document.querySelector("button").addEventListener("click", () => {
+  alert("Button clicked!");
+});
+```
+
+---
+
+## Common Events
+
+- `click`
+- `mouseover`
+- `keydown`
+- `submit`
+
+---
+
+## Event Objects
+
+- Event handlers receive an event object
+- Example:
+
+```js
+document.addEventListener("keydown", (event) => {
+  console.log("Key pressed:", event.key);
+});
+```
+
+- Properties of event objects:
+  - `event.type` (e.g., "click", "keydown")
+  - `event.target` (element that triggered event)
+  - `event.clientX` / `event.clientY` (mouse position)
+
+---
+
+## Event Propagation
+
+- **Bubbling**: Event travels from the target up to the root
+- **Capturing**: Event travels from the root to the target
+- Example:
+
+```js
+document.querySelector("div").addEventListener("click", (event) => {
+  console.log("Div clicked");
+}, true); // Use 'true' for capturing phase
+```
+
+---
+
+## Preventing Default Behavior
+
+- Some events have default behaviors (e.g., form submission)
+- Use `event.preventDefault()` to stop it
+
+```js
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("Form submission prevented");
+});
+```
+
+---
+
+## Fetching Data (HTTP Requests)
+
+- Using `fetch()`:
+
+```js
+fetch("https://some.place.com/posts/1")
+  .then(response => response.json())
+  .then(data => console.log(data));
+```
+
+- Handling errors:
+
+```js
+fetch("https://some.place.com/posts/1")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was messed up");
+    }
+    return response.json();
+  })
+  .then(data => console.log(data))
+  .catch(error => console.error("Fetch error:", error));
+```
+
+---
+
+## Async/Await
+
+- Simplifies handling asynchronous operations:
+
+```js
+async function fetchData() {
+  try {
+    let response = await fetch("https://some.place.com/posts/1");
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error("Fetch error:", error);
+  }
+}
+fetchData();
+```
+
+---
+
+## Handling Form Data
+
+- Sending data using `fetch()`:
+
+```js
+async function sendData() {
+  let response = await fetch("https://example.com/api", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name: "John", age: 30 })
+  });
+  let result = await response.json();
+  console.log(result);
+}
+sendData();
+```

@@ -1069,5 +1069,82 @@
     "title": "Javascript Basics",
     "section": "Asynchronous Programming",
     "text": "Asynchronous Programming\nCallbacks, Promises, and Async/Await\n\nCallbacks: Functions passed into other functions.\nPromises: Handle async operations.\nAsync/Await: Modern syntax for handling promises.\n\nasync function getData() {\n  let response = await fetch(\"https://api.example.com/data\");\n  let data = await response.json();\n  console.log(data);\n}\nfetchData();"
+  },
+  {
+    "objectID": "schedule/week10/index.html#the-dom-document-object-model",
+    "href": "schedule/week10/index.html#the-dom-document-object-model",
+    "title": "More Javascript",
+    "section": "The DOM (Document Object Model)",
+    "text": "The DOM (Document Object Model)\n\nRepresents the structure of a webpage as a tree\nJavaScript can manipulate HTML elements via the DOM\nExample:\n\nlet heading = document.querySelector(\"h1\");\nheading.textContent = \"Hello, DOM!\";"
+  },
+  {
+    "objectID": "schedule/week10/index.html#selecting-elements",
+    "href": "schedule/week10/index.html#selecting-elements",
+    "title": "More Javascript",
+    "section": "Selecting Elements",
+    "text": "Selecting Elements\n\ndocument.getElementById(\"id\")\ndocument.querySelector(\".class or #id\")\ndocument.querySelectorAll(\"tag\")"
+  },
+  {
+    "objectID": "schedule/week10/index.html#modifying-the-dom",
+    "href": "schedule/week10/index.html#modifying-the-dom",
+    "title": "More Javascript",
+    "section": "Modifying the DOM",
+    "text": "Modifying the DOM\n\nChanging text content:\n\ndocument.querySelector(\"p\").textContent = \"New paragraph!\";\n\nAdding elements:\n\nlet newDiv = document.createElement(\"div\");\nnewDiv.textContent = \"I'm a new div!\";\ndocument.body.appendChild(newDiv);"
+  },
+  {
+    "objectID": "schedule/week10/index.html#handling-events",
+    "href": "schedule/week10/index.html#handling-events",
+    "title": "More Javascript",
+    "section": "Handling Events",
+    "text": "Handling Events\n\nJavaScript listens for user interactions\nExample event listener:\n\ndocument.querySelector(\"button\").addEventListener(\"click\", () =&gt; {\n  alert(\"Button clicked!\");\n});"
+  },
+  {
+    "objectID": "schedule/week10/index.html#common-events",
+    "href": "schedule/week10/index.html#common-events",
+    "title": "More Javascript",
+    "section": "Common Events",
+    "text": "Common Events\n\nclick\nmouseover\nkeydown\nsubmit"
+  },
+  {
+    "objectID": "schedule/week10/index.html#event-objects",
+    "href": "schedule/week10/index.html#event-objects",
+    "title": "More Javascript",
+    "section": "Event Objects",
+    "text": "Event Objects\n\nEvent handlers receive an event object\nExample:\n\ndocument.addEventListener(\"keydown\", (event) =&gt; {\n  console.log(\"Key pressed:\", event.key);\n});\n\nProperties of event objects:\n\nevent.type (e.g., “click”, “keydown”)\nevent.target (element that triggered event)\nevent.clientX / event.clientY (mouse position)"
+  },
+  {
+    "objectID": "schedule/week10/index.html#event-propagation",
+    "href": "schedule/week10/index.html#event-propagation",
+    "title": "More Javascript",
+    "section": "Event Propagation",
+    "text": "Event Propagation\n\nBubbling: Event travels from the target up to the root\nCapturing: Event travels from the root to the target\nExample:\n\ndocument.querySelector(\"div\").addEventListener(\"click\", (event) =&gt; {\n  console.log(\"Div clicked\");\n}, true); // Use 'true' for capturing phase"
+  },
+  {
+    "objectID": "schedule/week10/index.html#preventing-default-behavior",
+    "href": "schedule/week10/index.html#preventing-default-behavior",
+    "title": "More Javascript",
+    "section": "Preventing Default Behavior",
+    "text": "Preventing Default Behavior\n\nSome events have default behaviors (e.g., form submission)\nUse event.preventDefault() to stop it\n\ndocument.querySelector(\"form\").addEventListener(\"submit\", (event) =&gt; {\n  event.preventDefault();\n  console.log(\"Form submission prevented\");\n});"
+  },
+  {
+    "objectID": "schedule/week10/index.html#fetching-data-http-requests",
+    "href": "schedule/week10/index.html#fetching-data-http-requests",
+    "title": "More Javascript",
+    "section": "Fetching Data (HTTP Requests)",
+    "text": "Fetching Data (HTTP Requests)\n\nUsing fetch():\n\nfetch(\"https://some.place.com/posts/1\")\n  .then(response =&gt; response.json())\n  .then(data =&gt; console.log(data));\n\nHandling errors:\n\nfetch(\"https://some.place.com/posts/1\")\n  .then(response =&gt; {\n    if (!response.ok) {\n      throw new Error(\"Network response was messed up\");\n    }\n    return response.json();\n  })\n  .then(data =&gt; console.log(data))\n  .catch(error =&gt; console.error(\"Fetch error:\", error));"
+  },
+  {
+    "objectID": "schedule/week10/index.html#asyncawait",
+    "href": "schedule/week10/index.html#asyncawait",
+    "title": "More Javascript",
+    "section": "Async/Await",
+    "text": "Async/Await\n\nSimplifies handling asynchronous operations:\n\nasync function fetchData() {\n  try {\n    let response = await fetch(\"https://some.place.com/posts/1\");\n    if (!response.ok) {\n      throw new Error(\"Network response was not ok\");\n    }\n    let data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error(\"Fetch error:\", error);\n  }\n}\nfetchData();"
+  },
+  {
+    "objectID": "schedule/week10/index.html#handling-form-data",
+    "href": "schedule/week10/index.html#handling-form-data",
+    "title": "More Javascript",
+    "section": "Handling Form Data",
+    "text": "Handling Form Data\n\nSending data using fetch():\n\nasync function sendData() {\n  let response = await fetch(\"https://example.com/api\", {\n    method: \"POST\",\n    headers: { \"Content-Type\": \"application/json\" },\n    body: JSON.stringify({ name: \"John\", age: 30 })\n  });\n  let result = await response.json();\n  console.log(result);\n}\nsendData();"
   }
 ]

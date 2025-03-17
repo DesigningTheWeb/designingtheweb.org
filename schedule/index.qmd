@@ -17,16 +17,18 @@ layout: full
 
 ### Week 1 (Jan 13-17): Introduction to Web Design and Tools  
 - Topics: Overview of web design, development tools, workflows, and sitemapping  
-- Tasks:  
+- Assignments Released:  
+  - [Technical Challenge 1: Sitemap](https://classroom.github.com/a/4uWr1dqq)
+- Read/Review:
   - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): Git, VSCode, Markdown
   - Read Chapter 1: Basics in [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)  
   - [Slides: Sitemap](week1/index.qmd)
-  - [Technical Challenge 1: Sitemap](https://classroom.github.com/a/4uWr1dqq)
 
 ### Week 2 (Jan 20-24): Markdown, Quarto, and Introduction to Software Engineering  
 - Topics: Markdown, Quarto, Wireframing and Software Engineering process
-- Tasks:  
+- Assignments Released:  
   - [Web Project 1: Course Website - Sprint 1](https://classroom.github.com/a/TWfWTBaQ)
+- Read/Review:
   - Read Chapter 1: Process in [Web Style Guide](https://www.webstyleguide.com/wsg3/1-process)  
   - Read Chapter 1 in [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/read/)
   - [Slides: Software Engineering Process](week2/index.qmd)
@@ -35,16 +37,21 @@ layout: full
 
 ### Week 3 (Jan 27-31): HTML Basics  
 - Topics: Structure of HTML documents, semantic HTML, and elements  
-- Tasks:  
+- Assignments DUE:
+  - Quiz 1 on January 31st
+- Assignments Released:  
+  - [Technical Challenge 2: Semantic HTML](https://classroom.github.com/a/32KcroMs)
+- Read/Review:
   - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): HTML
   - Read [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
   - Read [Markup](https://adaptivewebdesign.info/1st-edition/read/chapter-2.html)
-  - [Technical Challenge 2: Semantic HTML](https://classroom.github.com/a/32KcroMs)
-  - Quiz 1 on January 31st
 
 ### Week 4 (Feb 3-7): CSS Basics and Design Principles  
 - Topics: Design Principles & User Experience 
-- Tasks:
+- Assignments Released:
+  - [Technical Challenge 3](https://classroom.github.com/a/f1JC8UnX)
+  - [Web Project 1: Course Website - Sprint 2](https://classroom.github.com/a/TWfWTBaQ)
+- Read/Review:
   - Read [What is CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS)
   - Read [Box Model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
   - Read [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
@@ -52,87 +59,103 @@ layout: full
   - Read Chapter 4: Interface Design in [Web Style Guide](https://www.webstyleguide.com/wsg3/4-interface-design/index.html)
   - Read Chapter 6: Page Structure in [Web Style Guide](https://www.webstyleguide.com/wsg3/6-page-structure/index.html)
   - [Slides: Design Principles and Responsiveness](week4/index.qmd)
-  - [Technical Challenge 3](https://classroom.github.com/a/f1JC8UnX)
-  - [Web Project 1: Course Website - Sprint 2](https://classroom.github.com/a/TWfWTBaQ)
 
 ### Week 5 (Feb 10-14): Advanced CSS and Accessibility 
 - Topics: Positioning, layout, accessibility
-- Tasks:  
+- Assignments Released:  
+  - [Technical Challenge 4](https://classroom.github.com/a/i1_T0PjS)
+  - [Web Project 2: Personal Website - Stage 1](https://classroom.github.com/a/7rH6D574)
+- Read/Review:
   - Read [Flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox)
   - Read [CSS Positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
   - Read [CSS Grid](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids)
   - Ref: [Web Accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility)
   - [Slides: Advanced CSS and Accessibility](week5/index.qmd)
-  - [Technical Challenge 4](https://classroom.github.com/a/i1_T0PjS)
-  - [Web Project 2: Personal Website - Stage 1](https://classroom.github.com/a/7rH6D574)
 
 ### Week 6 (Feb 17-21): Responsive Design  
 - Topics: Media queries, flexible grids, responsive images 
-- Tasks:  
+- Assignments DUE:  
+  - Quiz 2 on February 21st 
+- Read/Review:
   - Read [Responsive web design basics](https://web.dev/articles/responsive-web-design-basics)
   - Read [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
   - Read [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
   - [Slides: Responsive Design](week6/index.qmd)
-  - Quiz 2 on February 21st 
 
 ### Week 7 (Feb 24-28): Accessibility   
 - Topics: More on creating accessible content  
-- Tasks:  
+- Assignments DUE:
+  - Project 1: Sprint 2 DUE on February 24th by 2:30pm
+- Read/Review:  
   - Read [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
   - Read [Keyboard Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
   - [Slides: Advanced Accessibility and Internationalization](week7/index.qmd)
-  - Project 1: Sprint 2 DUE on February 24th by 2:30pm
 
 ### Week 8 (Mar 1-9): Spring Break
 - No class meetings. Use this time to rest, reflect, and recharge.
 
 ### Week 9 (Mar 10-14): Javascript    
 - Topics: JavaScript syntax, DOM manipulation, basic interactivity   
-- Tasks:  
-  - [International & Intercultural Perspectives Presentation Assignment](https://classroom.github.com/a/RmT-d8O4) Released
+- Assignments DUE:
   - Project 2: Stage 1 Due on March 10th by 2:30pm (Complete a [peer review form](https://forms.gle/UBNRxeRP4ak2bnty6)). Begin Stage 2.
-  - Project 3: Requirements Gathering - Community Website. Complete the [Google form](https://forms.gle/X3svVkwGVoUADNW6A).
+  - Project 3: Requirements Gathering - Community Website. Complete the [Google form](https://forms.gle/X3svVkwGVoUADNW6A) on March 10th.
+- Assignments Released:  
+  - [International & Intercultural Perspectives Presentation Assignment](https://classroom.github.com/a/RmT-d8O4) 
+  - Begin Project 2: Stage 2
+  - [Technical Challenge 5](https://classroom.github.com/a/hcAXoH8a)
+- Read/Review:
   - Read [Eloquent JavaScript (Chapters 1-6, 10-11, 13)](https://eloquentjavascript.net/)
   - Read [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
   - Ref [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Slides: JavaScript Basics](week9/index.qmd)  
-  - [Technical Challenge 5](https://classroom.github.com/a/hcAXoH8a)
 
 ### Week 10 (Mar 17-21): Javascript  
 - Topics: More advanced Javascript 
-- Quiz 3 on March 17th 
-- Web Project 3: Sprint 1 - Community Website (March 17th lab)
-- Web Project 1: Sprint 3 (March 19th)
-- IIP Presentations Round 1 on March 21st
+- Assignments DUE:
+  - Technical Challenge 5 DUE on March 17th by 10am
+  - Quiz 3 on March 17th 
+  - [IIP Presentations Round 1](https://classroom.github.com/a/RmT-d8O4) on March 21st
+- Assignments Released:  
+  - Web Project 3: Sprint 1 - Community Website (March 17th lab)
+  - Web Project 1: Sprint 3 (March 19th)  
+- Read/Review:
+  - Read [Eloquent JavaScript (Chapters 14, 15, 18, and 20](https://eloquentjavascript.net/)
+  - [Slides: JavaScript Advanced Topics](week10/index.qmd)
 
 ### Week 11 (Mar 24-28): Introduction to React 
-- Topics: React fundamentals, components   
-- IIP Presentations Round 2 on March 28th
+- Topics: React fundamentals, components  
+- Assignments DUE:
+  - Project 3 Sprint 1 Progress Review on March 26th at 10am 
+  - IIP Presentations Round 2 on March 28th
 
 ### Week 12 (Mar 31-Apr 4): React  
 - Topics: React props, and state  
-- Tasks:  
-  - Project 2: Stage 2 Due on March 31st by 2:30pm (presentations during the lab). Begin Stage 3.
-  - IIP Presentations Round 3 on April 2nd
+- Assignments DUE:
+  - Project 2: Stage 2 DUE on March 31st by 2:30pm (presentations during the lab). 
+  - [IIP Presentations Round 3](https://classroom.github.com/a/RmT-d8O4) on April 2nd
   - Quiz 4 on April 4th
+- Assignments Released:  
+  - Begin Project 2 Stage 3
+  - Project 3 Sprint 1 Review on April 4th at 10am
 
 ### Week 13 (Apr 7-9): Building with React and Static Site Generators  
 - Topics: Using React with 11ty or integrating React components into static sites  
-- Tasks:
-  - IIP Presentations Round 4 on April 9th
+- Assignments DUE:
+  - [IIP Presentations Round 4](https://classroom.github.com/a/RmT-d8O4) on April 9th
 
 ### Week 14 (Apr 14-18): Web Performance Optimization  
 - Topics: Minimizing load times, SEO basics, performance audits  
-- Tasks: 
-  - IIP Presentations Round 5 on April 16th
+- Assignments DUE: 
+  - Project 3 Sprint 2 Progress Review on April 14th at 2:30pm
+  - [IIP Presentations Round 5](https://classroom.github.com/a/RmT-d8O4) on April 16th
 
 ### Week 15 (Apr 21-25): Final Project Development  
 - Activities: Web portfolio work time. Show and Tell.
-- Tasks:  
+- Assignments DUE:  
   - Quiz 5 on April 21st
-  - IIP Presentations Round 6 on April 25th
+  - [IIP Presentations Round 6](https://classroom.github.com/a/RmT-d8O4) on April 25th
 
 ### Final Exam Week (Apr 28-May 6): Project Presentation and Reflection  
 - Activities: Present final projects, peer reviews, course reflection
-- Community project presentations on April 28th
+- Community project 3 presentations on April 28th at 2:30pm
 - Project Portfolio with 3 Web Projects Due on May 5th by 9am

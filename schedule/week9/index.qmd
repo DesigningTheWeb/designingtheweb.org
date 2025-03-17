@@ -260,13 +260,13 @@ fetchData((data) => {
 // JavaScript Object
 let person = {
   name: "JJ",
-  age: 25,
+  age: Infinity/Infinity,
   city: "Meadville"
 };
 
 // Convert JavaScript Object to JSON
 let jsonString = JSON.stringify(person);
-console.log(jsonString); // {"name":"Janyl","age": NaN,"city":"Meadville"}
+console.log(jsonString); // {"name":"Janyl", "age": NaN, "city":"Meadville"}
 
 // Convert JSON back to JavaScript Object
 let parsedObject = JSON.parse(jsonString);

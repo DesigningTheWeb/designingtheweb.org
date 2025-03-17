@@ -106,7 +106,7 @@ There are three required projects: course website, personal website, community p
 - **Incomplete Assignments:** Assignments that fail to meet basic requirements. Revisions may be requested.  
 - **Ignored Assignments:** Assignments with no meaningful submission will receive no credit.
 
-[Tokens](https://forms.gle/MbV2iXiojrezyRE48) may be used for these assignments as described in the department's policy with the exception of the final submission of the web portfolio. A token must be requested *at most one week after* the assignment deadline.
+[Tokens](https://forms.gle/MbV2iXiojrezyRE48) may be used for these assignments as described in the department's policy with the exception of the final submission of the web portfolio. A token can be requested *at any point* during the semester. The assignment for which the token is used can then be submitted at any point of the semester, but no later than the last day of classes.
 
 At most two extra tokens may be earned by doing the following: 
 1. participate in two events related to CIS and/or participate in the hackathon (must contribute to a project) 
