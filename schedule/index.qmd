@@ -116,7 +116,7 @@ layout: full
   - Quiz 3 on March 17th 
   - [IIP Presentations Round 1](https://classroom.github.com/a/RmT-d8O4) on March 21st
 - Assignments Released:  
-  - Web Project 3: Sprint 1 - Community Website (March 17th lab)
+  - [Web Project 3: Sprint 1 - Community Website](https://classroom.github.com/a/2OhxTc65) (March 17th lab)
   - Web Project 1: Sprint 3 (March 19th)  
 - Read/Review:
   - Read [Eloquent JavaScript (Chapters 14, 15, 18, and 20](https://eloquentjavascript.net/)
