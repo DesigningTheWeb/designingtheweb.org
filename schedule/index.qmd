@@ -118,7 +118,7 @@ layout: full
   - [IIP Presentations Round 1](https://classroom.github.com/a/RmT-d8O4) on March 21st
 - Assignments Released:  
   - Web Project 3: Sprint 1 - Community Website (March 17th lab)
-  - Technical Challenge 6 (March 19th class)
+  - [Technical Challenge 6](https://classroom.github.com/a/FeNyByFg) (March 19th class)
 - Read/Review:
   - Read [Eloquent JavaScript (Chapters 14, 15, 18, and 20](https://eloquentjavascript.net/)
   - [Slides: JavaScript Advanced Topics](week10/index.qmd)
