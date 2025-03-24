@@ -128,7 +128,7 @@ layout: full
 - Assignments DUE:
   - IIP Presentations Round 2 on March 28th
 - Assignments Released:
-  - [Web Project 1: Sprint 3](https://github.com/CMPSC302-Spring-2025-AlleghenyCollege/project1_course-website) (March 24th class)
+  - [Web Project 1: Sprint 3](https://github.com/CMPSC302-Spring-2025-AlleghenyCollege/designingtheweb.org) (March 24th class)
 - Web Project 3 Work Time (March 24th lab)
 
 ### Week 12 (Mar 31-Apr 4): React  
