@@ -110,7 +110,7 @@ layout: full
   - Ref [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Slides: JavaScript Basics](week9/index.qmd)  
 
-### Week 10 (Mar 17-21): Javascript  
+### Week 10 (Mar 17-21): Javascript, Introduction to React  
 - Topics: More advanced Javascript, React introduction 
 - Assignments DUE:
   - Technical Challenge 5 DUE on March 17th
@@ -123,7 +123,7 @@ layout: full
   - Read [Eloquent JavaScript (Chapters 14, 15, 18, and 20](https://eloquentjavascript.net/)
   - [Slides: JavaScript Advanced Topics](week10/index.qmd)
 
-### Week 11 (Mar 24-28): Introduction to React 
+### Week 11 (Mar 24-28): Projects and React 
 - Topics: React components 
 - Assignments DUE:
   - IIP Presentations Round 2 on March 28th
