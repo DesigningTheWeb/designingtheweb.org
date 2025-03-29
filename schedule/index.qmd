@@ -123,7 +123,7 @@ layout: full
   - Read [Eloquent JavaScript (Chapters 14, 15, 18, and 20](https://eloquentjavascript.net/)
   - [Slides: JavaScript Advanced Topics](week10/index.qmd)
 
-### Week 11 (Mar 24-28): Projects and React 
+### Week 11 (Mar 24-28): Projects
 - Assignments DUE:
   - IIP Presentations Round 2 on March 28th
 - Assignments Released:
@@ -141,8 +141,7 @@ layout: full
 - Assignments Released:  
   - Begin Project 2 Stage 3
 
-### Week 13 (Apr 7-9): Building with React and Static Site Generators  
-- Topics: Using React with 11ty or integrating React components into static sites  
+### Week 13 (Apr 7-9): Projects  
 - Assignments DUE:
   - Project 3 Sprint 1 **Due** on April 9th
 - Assignments Released:  
