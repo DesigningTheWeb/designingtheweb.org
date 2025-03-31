@@ -135,7 +135,7 @@ layout: full
 ### Week 12 (Mar 31-Apr 4): React  
 - Topics: React components, props, and state  
 - Assignments DUE:
-  - Project 2: Stage 2 **Due** on March 31st (presentations during the lab). 
+  - Project 2: Stage 2 **Due** on March 31st (presentations during the lab). Feel out [peer feedback form](https://forms.gle/1oTejuogxWirvKLX7) for each presenter.
   - [IIP Presentations Round 3](https://classroom.github.com/a/RmT-d8O4) on April 2nd
   - Quiz 4 on April 4th
 - Assignments Released:  
@@ -173,7 +173,7 @@ layout: full
 |-----------------|------------------------------------------|-------------------------------------------------|---------------------------------------------------|----------------------------------------|
 | **Week 10** (Mar 17-21) | TC 5, Quiz 3 |  Project 3: Sprint 1 (Released) | TC 6 (Released) | IIP Presentations Round 1 |
 | **Week 11** (Mar 24-28) |  Project 1: Sprint 3 (Released) |  Project 3: Work Time | TC 6 **Due**. Project 1: Work Time | IIP Presentations Round 2. Project 3: Work Time |
-| **Week 12** (Mar 31-Apr 4) |  Project 1 Work Time | Project 2: Stage 2 **Due** | IIP Presentations Round 3 | Quiz 4 |
+| **Week 12** (Mar 31-Apr 4) |  Project 1 Work Time | Project 2: Stage 2 **Due**. [Peer Feedback Form](https://forms.gle/1oTejuogxWirvKLX7). | IIP Presentations Round 3 | Quiz 4 |
 | **Week 13** (Apr 7-9) | No Class | No Lab | No Class. Project 3 Sprint 1 **Due**. | No Class |
 | **Week 14** (Apr 14-18) | Project 1: Sprint 3 **Due**, begin sprint 4. | Project 3 Progress Review | IIP Presentations Round 4 | TC 7 (Released) |
 | **Week 15** (Apr 21-25) | Quiz 5 | Project 1 Work Time | Project 3 Work Time. TC 7 **Due** | IIP Presentations Round 5 |
