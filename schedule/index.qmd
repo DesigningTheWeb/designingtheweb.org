@@ -140,6 +140,8 @@ layout: full
   - Quiz 4 on April 4th
 - Assignments Released:  
   - Begin Project 2 Stage 3
+- Read/Review:
+  - [Continuous Integration Example](https://github.com/CMPSC302-Spring-2025-AlleghenyCollege/ci_example)
 
 ### Week 13 (Apr 7-9): Projects  
 - Assignments DUE:
