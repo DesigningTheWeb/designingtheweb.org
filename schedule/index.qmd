@@ -154,14 +154,12 @@ layout: full
 - Assignments DUE: 
   - Project 3 Sprint 2 Progress Review on April 14th
   - [IIP Presentations Round 4](https://classroom.github.com/a/RmT-d8O4) on April 16th
-- Assignments Released:
-  - Technical Challenge 7 on April 18th
+  - Project 1 Progress Review on April 18th
 
 ### Week 15 (Apr 21-25): Final Project Development  
 - Activities: Web portfolio work time. Show and Tell.
 - Assignments DUE:  
   - Extra Quiz on April 21st
-  - Technical Challenge 7 on April 21st
   - Project 3 Work Time on April 21st LAB
   - Project 1 Presentations of Completed Features on April 23rd
   - [IIP Presentations Round 5](https://classroom.github.com/a/RmT-d8O4) on April 21st
