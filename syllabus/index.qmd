@@ -101,6 +101,8 @@ Small weekly assignments that provide exploration of the tools and technologies 
 
 There are three required projects: course website, personal website, community project (introduced in this order). Course web and community web projects are completed in teams. Personal website project is completed individually. Projects are graded on a Pass/Fail basis. All three software portfolio projects have scaffolded tasks and deadlines throughout the semester, and require engagement in a standard software engineering process.
 
+ If you do not contribute equitably to team projects — for example, if your team completes the project but your role was minimal — the project may still count as "completed" with a course grade reduction of up to one full letter (e.g., A to B or B+ to C+), depending on the extent of under-contribution. This determination will be based on: team feedback, observable contributions (e.g., PRs, commits), communication and engagement during the project.
+
 To request an early assessment of any of your projects, please submit a request via [this form](https://forms.gle/4XTRoSCYaHeavBk79). I will check it, provide feedback on your project and if it does not meet some of the requirements, specify those improvements that need to be made before project passes.
 
 #### `Incomplete` and `Ignored` Assignments
