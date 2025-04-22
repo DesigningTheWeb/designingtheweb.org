@@ -73,15 +73,15 @@ At the end of the semester, I have to give you a grade, and for that we will fol
 
 | Final Letter Grade | Software Portfolio (3 Projects) | Quizzes (~5 total) | Technical Challenges | IP Presentation |
 |---------------------|---------------------------------|-------------------|-----------------------|----------------------------------------|
-| A                   | All completed                  | Average ≥ 90%    | 7 completed        | 1 completed                            |
-| A-                  | All completed                  | Average ≥ 85%    | 7 completed         | 1 completed                            |
-| B+                  | All completed                  | Average ≥ 80%    | 6 completed         | 1 completed                            |
-| B                   | All completed                  | Average ≥ 75%    | 6 completed         | 1 completed                            |
-| B-                  | All completed                  | Average ≥ 70%    | 6 completed         | 1 completed                            |
-| C+                  | All completed                  | Average ≥ 65%    | 5 completed         | 1 completed                            |
-| C                   | All completed                  | Average ≥ 60%    | 5 completed         | 1 completed                            |
-| C-                  | 2 completed                    | Average ≥ 55%    | 5 completed         | 0 completed                            |
-| D                   | 2 completed                    | Average ≥ 60%    | 4 completed         | 0 completed                            |
+| A                   | All completed                  | Average ≥ 90%    | 6 completed        | 1 completed                            |
+| A-                  | All completed                  | Average ≥ 85%    | 6 completed         | 1 completed                            |
+| B+                  | All completed                  | Average ≥ 80%    | 5 completed         | 1 completed                            |
+| B                   | All completed                  | Average ≥ 75%    | 5 completed         | 1 completed                            |
+| B-                  | All completed                  | Average ≥ 70%    | 5 completed         | 1 completed                            |
+| C+                  | All completed                  | Average ≥ 65%    | 4 completed         | 1 completed                            |
+| C                   | All completed                  | Average ≥ 60%    | 4 completed         | 1 completed                            |
+| C-                  | 2 completed                    | Average ≥ 55%    | 4 completed         | 0 completed                            |
+| D                   | 2 completed                    | Average ≥ 50%    | 3 completed         | 0 completed                            |
 
 #### A note about assignment types
 
