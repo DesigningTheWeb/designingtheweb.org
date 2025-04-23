@@ -1209,5 +1209,131 @@
     "title": "Schedule",
     "section": "Calendar",
     "text": "Calendar\n\n\n\n\n\n\n\n\n\n\nWeek\nMonday Class\nMonday Lab\nWednesday Class\nFriday Class\n\n\n\n\nWeek 10 (Mar 17-21)\nMar 17 (10am): Tech Challenge 5, Quiz 3\nMar 17: Web Project 3: Sprint 1 (Released)\nMar 19: Tech Challenge 6 (Released)\nMar 21: IIP Presentations Round 1\n\n\nWeek 11 (Mar 24-28)\nMar 24: Web Project 1: Sprint 3 (Released)\n…existing code…\nMar 26 (10am): Project 3 Sprint 1 Progress Review\nMar 28: IIP Presentations Round 2\n\n\nWeek 12 (Mar 31-Apr 4)\nMar 31: Class Session\nMar 31 (2:30pm): Project 2 Stage 2 Due\nApr 2: IIP Presentations Round 3\nApr 4: Quiz 4\n\n\nWeek 13 (Apr 7-9)\nApr 7: Class Session\nApr 7 (2:30pm): Project 3 Sprint 1 Due\nApr 9: IIP Presentations Round 4\n…existing code…\n\n\nWeek 14 (Apr 14-18)\nApr 14: Class Session\nApr 14 (2:30pm): Project 3 Sprint 2 Review\nApr 16: IIP Presentations Round 5\n…existing code…\n\n\nWeek 15 (Apr 21-25)\nApr 21: Quiz 5\n…existing code…\nApr 23: Class Session\nApr 25: IIP Presentations Round 6\n\n\nFinal Exam (Apr 28-May 6)\nApr 28 (2:30pm): Community Project 3 Presentations\n…existing code…\n…existing code…\nMay 5 (9am): Project Portfolio Due"
+  },
+  {
+    "objectID": "schedule/week16/index.html#web-performance-optimization",
+    "href": "schedule/week16/index.html#web-performance-optimization",
+    "title": "Optimization, SEO",
+    "section": "Web Performance Optimization",
+    "text": "Web Performance Optimization\n\n\nWhy performance matters:\n\n40% of users abandon sites that take &gt;3 seconds to load\n1 second delay can reduce conversions by 7%\nImpacts SEO rankings\nAffects user experience and engagement"
+  },
+  {
+    "objectID": "schedule/week16/index.html#minimizing-load-times",
+    "href": "schedule/week16/index.html#minimizing-load-times",
+    "title": "Optimization, SEO",
+    "section": "Minimizing Load Times",
+    "text": "Minimizing Load Times\n\n\nFile Optimization:\n\nCompress and minify CSS/JavaScript\nOptimize images (WebP, SVG, responsive images)\nUse modern formats like AVIF and WebP\n\nDelivery Optimization:\n\nImplement browser caching\nUse Content Delivery Networks (CDNs)\nReduce HTTP requests"
+  },
+  {
+    "objectID": "schedule/week16/index.html#example-cssjs-minification",
+    "href": "schedule/week16/index.html#example-cssjs-minification",
+    "title": "Optimization, SEO",
+    "section": "Example: CSS/JS Minification",
+    "text": "Example: CSS/JS Minification\n\n\nOriginal CSS (256 bytes):\n/* Button styling */\n.button {\n    background-color: #4CAF50;\n    color: white;\n    padding: 10px 15px;\n    margin: 8px 0;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n}\n\nMinified CSS (154 bytes):\n.button{background-color:#4CAF50;color:#fff;padding:10px 15px;margin:8px 0;border:none;border-radius:4px;cursor:pointer}\n\n\n\nOriginal JS (237 bytes):\n// Toggle menu visibility\nfunction toggleMenu() {\n    const menu = document.getElementById('menu');\n    if (menu.style.display === 'none') {\n        menu.style.display = 'block';\n    } else {\n        menu.style.display = 'none';\n    }\n}\n\nMinified JS (120 bytes):\nfunction toggleMenu(){const e=document.getElementById(\"menu\");\"none\"===e.style.display?e.style.display=\"block\":e.style.display=\"none\"}"
+  },
+  {
+    "objectID": "schedule/week16/index.html#tools-for-minification",
+    "href": "schedule/week16/index.html#tools-for-minification",
+    "title": "Optimization, SEO",
+    "section": "Tools for Minification",
+    "text": "Tools for Minification\n\n\nCommand line tools:\n\nTerser: npx terser script.js -o script.min.js\ncssnano: npx cssnano styles.css styles.min.css\n\nBuild tools:\n\nWebpack, Parcel, Rollup, Vite\nGulp/Grunt tasks\n\nOnline services:\n\nCSS Minifier\nJavaScript Minifier"
+  },
+  {
+    "objectID": "schedule/week16/index.html#more-load-time-optimization",
+    "href": "schedule/week16/index.html#more-load-time-optimization",
+    "title": "Optimization, SEO",
+    "section": "More Load Time Optimization",
+    "text": "More Load Time Optimization\n\n\nCritical Rendering Path:\n\nReduce render-blocking resources\nInline critical CSS\nDefer non-essential JavaScript\n\nResponsive Design:\n\nMobile-first approach\nAdaptive images\nMedia queries"
+  },
+  {
+    "objectID": "schedule/week16/index.html#code-example-lazy-loading",
+    "href": "schedule/week16/index.html#code-example-lazy-loading",
+    "title": "Optimization, SEO",
+    "section": "Code Example: Lazy Loading",
+    "text": "Code Example: Lazy Loading\n&lt;!-- Basic image lazy loading --&gt;\n&lt;img src=\"image.jpg\" loading=\"lazy\" alt=\"Description\"&gt;\n\n&lt;!-- With JavaScript --&gt;\n&lt;img data-src=\"image.jpg\" class=\"lazy\" alt=\"Description\"&gt;\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  let lazyImages = [].slice.call(document.querySelectorAll(\"img.lazy\"));\n  \n  if (\"IntersectionObserver\" in window) {\n    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {\n      entries.forEach(function(entry) {\n        if (entry.isIntersecting) {\n          let lazyImage = entry.target;\n          lazyImage.src = lazyImage.dataset.src;\n          lazyImage.classList.remove(\"lazy\");\n          lazyImageObserver.unobserve(lazyImage);\n        }\n      });\n    });\n\n    lazyImages.forEach(function(lazyImage) {\n      lazyImageObserver.observe(lazyImage);\n    });\n  }\n});"
+  },
+  {
+    "objectID": "schedule/week16/index.html#seo-basics",
+    "href": "schedule/week16/index.html#seo-basics",
+    "title": "Optimization, SEO",
+    "section": "SEO Basics",
+    "text": "SEO Basics\n\n\nSearch Engine Optimization: Techniques to increase visibility in search results\nWhy it matters:\n\n68% of online experiences begin with a search engine\n75% of users never scroll past the first page of results\nOrganic search drives ~53% of website traffic"
+  },
+  {
+    "objectID": "schedule/week16/index.html#on-page-seo-factors",
+    "href": "schedule/week16/index.html#on-page-seo-factors",
+    "title": "Optimization, SEO",
+    "section": "On-Page SEO Factors",
+    "text": "On-Page SEO Factors\n\n\nContent optimization:\n\nHigh-quality, relevant content\nProper keyword usage\nStructured content with headers\n\nHTML elements:\n\nTitle tags: &lt;title&gt;Page Title&lt;/title&gt;\nMeta descriptions\nImage alt text\nSemantic HTML"
+  },
+  {
+    "objectID": "schedule/week16/index.html#technical-seo",
+    "href": "schedule/week16/index.html#technical-seo",
+    "title": "Optimization, SEO",
+    "section": "Technical SEO",
+    "text": "Technical SEO\n\n\nMobile optimization\n\nMobile-friendly design is a ranking factor\nResponsive design is preferred\n\nSite speed\n\nCore Web Vitals metrics\nLighthouse performance\n\nHTTPS\n\nSecure sites rank higher\nRequired for modern browser features"
+  },
+  {
+    "objectID": "schedule/week16/index.html#performance-audits",
+    "href": "schedule/week16/index.html#performance-audits",
+    "title": "Optimization, SEO",
+    "section": "Performance Audits",
+    "text": "Performance Audits\n\n\nKey metrics:\n\nLCP (Largest Contentful Paint) - loading\nFID (First Input Delay) - interactivity\nCLS (Cumulative Layout Shift) - visual stability\nTTFB (Time To First Byte) - server response"
+  },
+  {
+    "objectID": "schedule/week16/index.html#performance-audit-tools",
+    "href": "schedule/week16/index.html#performance-audit-tools",
+    "title": "Optimization, SEO",
+    "section": "Performance Audit Tools",
+    "text": "Performance Audit Tools\n\n\nGoogle Lighthouse: Comprehensive analysis in Chrome DevTools\nPageSpeed Insights: Online tool using Lighthouse\nWebPageTest: Detailed waterfall analysis\nChrome DevTools: Performance and Network tabs\nGTmetrix: Alternative with additional metrics\n\n\n\nGoogle Lighthouse Report"
+  },
+  {
+    "objectID": "schedule/week16/index.html#performance-audit-workflow",
+    "href": "schedule/week16/index.html#performance-audit-workflow",
+    "title": "Optimization, SEO",
+    "section": "Performance Audit Workflow",
+    "text": "Performance Audit Workflow\n\n\nRun initial audit to identify baseline metrics\nAnalyze bottlenecks using waterfall charts\nPrioritize issues based on impact\nImplement optimizations one at a time\nRe-audit to measure improvements\nDocument before/after metrics"
+  },
+  {
+    "objectID": "schedule/week16/index.html#web-analytics",
+    "href": "schedule/week16/index.html#web-analytics",
+    "title": "Optimization, SEO",
+    "section": "Web Analytics",
+    "text": "Web Analytics\n\n\nWhat is web analytics?: Collection, reporting, and analysis of website data\nWhy it matters:\n\nEvidence-based decision making\nMeasure impact of optimizations\nUnderstand user behavior\nTrack conversions and goals"
+  },
+  {
+    "objectID": "schedule/week16/index.html#popular-analytics-tools",
+    "href": "schedule/week16/index.html#popular-analytics-tools",
+    "title": "Optimization, SEO",
+    "section": "Popular Analytics Tools",
+    "text": "Popular Analytics Tools\n\n\nGoogle Analytics: Most widely used\nMatomo (Piwik): Open-source, privacy-focused alternative\nPlausible: Lightweight, privacy-friendly analytics\nHotjar: Heatmaps and user recordings\nClarity: Microsoft’s free behavior analytics"
+  },
+  {
+    "objectID": "schedule/week16/index.html#key-analytics-metrics",
+    "href": "schedule/week16/index.html#key-analytics-metrics",
+    "title": "Optimization, SEO",
+    "section": "Key Analytics Metrics",
+    "text": "Key Analytics Metrics\n\n\nTraffic metrics:\n\nSessions, users, pageviews\nTraffic sources\n\nEngagement metrics:\n\nBounce rate\nAverage session duration\nPages per session\n\nConversion metrics:\n\nGoal completion\nConversion rate"
+  },
+  {
+    "objectID": "schedule/week16/index.html#setting-up-google-analytics",
+    "href": "schedule/week16/index.html#setting-up-google-analytics",
+    "title": "Optimization, SEO",
+    "section": "Setting Up Google Analytics",
+    "text": "Setting Up Google Analytics\n\n\nCreate Google Analytics account\nSet up property and data stream\nAdd tracking code to your website:\n\n\n&lt;!-- Google tag (gtag.js) --&gt;\n&lt;script async src=\"https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID\"&gt;&lt;/script&gt;\n&lt;script&gt;\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-MEASUREMENT_ID');\n&lt;/script&gt;"
+  },
+  {
+    "objectID": "schedule/week16/index.html#using-analytics-data",
+    "href": "schedule/week16/index.html#using-analytics-data",
+    "title": "Optimization, SEO",
+    "section": "Using Analytics Data",
+    "text": "Using Analytics Data\n\n\nIdentify optimization opportunities:\n\nHigh-bounce pages\nSlow-loading content\n\nContent strategy:\n\nMost/least popular content\nEntry and exit pages\n\nUser journey analysis:\n\nNavigation paths\nDrop-off points"
+  },
+  {
+    "objectID": "schedule/week16/index.html#resources",
+    "href": "schedule/week16/index.html#resources",
+    "title": "Optimization, SEO",
+    "section": "Resources",
+    "text": "Resources\n\nWeb.dev\nGoogle Search Central\nPageSpeed Insights\nGoogle Analytics Documentation\nMoz SEO Learning Center"
   }
 ]

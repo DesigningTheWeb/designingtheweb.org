@@ -1,0 +1,335 @@
+---
+title: "Optimization, SEO"
+description: "Optimization, SEO"
+date: "2025-03-24"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+## Web Performance Optimization
+
+:::{.incremental}
+- Why performance matters:
+  - 40% of users abandon sites that take >3 seconds to load
+  - 1 second delay can reduce conversions by 7%
+  - Impacts SEO rankings
+  - Affects user experience and engagement
+:::
+
+---
+
+## Minimizing Load Times
+
+:::{.incremental}
+- **File Optimization**:
+  - Compress and minify CSS/JavaScript
+  - Optimize images (WebP, SVG, responsive images)
+  - Use modern formats like AVIF and WebP
+- **Delivery Optimization**:
+  - Implement browser caching
+  - Use Content Delivery Networks (CDNs)
+  - Reduce HTTP requests
+:::
+
+---
+
+## Example: CSS/JS Minification
+
+:::{.columns}
+:::{.column width="50%"}
+**Original CSS (256 bytes)**:
+```css
+/* Button styling */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+```
+:::
+
+:::{.column width="50%"}
+**Minified CSS (154 bytes)**:
+```css
+.button{background-color:#4CAF50;color:#fff;padding:10px 15px;margin:8px 0;border:none;border-radius:4px;cursor:pointer}
+```
+:::
+:::
+
+:::{.columns}
+:::{.column width="50%"}
+**Original JS (237 bytes)**:
+```javascript
+// Toggle menu visibility
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+}
+```
+:::
+
+:::{.column width="50%"}
+**Minified JS (120 bytes)**:
+```javascript
+function toggleMenu(){const e=document.getElementById("menu");"none"===e.style.display?e.style.display="block":e.style.display="none"}
+```
+:::
+:::
+
+---
+
+## Tools for Minification
+
+:::{.incremental}
+- **Command line tools**:
+  - Terser: `npx terser script.js -o script.min.js`
+  - cssnano: `npx cssnano styles.css styles.min.css`
+- **Build tools**:
+  - Webpack, Parcel, Rollup, Vite
+  - Gulp/Grunt tasks
+- **Online services**:
+  - [CSS Minifier](https://cssminifier.com/)
+  - [JavaScript Minifier](https://javascript-minifier.com/)
+:::
+
+---
+
+## More Load Time Optimization
+
+:::{.incremental}
+- **Critical Rendering Path**:
+  - Reduce render-blocking resources
+  - Inline critical CSS
+  - Defer non-essential JavaScript
+- **Responsive Design**:
+  - Mobile-first approach
+  - Adaptive images
+  - Media queries
+:::
+
+---
+
+## Code Example: Lazy Loading
+
+```html
+<!-- Basic image lazy loading -->
+<img src="image.jpg" loading="lazy" alt="Description">
+
+<!-- With JavaScript -->
+<img data-src="image.jpg" class="lazy" alt="Description">
+```
+
+```javascript
+document.addEventListener("DOMContentLoaded", function() {
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+});
+```
+
+---
+
+## SEO Basics
+
+:::{.incremental}
+- **Search Engine Optimization**: Techniques to increase visibility in search results
+- **Why it matters**:
+  - 68% of online experiences begin with a search engine
+  - 75% of users never scroll past the first page of results
+  - Organic search drives ~53% of website traffic
+:::
+
+---
+
+## On-Page SEO Factors
+
+:::{.incremental}
+- **Content optimization**:
+  - High-quality, relevant content
+  - Proper keyword usage
+  - Structured content with headers
+- **HTML elements**:
+  - Title tags: `<title>Page Title</title>`
+  - Meta descriptions
+  - Image alt text
+  - Semantic HTML
+:::
+
+---
+
+## Technical SEO
+
+:::{.incremental}
+- **Mobile optimization**
+  - Mobile-friendly design is a ranking factor
+  - Responsive design is preferred
+- **Site speed**
+  - Core Web Vitals metrics
+  - Lighthouse performance
+- **HTTPS**
+  - Secure sites rank higher
+  - Required for modern browser features
+:::
+
+---
+
+## Performance Audits
+
+:::{.incremental}
+- **Key metrics**:
+  - **LCP** (Largest Contentful Paint) - loading
+  - **FID** (First Input Delay) - interactivity
+  - **CLS** (Cumulative Layout Shift) - visual stability
+  - **TTFB** (Time To First Byte) - server response
+:::
+
+---
+
+## Performance Audit Tools
+
+:::{.incremental}
+- **Google Lighthouse**: Comprehensive analysis in Chrome DevTools
+- **PageSpeed Insights**: Online tool using Lighthouse
+- **WebPageTest**: Detailed waterfall analysis
+- **Chrome DevTools**: Performance and Network tabs
+- **GTmetrix**: Alternative with additional metrics
+:::
+
+![Google Lighthouse Report](https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/tpo4yz0gldbhdeisupcx.png?auto=format){width=60%}
+
+---
+
+## Performance Audit Workflow
+
+:::{.incremental}
+1. **Run initial audit** to identify baseline metrics
+2. **Analyze bottlenecks** using waterfall charts
+3. **Prioritize issues** based on impact
+4. **Implement optimizations** one at a time
+5. **Re-audit** to measure improvements
+6. **Document** before/after metrics
+:::
+
+---
+
+## Web Analytics
+
+:::{.incremental}
+- **What is web analytics?**: Collection, reporting, and analysis of website data
+- **Why it matters**:
+  - Evidence-based decision making
+  - Measure impact of optimizations
+  - Understand user behavior
+  - Track conversions and goals
+:::
+
+---
+
+## Popular Analytics Tools
+
+:::{.incremental}
+- **Google Analytics**: Most widely used
+- **Matomo (Piwik)**: Open-source, privacy-focused alternative
+- **Plausible**: Lightweight, privacy-friendly analytics
+- **Hotjar**: Heatmaps and user recordings
+- **Clarity**: Microsoft's free behavior analytics
+:::
+
+---
+
+## Key Analytics Metrics
+
+:::{.incremental}
+- **Traffic metrics**:
+  - Sessions, users, pageviews
+  - Traffic sources
+- **Engagement metrics**:
+  - Bounce rate
+  - Average session duration
+  - Pages per session
+- **Conversion metrics**:
+  - Goal completion
+  - Conversion rate
+:::
+
+---
+
+## Setting Up Google Analytics
+
+:::{.incremental}
+1. Create Google Analytics account
+2. Set up property and data stream
+3. Add tracking code to your website:
+:::
+
+```html
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MEASUREMENT_ID');
+</script>
+```
+
+---
+
+## Using Analytics Data
+
+:::{.incremental}
+- **Identify optimization opportunities**:
+  - High-bounce pages
+  - Slow-loading content
+- **Content strategy**:
+  - Most/least popular content
+  - Entry and exit pages
+- **User journey analysis**:
+  - Navigation paths
+  - Drop-off points
+:::
+
+---
+
+## Resources
+
+- [Web.dev](https://web.dev/learn-web-vitals/)
+- [Google Search Central](https://developers.google.com/search)
+- [PageSpeed Insights](https://pagespeed.web.dev/)
+- [Google Analytics Documentation](https://support.google.com/analytics/)
+- [Moz SEO Learning Center](https://moz.com/learn/seo)
+
+
