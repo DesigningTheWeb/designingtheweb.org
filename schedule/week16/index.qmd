@@ -1,7 +1,7 @@
 ---
 title: "Optimization, SEO"
 description: "Optimization, SEO"
-date: "2025-03-24"
+date: "2025-04-25"
 date-format: long
 author: Janyl Jumadinova
 format:
@@ -13,6 +13,7 @@ format:
     transition: slide
     highlight-style: github
     footer: "Web Design"
+
 ---
 
 ## Web Performance Optimization
